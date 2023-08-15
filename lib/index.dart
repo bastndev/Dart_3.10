@@ -16,6 +16,7 @@
 
 //--- -- - -- - FIXME: Print 
 void main(){
-  String name = 'Andre';
-  print('Name: $name');
+  String myName = 'Gohit';
+  String lastName = 'Bastian';
+  print('Hello 👋\nMy name is: $myName and my last name is: $lastName');
 }
