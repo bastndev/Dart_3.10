@@ -50,4 +50,7 @@ void main (){
 
   print("✅ my name is: $firstName $lastName. I'm $age years old, I'm $height meters tall.");
   print("Next year I will be ${age + 1} years old.  ");
+
+  double temp = 30;
+  print("${temp}C");
 }
