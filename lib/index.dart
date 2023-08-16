@@ -48,6 +48,6 @@ void main (){
   int age = 25;
   double height = 1.70;
 
-  print("my name is: $firstName $lastName. I'm $age years old, I'm $height meters tall.");
-
+  print("✅ my name is: $firstName $lastName. I'm $age years old, I'm $height meters tall.");
+  print("Next year I will be ${age + 1} years old.  ");
 }
