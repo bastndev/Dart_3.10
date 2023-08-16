@@ -32,11 +32,22 @@
 } */
 
 //--- --- --- --- TODO:
-void main(){
+/* void main(){
   String firstName = 'Andrea';
   String lastName = 'Bizzotto';
   int age = 36;
   double height = 1.84;
 
   print("Hello 👋 \nMy name is: ${firstName} ${lastName} \nand I have: ${age} years old \nI height: ${height}m");
+} */
+
+//-- - -- - -- -- FIXME:
+void main (){
+  String firstName = 'Gohit';
+  String lastName = 'Bastian';
+  int age = 25;
+  double height = 1.70;
+
+  print("my name is: " + firstName + " " + lastName);
+  print("my name is: $firstName $lastName 2");
 }
