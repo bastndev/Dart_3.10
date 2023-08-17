@@ -124,3 +124,5 @@ This is an even longer sentence, which will not fit inside a singer line.
   """;
   print(s);
 } */
+
+//--- -- - -- - -- TODO: Basic String operations: uppercase and lowercase
