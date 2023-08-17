@@ -54,14 +54,26 @@
   double temp = 30;
   print("${temp}C");
 } */
+// -- - --- -- -- -TODO: Exircice 2
+void main() {
+  double temperature = 20;
+  int value = 0;
+  String pizza = 'Pizza';
+  String pasta = 'Pasta';
+
+  print("The temperature is: ${temperature}C");
+  print("$value plus $value makes ${value + value}");
+  print("I like $pizza and $pasta");
+}
 
 // --- -- -- -- -- FIXME: Exjercice 2
 
-void main() {
+/* void main() {
   double temperature = 20;
-  int value = 4;
+  int value = 1;
   String pizza = 'Pizza';
   String pasta = 'Pasta';
 
   print("The temperature is: ${temperature}C \n$value plus $value makes ${value * 2} \nI like $pizza and $pasta");
 }
+ */
