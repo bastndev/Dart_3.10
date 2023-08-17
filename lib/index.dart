@@ -101,3 +101,9 @@
   print("This is a longer sentence, I dare say.");
   print("This is an even longer sentence, which will not fit inside a singer line.");
 } */
+//--- FIXME: on2
+/* void main() {
+  print("This is a short sentence. \n"
+      "This is a longer sentence, I dare say.\n"
+      "This is an even longer sentence, which will not fit inside a singer line.");
+} */
