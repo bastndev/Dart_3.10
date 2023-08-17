@@ -115,3 +115,12 @@ This is a longer sentence, I dare say.
 This is an even longer sentence, which will not fit inside a singer line.
   """);
 } */
+//--- FIXME: on4
+/* void main() {
+  String s ="""
+This is a short sentence. 
+This is a longer sentence, I dare say.
+This is an even longer sentence, which will not fit inside a singer line.
+  """;
+  print(s);
+} */
