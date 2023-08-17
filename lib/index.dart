@@ -14,7 +14,7 @@
 }
  */
 
-//--- -- - -- - FIXME: Print 
+//--- -- - -- - FIXME: Print
 /* void main(){
   String myName = 'Gohit';
   String lastName = 'Bastian';
@@ -42,7 +42,7 @@
 } */
 
 //-- - -- - -- -- FIXME:
-void main (){
+/* void main (){
   String firstName = 'Gohit';
   String lastName = 'Bastian';
   int age = 25;
@@ -53,4 +53,15 @@ void main (){
 
   double temp = 30;
   print("${temp}C");
+} */
+
+// --- -- -- -- -- FIXME: Exjercice 2
+
+void main() {
+  double temperature = 20;
+  int value = 4;
+  String pizza = 'Pizza';
+  String pasta = 'Pasta';
+
+  print("The temperature is: ${temperature}C \n$value plus $value makes ${value * 2} \nI like $pizza and $pasta");
 }
