@@ -55,7 +55,7 @@
   print("${temp}C");
 } */
 // -- - --- -- -- -TODO: Exircice 2
-void main() {
+/* void main() {
   double temperature = 20;
   int value = 0;
   String pizza = 'Pizza';
@@ -64,7 +64,7 @@ void main() {
   print("The temperature is: ${temperature}C");
   print("$value plus $value makes ${value + value}");
   print("I like $pizza and $pasta");
-}
+} */
 
 // --- -- -- -- -- FIXME: Exjercice 2
 
@@ -77,3 +77,27 @@ void main() {
   print("The temperature is: ${temperature}C \n$value plus $value makes ${value * 2} \nI like $pizza and $pasta");
 }
  */
+
+// --- --- - -- - - TODO: String escaping
+/* void main (){
+  print("Today I'm feeling great");
+  print('Today I\'m feeling great');
+  print('\\');
+  print('\$');
+  print('C:\\Windows\\system32');
+  print(r'C:\Windows\system32');
+} */
+// --- --- - -- - - TODO: String escaping
+/* void main() {
+  int a = 10;
+  print('$a');
+  print('\$a');
+  print('\$$a');
+} */
+// --- --- - -- - - TODO:  Multi-line strings
+//--- FIXME: on1
+/* void main(){
+  print("This is a short sentence.");
+  print("This is a longer sentence, I dare say.");
+  print("This is an even longer sentence, which will not fit inside a singer line.");
+} */
