@@ -132,7 +132,15 @@ This is an even longer sentence, which will not fit inside a singer line.
   print(title.toLowerCase());
 } */
 // --- - -- -- FIXME: 2
-void main (){
+/* void main (){
   String title = 'Dark Course'.toUpperCase();
+  print(title);
+} */
+
+void main (){
+  String title = 'Dark Course';
+  print(title);
+  
+  title = title.toUpperCase();
   print(title);
 }
