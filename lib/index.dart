@@ -152,7 +152,18 @@ void main (){
 } */
 
 //--- -- - -- - -- TODO: 17 Finding and replacing strings
-void main (){
+/* void main (){
   String lovePizza = 'I love pizza';
   print(lovePizza.contains('love'));
+}
+ */
+/* void main (){
+  String lovePizza = 'I love pizza';
+  bool containsPizza = lovePizza.contains('pizza');
+  print(containsPizza);
+} */
+void main (){
+  String lovePizza = 'I love pizza';
+  String lovePasta = lovePizza.replaceAll('pizza', 'pasta');
+  print(lovePasta);
 }
