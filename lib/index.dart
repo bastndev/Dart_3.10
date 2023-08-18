@@ -131,16 +131,28 @@ This is an even longer sentence, which will not fit inside a singer line.
   print(title.toUpperCase());
   print(title.toLowerCase());
 } */
-// --- - -- -- FIXME: 2
 /* void main (){
   String title = 'Dark Course'.toUpperCase();
   print(title);
 } */
-
+/* 
 void main (){
   String title = 'Dark Course';
   print(title);
   
   title = title.toUpperCase();
   print(title);
+} */
+
+// --- - -- -- FIXME: Exercise
+/* void main(){
+  String title = 'Dark course';
+
+  print("$title \n${title.toUpperCase()} \n${title.toLowerCase()}");
+} */
+
+//--- -- - -- - -- TODO: 17 Finding and replacing strings
+void main (){
+  String lovePizza = 'I love pizza';
+  print(lovePizza.contains('love'));
 }
