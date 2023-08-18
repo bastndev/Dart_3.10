@@ -126,8 +126,13 @@ This is an even longer sentence, which will not fit inside a singer line.
 } */
 
 //--- -- - -- - -- TODO: Basic String operations: uppercase and lowercase
-void main (){
+/* void main (){
   String title = 'Dark Course';
   print(title.toUpperCase());
   print(title.toLowerCase());
+} */
+// --- - -- -- FIXME: 2
+void main (){
+  String title = 'Dark Course'.toUpperCase();
+  print(title);
 }
