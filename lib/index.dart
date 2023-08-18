@@ -169,8 +169,9 @@ void main (){
   print(lovePasta);
 } */
 
-void main (){
-  String lovePizza = 'I love pizza';
-  lovePizza = lovePizza.replaceAll('pizza', 'pasta');
-  print(lovePizza);
-}
+/* void main (){
+  String foodPreference = 'I love pizza';
+  foodPreference= foodPreference.replaceAll('pizza', 'pasta');
+  print(foodPreference);
+} */
+//TODO: 18. Conversions between types
