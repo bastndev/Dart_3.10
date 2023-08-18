@@ -162,8 +162,15 @@ void main (){
   bool containsPizza = lovePizza.contains('pizza');
   print(containsPizza);
 } */
-void main (){
+// FIXME: wow
+/* void main (){
   String lovePizza = 'I love pizza';
   String lovePasta = lovePizza.replaceAll('pizza', 'pasta');
   print(lovePasta);
+} */
+
+void main (){
+  String lovePizza = 'I love pizza';
+  lovePizza = lovePizza.replaceAll('pizza', 'pasta');
+  print(lovePizza);
 }
