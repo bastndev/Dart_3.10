@@ -182,9 +182,16 @@ void main (){
 
   print(ageString);
 } */
-void main(){
+
+/* void main(){
   double height = 1.71;
   String toHeight = height.toStringAsFixed(19);//-- FIXME: te dice cuantos decimales imprimir
   print(toHeight);
-}
+} */
 
+void main(){
+  String newiString = '4.5';
+  double newi = double.parse(newiString);
+
+  print(newi+1);
+}
