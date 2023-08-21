@@ -176,10 +176,15 @@ void main (){
 } */
 
 //TODO: 18. Conversions between types
-void main(){
+/* void main(){
   int age = 25;
   String ageString = age.toString();
 
   print(ageString);
+} */
+void main(){
+  double height = 1.71;
+  String toHeight = height.toStringAsFixed(19);//-- FIXME: te dice cuantos decimales imprimir
+  print(toHeight);
 }
 
