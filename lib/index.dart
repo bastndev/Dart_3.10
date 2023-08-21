@@ -174,4 +174,13 @@ void main (){
   foodPreference= foodPreference.replaceAll('pizza', 'pasta');
   print(foodPreference);
 } */
+
 //TODO: 18. Conversions between types
+
+void main(){
+  String name = 'Lucas Mamani';
+  String newName = name.replaceAll('Mamani','Zuckenbert');
+
+  print(newName);
+
+}
