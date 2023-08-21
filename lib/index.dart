@@ -198,9 +198,16 @@ void main (){
   print(double.parse(helloString));
 } */
 
-void main(){
+/* void main(){
   int x = 10;
   double z = x.toDouble();
 
   print(z);
+} */
+
+void main(){
+  double y = 20;
+
+  int w  = 40.4.round();
+  print(w);
 }
