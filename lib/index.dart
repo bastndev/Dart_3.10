@@ -197,3 +197,10 @@ void main (){
   String helloString = 'hello';
   print(double.parse(helloString));
 } */
+
+void main(){
+  int x = 10;
+  double z = x.toDouble();
+
+  print(z);
+}
