@@ -179,7 +179,7 @@ void main (){
 
 void main(){
   String name = 'Lucas Mamani';
-  String newName = name.replaceAll('Mamani','Zuckenbert');
+  String newName = name.replaceAll('Mamani','Zuckerberg');
 
   print(newName);
 
