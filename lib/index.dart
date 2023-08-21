@@ -205,9 +205,16 @@ void main (){
   print(z);
 } */
 
-void main(){
+/* void main(){
   double y = 20;
 
   int w  = 40.4.round();
+  print(w);
+} */
+
+void main(){
+  double y = 20;
+
+  int w  = 40.6.round();
   print(w);
 }
