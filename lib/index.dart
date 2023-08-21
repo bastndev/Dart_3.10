@@ -189,9 +189,11 @@ void main (){
   print(toHeight);
 } */
 
-void main(){
+/* void main(){
   String newiString = '4.5';
   double newi = double.parse(newiString);
 
   print(newi+1);
-}
+  String helloString = 'hello';
+  print(double.parse(helloString));
+} */
