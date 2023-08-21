@@ -176,11 +176,10 @@ void main (){
 } */
 
 //TODO: 18. Conversions between types
-
 void main(){
-  String name = 'Lucas Mamani';
-  String newName = name.replaceAll('Mamani','Zuckerberg');
+  int age = 25;
+  String ageString = age.toString();
 
-  print(newName);
-
+  print(ageString);
 }
+
