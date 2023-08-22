@@ -222,9 +222,14 @@ void main (){
 
 // TODO: 19. Arithmetic operations
 
-void main() {
+/* void main() {
   print(5 + 2);
   print(5 - 2);
   print(5 * 2);
   print(5 / 2);
+} */
+
+void main() {
+  print(5 ~/ 2);
+  print(5 % 2);
 }
