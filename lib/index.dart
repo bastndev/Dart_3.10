@@ -229,7 +229,14 @@ void main (){
   print(5 / 2);
 } */
 
-void main() {
+/* void main() {
   print(5 ~/ 2);
   print(5 % 2);
+} */
+
+void main() {
+  int x = 4;
+  x = x + 4;
+
+  print(x);
 }
