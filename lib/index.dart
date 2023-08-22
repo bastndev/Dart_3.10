@@ -234,9 +234,24 @@ void main (){
   print(5 % 2);
 } */
 
-void main() {
+/* void main() {
   int x = 4;
   x = x + 4;
 
+  print(x);
+} */
+
+/* void main() {
+  int x = 4;
+  x = x + 4;
+  x *= 2;
+  x ~/= 2; //--- Redondea ~
+  print(x);
+} */
+void main() {
+  double x = 4;
+  x = x + 4;
+  x *= 2;
+  x /= 2; 
   print(x);
 }
