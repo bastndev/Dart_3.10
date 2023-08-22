@@ -248,10 +248,15 @@ void main (){
   x ~/= 2; //--- Redondea ~
   print(x);
 } */
-void main() {
+/* void main() {
   double x = 4;
   x = x + 4;
   x *= 2;
   x /= 2; 
   print(x);
+} */
+
+void main() {
+  print(10 - 2 * 3);
+  print((10 - 2) * 3);
 }
