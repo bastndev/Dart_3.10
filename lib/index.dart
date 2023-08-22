@@ -212,9 +212,19 @@ void main (){
   print(w);
 } */
 
-void main(){
+/* void main(){
   double y = 20;
 
   int w  = 40.6.round();
   print(w);
+}
+ */
+
+// TODO: 19. Arithmetic operations
+
+void main() {
+  print(5 + 2);
+  print(5 - 2);
+  print(5 * 2);
+  print(5 / 2);
 }
