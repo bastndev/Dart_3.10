@@ -256,10 +256,12 @@ void main (){
   print(x);
 } */
 
-void main() {
+/* void main() {
   print(10 - 2 * 3);
   print((10 - 2) * 3);
   print((10 - 2) / 3);
   print((10 - 2) - 3);
   print((10 - 2) + 3);
-}
+} */
+
+// --- TODO: practice 2.0
