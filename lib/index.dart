@@ -265,3 +265,7 @@ void main (){
 } */
 
 // --- TODO: practice 2.0
+
+void main (){
+print((1.8)+ 32);
+}
