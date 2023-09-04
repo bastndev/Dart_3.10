@@ -266,6 +266,14 @@ void main (){
 
 // --- TODO: practice 2.0
 
-void main (){
+/* void main (){
 print((1.8)+ 32);
+}
+ */
+
+// -- - -- FIXME: Fahrenheit to Celsius
+void main() {
+  double num1 = 90;
+  double num2 = (num1 - 32) / 1.8;
+  print('${num1}F = ${num2}C');
 }
