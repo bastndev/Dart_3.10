@@ -284,9 +284,16 @@ print((1.8)+ 32);
 
   print("${temFahrenheit}F|${temCelsius}C");
 } */
-void main() {
+/* void main() {
   double temFahrenheit = 92.25;
   double temCelsius = (temFahrenheit - 32) / 1.8;
 
   print("${temFahrenheit.toStringAsFixed(1)}F|${temCelsius.toStringAsFixed(1)}C");
+} */
+
+// --- --- --- TODO: 21. Increment & decrement operators
+void main (){
+  int x = 1;
+  x++;
+  print(x);
 }
