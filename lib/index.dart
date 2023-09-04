@@ -294,6 +294,6 @@ print((1.8)+ 32);
 // --- --- --- TODO: 21. Increment & decrement operators
 void main (){
   int x = 1;
-  x++;
-  print(x);
+  int y = x++;
+  print("x: $x, y: $y");
 }
