@@ -272,8 +272,15 @@ print((1.8)+ 32);
  */
 
 // -- - -- FIXME: Fahrenheit to Celsius
-void main() {
+/* void main() {
   double num1 = 90;
   double num2 = (num1 - 32) / 1.8;
   print('${num1}F = ${num2}C');
+} */
+
+void main() {
+  double temFahrenheit = 86;
+  double temCelsius = (temFahrenheit - 32) / 1.8;
+
+  print("${temFahrenheit}F|${temCelsius}C");
 }
