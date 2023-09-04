@@ -278,9 +278,15 @@ print((1.8)+ 32);
   print('${num1}F = ${num2}C');
 } */
 
-void main() {
+/* void main() {
   double temFahrenheit = 86;
   double temCelsius = (temFahrenheit - 32) / 1.8;
 
   print("${temFahrenheit}F|${temCelsius}C");
+} */
+void main() {
+  double temFahrenheit = 92.25;
+  double temCelsius = (temFahrenheit - 32) / 1.8;
+
+  print("${temFahrenheit.toStringAsFixed(1)}F|${temCelsius.toStringAsFixed(1)}C");
 }
