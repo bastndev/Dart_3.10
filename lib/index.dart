@@ -292,8 +292,22 @@ print((1.8)+ 32);
 } */
 
 // --- --- --- TODO: 21. Increment & decrement operators
-void main (){
+/* void main (){
   int x = 1;
   int y = x++;
   print("x: $x, y: $y");
+} */
+
+/* void main (){
+  int x = 1;
+  int y = ++x;
+  print("x: $x, y: $y");
+} */
+
+void main (){
+  int x = 1;
+  int y = x++;
+  int z = --y;
+
+  print("x: $x, y: $y, z:$z");
 }
