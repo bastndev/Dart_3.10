@@ -359,8 +359,10 @@ print((1.8)+ 32);
 }
  */
 
+//--- isNotEmpty (ve si la cadena de texto si esta vacio)
+// --- contains (ve si una parte especifica tiene @ u/o otra cosa)
 void main() {
   String email = 'text@example.com';
-  print(email.isNotEmpty && email.contains('@'));
+  print(email.isNotEmpty && email.contains('.com')); //
   print(email);
 }
