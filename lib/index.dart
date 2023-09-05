@@ -354,6 +354,13 @@ print((1.8)+ 32);
   print(9 < 10);
 } */
 
-void main() {
+/* void main() {
   print(!(5 < 2));
+}
+ */
+
+void main() {
+  String email = 'text@example.com';
+  print(email.isNotEmpty && email.contains('@'));
+  print(email);
 }
