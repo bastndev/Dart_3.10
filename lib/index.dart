@@ -304,10 +304,25 @@ print((1.8)+ 32);
   print("x: $x, y: $y");
 } */
 
-void main (){
+/* void main (){
   int x = 1;
   int y = x++;
   int z = --y;
 
   print("x: $x, y: $y, z:$z");
+} */
+
+void main() {
+  int a = 4;
+  int b = 4;
+
+  int result1 = a++ * b++; 
+  
+  int c = 4;
+  int d = 4;
+
+  int result2 = --c * --d; 
+
+  print("a: $a, b: $b, result1: $result1");
+  print("c: $c, d: $d, result2: $result2");
 }
