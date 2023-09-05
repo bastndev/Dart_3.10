@@ -342,7 +342,14 @@ print((1.8)+ 32);
   // print(5 < 'hello'):
 } */
 
-void main() {
+/* void main() {
   print(5 < 2 || 5 < 7);
   print(5 < 2 && 5 < 7);
+}
+ */
+
+void main() {
+  print((5 < 2 || 5 < 7) && 5 < 6);
+  print(5 < 2 && 5 < 7);
+  print(9 < 10);
 }
