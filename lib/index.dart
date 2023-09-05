@@ -329,7 +329,7 @@ print((1.8)+ 32);
 
 // - -- --- --- TODO: 22. Logical & Relational operators
 
-void main (){
+/* void main (){
   print(5 == 2 ); // equal
   print(5 != 2 ); // not equal
   print(5 >= 2 );  // greater or equal to
@@ -340,4 +340,9 @@ void main (){
   //this does't work
   // print(5 < 2.5);
   // print(5 < 'hello'):
+} */
+
+void main() {
+  print(5 < 2 || 5 < 7);
+  print(5 < 2 && 5 < 7);
 }
