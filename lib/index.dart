@@ -389,7 +389,7 @@ print((1.8)+ 32);
   print(type);
 } */
 
-void main () {
+/* void main () {
   int num1 = 4;
   int num2 = 4;
 
@@ -398,4 +398,6 @@ void main () {
   String type = result > 17 ? 'Adult' : 'Child';
   print(type);
 }
+ */
 
+//--- --- TODO: 24. Hex format, bitwise & shifting operators
