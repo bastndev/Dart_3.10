@@ -369,9 +369,22 @@ print((1.8)+ 32);
  */
 
 // --- -- -- TODO: 23. Ternary access operator (if else) = (? :)
-void main() {
+/* void main() {
   int age = 25;
   String type  = age > 17 ? 'adult' : 'child';
 
+  print(type);
+} */
+
+//FIXME: me
+void main() {
+  int num1 = 6;
+  int num2 = 6;
+
+  int result = num1++ * num2++;
+
+  print(result);
+
+  String type = result > 17 ? 'Adult' : 'Child';
   print(type);
 }
