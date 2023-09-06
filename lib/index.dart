@@ -377,7 +377,7 @@ print((1.8)+ 32);
 } */
 
 //FIXME: me
-void main() {
+/* void main() {
   int num1 = 6;
   int num2 = 6;
 
@@ -387,4 +387,15 @@ void main() {
 
   String type = result > 17 ? 'Adult' : 'Child';
   print(type);
+} */
+
+void main () {
+  int num1 = 4;
+  int num2 = 4;
+
+  int result = num1++ * num2++;
+
+  String type = result > 17 ? 'Adult' : 'Child';
+  print(type);
 }
+
