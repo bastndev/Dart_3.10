@@ -407,9 +407,20 @@ print((1.8)+ 32);
 } */
 
 // FIXME: bool =(||) bits = (|)
-void main () {
+/* void main () {
   int x = 0xF0; // binary: 11110000
   int y = 0x0F; // binary: 00001111
 
   print(x | y );
-}
+} */
+
+/* void main () {
+  int x = 0xF0; // binary: 11110000
+  int y = 0x0F; // binary: 00001111
+
+  print ((x | y ).toRadixString(16));
+  print ((x | y ).toRadixString(2));
+  print ((x & y ).toRadixString(2));
+  print ((x ^ y ).toRadixString(2));
+  print ((~y ).toRadixString(2));
+} */
