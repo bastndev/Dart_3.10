@@ -401,3 +401,14 @@ print((1.8)+ 32);
  */
 
 //--- --- TODO: 24. Hex format, bitwise & shifting operators
+/* void main () {
+  int green = 0xF2AFF00;
+  print(green);
+} */
+
+void main () {
+  int x = 0xF0; // binary: 11110000
+  int y = 0x0F; // binary: 00001111
+
+  print(x | y );
+}
