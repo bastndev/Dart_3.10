@@ -368,4 +368,10 @@ print((1.8)+ 32);
 }
  */
 
-// --- -- -- TODO: new false GIT
+// --- -- -- TODO: 23. Ternary access operator (if else) = (? :)
+void main() {
+  int age = 25;
+  String type  = age > 17 ? 'adult' : 'child';
+
+  print(type);
+}
