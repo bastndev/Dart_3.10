@@ -424,3 +424,9 @@ print((1.8)+ 32);
   print ((x ^ y ).toRadixString(2));
   print ((~y ).toRadixString(2));
 } */
+
+void main () {
+  int x = 4;
+  print((x>> 1).toRadixString(2));
+  print((x<< 2).toRadixString(2));
+}
