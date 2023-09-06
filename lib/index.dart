@@ -406,6 +406,7 @@ print((1.8)+ 32);
   print(green);
 } */
 
+// FIXME: bool =(||) bits = (|)
 void main () {
   int x = 0xF0; // binary: 11110000
   int y = 0x0F; // binary: 00001111
