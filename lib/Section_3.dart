@@ -31,7 +31,7 @@
   final height = 1.70;
 
 } */
-//FIXME: No nesesary add (INT - String and - double) 
+//FIXME: No nesesary add (INT - String and - double)
 //Es estricto est a Loca
 /* void main (){
   final title = 'Dart Course';
@@ -41,3 +41,10 @@
 } */
 
 // --- TODO: 31. The const keyword
+void main() {
+  const x = 1;
+  const y = 1;
+  const z = x + y;
+
+  print(z);
+}
