@@ -7,3 +7,10 @@
 */
 
 //--- TODO: 28. Static vs Dynamic Languages
+
+void main () {
+  String name = 'Gohit';
+
+  print(name.toUpperCase());
+  print(name.toLowerCase());
+}
