@@ -1,4 +1,9 @@
 // TODO: 27. Dart type system
-void main () {
-  
-}
+/* 
+  *Lenguajes estaticos VS dinamicos
+  *Inferencia de tiopo
+  * var final const, keyboard 
+  * Nunalividad y seguridad Nula
+*/
+
+//--- TODO: 28. Static vs Dynamic Languages
