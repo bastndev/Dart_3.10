@@ -51,7 +51,8 @@
  */
 
 // --- TODO: 32. [Exercise] var, final and const
-void main() {
+
+/* void main() {
   //which variables use const final and var
   const text = 'I like Pizza';
   const topping = 'whit tomatoes';
@@ -62,4 +63,16 @@ void main() {
 
   print(newText);
   print(newFavorite);
+}
+ */
+
+//--- TODO: 33. The dynamic keyword
+void main () {
+/*   var x = 10;
+  x = true; */
+
+  dynamic y = 10;
+  y = true;
+
+  print(y);
 }
