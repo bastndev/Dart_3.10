@@ -41,10 +41,25 @@
 } */
 
 // --- TODO: 31. The const keyword
-void main() {
+/* void main() {
   const x = 1;
   const y = 1;
   const z = x + y;
 
   print(z);
+}
+ */
+
+// --- TODO: 32. [Exercise] var, final and const
+void main() {
+  //which variables use const final and var
+  const text = 'I like Pizza';
+  const topping = 'whit tomatoes';
+  const favorite = '$text $topping';
+
+  final newText = favorite.replaceAll('Pizza', 'Pasta');
+  const newFavorite = 'Now I like curry';
+
+  print(newText);
+  print(newFavorite);
 }
