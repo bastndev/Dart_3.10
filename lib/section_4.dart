@@ -46,8 +46,8 @@
  */
 
 //---TODO: 36. [Exercise] if/else statements
-//-FIXME:me
-void main() {
+//-FIXME: me
+/* void main() {
   const salary = 2000;
   const bills = 10;
 
@@ -55,6 +55,18 @@ void main() {
 
   if (save <= 0) {
     print("you didn't save anything");
+  } else if (save < salary) {
+    print("You save: \$$save");
+  }
+} */
+void main() {
+  const salary = 2000;
+  const bills = 2200;
+
+  const save = salary - bills;
+
+  if (save <= 0) {
+    print("you didn't save anything ${save}");
   } else if (save < salary) {
     print("You save: \$$save");
   }
