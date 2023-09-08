@@ -30,7 +30,7 @@
 } */
 
 //FIXME: Practice 2
-void main() {
+/* void main() {
   const me = 90;
 
   if (me < 17) {
@@ -42,4 +42,20 @@ void main() {
     print("But, You do not need to participate");
   }
   print("Thanks for Visiting us");
+}
+ */
+
+//---TODO: 36. [Exercise] if/else statements
+//-FIXME:me
+void main() {
+  const salary = 2000;
+  const bills = 10;
+
+  const save = salary - bills;
+
+  if (save <= 0) {
+    print("you didn't save anything");
+  } else if (save < salary) {
+    print("You save: \$$save");
+  }
 }
