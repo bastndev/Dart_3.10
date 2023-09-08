@@ -15,7 +15,31 @@
   print("Enjoy your visit");
 } */
 
-//FIXME: Practice
-void main () {
-  
+//FIXME: Practice 1
+void main() {
+  const me = 90;
+
+  if (me < 17) {
+    print("You don't vote");
+  } else if (me >= 60) {
+    print("But, You do not need to participate");
+  } else {
+    print("Your Vote");
+  }
+  print("Thanks for Visiting us");
 }
+
+//FIXME: Practice 2
+/* void main() {
+  const me = 90;
+
+  if (me < 17) {
+    print("You don't vote");
+  } else {
+    print("Your Vote");
+  }  if (me >= 60) {
+    print("But, You do not need to participate");
+  }
+  print("Thanks for Visiting us");
+}
+ */
