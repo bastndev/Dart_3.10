@@ -75,7 +75,7 @@
 //--- TODO:
 void main () {
   const salary = 2000;
-  const bills = 1000;
+  const bills = 2100;
 
   if(salary > bills){
     print("You have saved \$${salary - bills} this is month.");
