@@ -59,7 +59,7 @@
     print("You save: \$$save");
   }
 } */
-void main() {
+/* void main() {
   const salary = 2000;
   const bills = 2200;
 
@@ -69,5 +69,19 @@ void main() {
     print("you didn't save anything ${save}");
   } else if (save < salary) {
     print("You save: \$$save");
+  }
+} */
+
+//--- TODO:
+void main () {
+  const salary = 2000;
+  const bills = 1000;
+
+  if(salary > bills){
+    print("You have saved \$${salary - bills} this is month.");
+  }else if (bills > salary){
+    print("You have lost \$${bills - salary} this is month");
+  }else{
+    print("You balance hast't changed");
   }
 }
