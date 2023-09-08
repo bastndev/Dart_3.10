@@ -1,6 +1,6 @@
 // ---TODO: Control flow
 //- FIXME: 35. If/else statements
-void main() {
+/* void main() {
   const age = 40;
   if (age < 17) {
     print("Welcome Junior");
@@ -13,4 +13,9 @@ void main() {
     print("price is \$10");
   }
   print("Enjoy your visit");
+} */
+
+//FIXME: Practice
+void main () {
+  
 }
