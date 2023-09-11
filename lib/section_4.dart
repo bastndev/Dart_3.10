@@ -99,11 +99,22 @@
  */
 
 //--- TODO: 37. while loops
-void main () {
+/* void main () {
   var i = 1;
   while(i <= 5){
     print(i);
     i++;
   }
   print("Done");
-}
+} */
+
+/* void main() {
+  var i = 1;
+  while (i <= 5) {
+    print("x" * i);
+    i++;
+  }
+  print("Done");
+} */
+
+//--- TODO:38. for loops
