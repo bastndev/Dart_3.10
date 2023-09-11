@@ -117,4 +117,10 @@
   print("Done");
 } */
 
-//--- TODO:38. for loops
+//--- TODO: 38. for loops
+void main (){
+  for (var i = 1 ; i <= 5; i++){
+    print("x" * i);
+  }
+  print("Done");
+}
