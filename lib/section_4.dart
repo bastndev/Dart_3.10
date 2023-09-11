@@ -73,7 +73,7 @@
 } */
 
 //--- TODO:
-void main () {
+/* void main () {
   const salary = 2000;
   const bills = 2100;
 
@@ -83,5 +83,16 @@ void main () {
     print("You have lost \$${bills - salary} this is month");
   }else{
     print("You balance hast't changed");
+  }
+} */
+
+// --- FIXME:
+void main() {
+  final age = 18;
+
+  if (age > 17) {
+    print("Hello Mr");
+  } else {
+    print("You are baby");
   }
 }
