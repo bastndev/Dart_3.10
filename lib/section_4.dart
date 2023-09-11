@@ -87,7 +87,7 @@
 } */
 
 // --- FIXME:
-void main() {
+/* void main() {
   final age = 18;
 
   if (age > 17) {
@@ -95,4 +95,15 @@ void main() {
   } else {
     print("You are baby");
   }
+}
+ */
+
+//--- TODO: 37. while loops
+void main () {
+  var i = 1;
+  while(i <= 5){
+    print(i);
+    i++;
+  }
+  print("Done");
 }
