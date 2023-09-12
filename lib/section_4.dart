@@ -275,7 +275,7 @@ void main() {
 } */
 
 //FIXME: Practice new
-enum Medal { gold, silver, bronze, noMedal }
+/* enum Medal { gold, silver, bronze, noMedal }
 
 enum DayOfTheWeek {
   monday,
@@ -308,4 +308,11 @@ void main() {
     case Medal.noMedal:
       print("No medal, try again 😢");
   }
+}
+ */
+
+
+// --- TODO: ---  Practice --- TODO: //
+void main() {
+
 }
