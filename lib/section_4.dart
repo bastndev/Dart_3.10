@@ -127,9 +127,18 @@
 }
  */
 
-void main() {
+/* void main() {
   for (var i = 5; i >= 1; i--) {
     print(" " * (5 - i) + "x" * i);
   }
   print("Done");
+} */
+
+void main() {
+  for (var i = 5; i >= 1; i--) {
+    print(" " * (5 - i) + "x" * i);
+  }
+  for(var i = 1 ; i <= 5; i++){
+    print("x" * i);
+  }
 }
