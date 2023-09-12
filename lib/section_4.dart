@@ -144,9 +144,9 @@
 }*/
 
 //--- FIXME:  practice
-void main() {
+/* void main() {
   for (var i = 1; i <= 15; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
+    if ((i % 3 == 0) && (i % 5 == 0)) {
       print("fizz buzz");
     }else if(i % 3 == 0){
       print("fizz");
@@ -154,5 +154,20 @@ void main() {
       print("buzz");
     }
     print(i);
+  }
+} */
+
+//FIXME: Improvement
+void main() {
+  for (var i = 1; i <= 15; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      print("fizz buzz");
+    } else if (i % 3 == 0) {
+      print("fizz");
+    } else if (i % 5 == 0) {
+      print("buzz");
+    } else {
+      print(i);
+    }
   }
 }
