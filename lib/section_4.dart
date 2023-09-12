@@ -256,9 +256,45 @@ void main() {
 }
  */
 
-enum Medal {gold, silver, bronze , noMedal}
+/* enum Medal {gold, silver, bronze , noMedal}
 void main() {
   const medal = Medal.noMedal;
+  switch (medal) {
+    case Medal.gold:
+      print("Gold 🤩");
+      break;
+    case Medal.silver:
+      print("Silver  😊");
+      break;
+    case Medal.bronze:
+      print("Bronze 😔");
+      break;
+    case Medal.noMedal:
+      print("No medal, try again 😢");
+  }
+} */
+
+//FIXME: Practice new
+enum Medal { gold, silver, bronze, noMedal }
+
+enum DayOfTheWeek {
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday,
+}
+
+enum Suits { hearts, diamonds, clubs, spades}
+
+void main() {
+  const medal = Medal.gold;
+    print(medal);
+    print(medal.name);
+    print(Medal.values);
+    print(Medal.values.byName('silver'));
   switch (medal) {
     case Medal.gold:
       print("Gold 🤩");
