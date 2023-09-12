@@ -188,7 +188,7 @@
   }
   print("Done");
 } */
-void main() {
+/* void main() {
   for (var i = 1; i <= 15; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
       print("fizz buzz");
@@ -207,4 +207,19 @@ void main() {
     }
   }
   print("Done");
+} */
+
+//--- TODO: 41. switch statements
+void main () {
+  const pos = 3 ;
+
+  if (pos == 1){
+    print("Gold 🤩");
+  }else if (pos == 2){
+    print("Silver  😊");
+  } else if (pos == 3){
+    print("Bronze 😔");
+  }else{
+    print("No medal, try again 😢");
+  }
 }
