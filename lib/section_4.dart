@@ -341,9 +341,9 @@ void main() {
 enum Operation { plus, minus, multiply, divide }
 
 void main() {
-  const a = 4;
+  const a = 6;
   const b = 2;
-  const op = Operation.minus;
+  const op = Operation.multiply;
 
   switch (op) {
     case Operation.plus:
