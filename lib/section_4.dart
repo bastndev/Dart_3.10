@@ -211,7 +211,18 @@
 
 //--- TODO: 41. switch statements
 void main () {
-  const pos = 3 ;
+  const pos = 30 ;
+
+  switch(pos){
+    case 1: print("Gold 🤩");
+    break;
+    case 2: print("Silver  😊");
+    break;
+    case 3: print("Bronze 😔");
+    break;
+    default: print("No medal, try again 😢");
+  }
+
 
   if (pos == 1){
     print("Gold 🤩");
