@@ -7,6 +7,6 @@ enum Move {rock, paper, scissors }
 void main () {
   while(true){
     stdout.write("Welcome this is game (r s p /q) ↧↧↧↧");
-    
+    final input = stdin.readLineSync();
   }
 }
