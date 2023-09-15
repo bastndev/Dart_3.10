@@ -2,23 +2,24 @@
 import 'dart:io';
 import 'dart:math';
 
-enum Move {rock, paper, scissors }
-void main () {
-  while(true){
+enum Move { rock, paper, scissors }
+
+void main() {
+  while (true) {
     stdout.write("Welcome this is game (r s p /q) ↧↧↧↧");
     final input = stdin.readLineSync();
 
-    //Selecting player move 
+    //Selecting player move
     var playerMove;
-    if(input == 'r'){
+    if (input == 'r') {
       playerMove = Move.rock;
-    }else if (input == 's'){
+    } else if (input == 's') {
       playerMove = Move.scissors;
-    }else if (input == 'p'){
+    } else if (input == 'p') {
       playerMove = Move.paper;
-    }else if (input == 'q'){
+    } else if (input == 'q') {
       break;
-    }else{
+    } else {
       print("no Valid");
     }
 
@@ -30,6 +31,11 @@ void main () {
     print("Played Human: $playerMove");
     print("Played AI: $aiMove");
 
-    //
+    //Logic Program
+    if (playerMove == Move.rock && aiMove == Move.paper ||
+        playerMove == Move.paper && aiMove == Move.scissors ||
+        playerMove == Move.scissors && aiMove == Move.rock) {
+          
+        }
   }
 }
