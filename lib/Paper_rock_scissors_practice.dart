@@ -24,6 +24,12 @@ void main () {
 
     //--- Select AI Move
     final randomNumber = Random().nextInt(3);
-    
+    final aiMove = Move.values[randomNumber];
+
+    //Showing player move & Ai Move
+    print("Played Human: $playerMove");
+    print("Played AI: $aiMove");
+
+    //
   }
 }
