@@ -35,7 +35,11 @@ void main() {
     if (playerMove == Move.rock && aiMove == Move.paper ||
         playerMove == Move.paper && aiMove == Move.scissors ||
         playerMove == Move.scissors && aiMove == Move.rock) {
-          
-        }
+      print("You Win");
+    } else if (playerMove == aiMove) {
+      print("Draw");
+    } else {
+      print("You Lose");
+    }
   }
 }
