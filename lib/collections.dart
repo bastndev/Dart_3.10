@@ -19,4 +19,12 @@
     print(cities[i]);
   } 
 } */
+
 // --- --- -FIXME: After
+void main (){
+  var cities = ['Paris', 'Lima', 'Vietnam'];
+
+  for (var city in cities){
+    print(city);
+  }
+}
