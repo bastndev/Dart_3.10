@@ -89,6 +89,7 @@ void main() {
   print([].isNotEmpty);
 } */
 
+//-FIXME: Convert to Number
 /* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
 
@@ -96,9 +97,20 @@ void main() {
   print([].isEmpty);
   print([].isNotEmpty);
 } */
-void main () {
+
+//-FIXME: First and last
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
 
   print(cities.first);
   print(cities.last);
-}
+} */
+
+//-FIXME: add 
+/* void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  cities.add('Tokio');
+
+  print(cities.last);
+} */
+
