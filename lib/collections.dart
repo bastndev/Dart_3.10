@@ -149,8 +149,8 @@ void main() {
 } */
 
 //-FIXME: IndexOf - watch Position 0 to ....
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   print(cities.indexOf('Lima'));
   print(cities.indexOf('San Juan'));
-}
+} */
