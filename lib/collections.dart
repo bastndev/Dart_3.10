@@ -125,11 +125,19 @@ void main() {
 } */
 
 //-FIXME: removeAt
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   cities.removeAt(0);
 
   print(cities);
   print(cities.first);
   print(cities.last);
+} */
+
+//-FIXME: Clear
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  cities.clear();
+
+  print(cities);
 }
