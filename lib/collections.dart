@@ -21,10 +21,23 @@
 } */
 
 // --- --- -FIXME: After
-void main (){
+/* void main (){
   var cities = ['Paris', 'Lima', 'Vietnam'];
 
   for (var city in cities){
     print(city);
   }
+} */
+
+//-TODO: [Exercise] Sum of the items in a list
+void main() {
+  var nums = [1, 3, 5, 7, 9];
+  var sum = 0;
+
+  for (var number in nums) {
+    sum += number; 
+  }
+
+  print(sum); 
 }
+
