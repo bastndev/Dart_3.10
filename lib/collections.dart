@@ -154,3 +154,11 @@ void main() {
   print(cities.indexOf('Lima'));
   print(cities.indexOf('San Juan'));
 } */
+
+//-TODO: 57. Type annotations with lists
+
+/* void main (){
+  // List <String> cities = ['Paris', 'Montreal', 'Lima'];
+  // var cities  = <String> ['Paris', 'Montreal', 'Lima' , 10];
+}
+ */
