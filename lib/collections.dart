@@ -52,3 +52,19 @@
   print("El producto de los números en la lista es: $producto");
 }
  */
+
+/* import 'dart:math' as math;
+
+void main() {
+  // Investment data
+  double initialInvestment = 1000.0; // Initial investment of $1000
+  double annualInterestRate = 0.05; // Annual interest rate of 5%
+  int years = 5; // Investment period in years
+
+  // Calculate the future value with compound interest
+  double futureValue = initialInvestment * math.pow(1 + annualInterestRate, years);
+
+  // Print the result
+  print("The future value of the investment will be: \$${futureValue.toStringAsFixed(2)}");
+}
+ */
