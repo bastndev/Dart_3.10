@@ -81,10 +81,24 @@ void main() {
  */
 
 //-TODO: 56. List methods
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
 
   print(cities.length);
   print([].isEmpty);
   print([].isNotEmpty);
+} */
+
+/* void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+
+  print(cities.length);
+  print([].isEmpty);
+  print([].isNotEmpty);
+} */
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+
+  print(cities.first);
+  print(cities.last);
 }
