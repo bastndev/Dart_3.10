@@ -69,7 +69,7 @@ void main() {
 }
  */
 
-void main() {
+/* void main() {
   var nums = [2, 4, 6, 8];
   var sum = 0;
 
@@ -77,4 +77,14 @@ void main() {
     sum += number;
   }
   print(sum);
+}
+ */
+
+//-TODO: 56. List methods
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+
+  print(cities.length);
+  print([].isEmpty);
+  print([].isNotEmpty);
 }
