@@ -68,3 +68,13 @@ void main() {
   print("The future value of the investment will be: \$${futureValue.toStringAsFixed(2)}");
 }
  */
+
+void main() {
+  var nums = [2, 4, 6, 8];
+  var sum = 0;
+
+  for (var number in nums) {
+    sum += number;
+  }
+  print(sum);
+}
