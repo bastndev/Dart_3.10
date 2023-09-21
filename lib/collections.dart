@@ -164,8 +164,17 @@ void main() {
  */
 
 //-TODO: 58. Using var, final, const with lists
-void main () {
-  final cities = ['Paris', 'Montreal', 'Lima'];
+
+//-FIXME: with error && Immutable
+/* void main () {
+  const cities = ['Paris', 'Montreal', 'Lima'];
   // cities = ['Venice'];
   cities[1]= 'Venice';
+} */
+//-FIXME: swap Montreal for Venice
+void main () {
+  final cities = ['Paris', 'Montreal', 'Lima'];
+  cities[1]= 'Venice';
+
+  print(cities);
 }
