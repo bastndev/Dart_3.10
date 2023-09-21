@@ -114,3 +114,12 @@ void main() {
   print(cities.last);
 } */
 
+//-FIXME: Insert
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  cities.insert(0,'Tokio');
+
+  print(cities);
+  print(cities.first);
+  print(cities.last);
+}
