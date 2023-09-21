@@ -30,7 +30,7 @@
 } */
 
 //-TODO: [Exercise] Sum of the items in a list
-void main() {
+/* void main() {
   var nums = [1, 3, 5, 7, 9];
   var sum = 0;
 
@@ -39,5 +39,16 @@ void main() {
   }
 
   print(sum); 
-}
+} */
 
+/* void main() {
+  var numeros = [2, 4, 6, 8, 10];
+  var producto = 0;
+
+  for (var numero in numeros) {
+    producto += numero;
+  }
+
+  print("El producto de los números en la lista es: $producto");
+}
+ */
