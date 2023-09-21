@@ -143,7 +143,13 @@ void main() {
 } */
 
 //-FIXME: Contains
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   print(cities.contains('Paris'));
+} */
+
+//-FIXME: IndexOf - watch Position 0 to ....
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  print(cities.indexOf('Lima'));
 }
