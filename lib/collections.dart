@@ -162,3 +162,10 @@ void main() {
   // var cities  = <String> ['Paris', 'Montreal', 'Lima' , 10];
 }
  */
+
+//-TODO: 58. Using var, final, const with lists
+void main () {
+  final cities = ['Paris', 'Montreal', 'Lima'];
+  // cities = ['Venice'];
+  cities[1]= 'Venice';
+}
