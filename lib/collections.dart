@@ -152,4 +152,5 @@ void main() {
 void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   print(cities.indexOf('Lima'));
+  print(cities.indexOf('San Juan'));
 }
