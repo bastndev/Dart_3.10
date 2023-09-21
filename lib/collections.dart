@@ -115,9 +115,19 @@ void main() {
 } */
 
 //-FIXME: Insert
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   cities.insert(0,'Tokio');
+
+  print(cities);
+  print(cities.first);
+  print(cities.last);
+} */
+
+//-FIXME: removeAt
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  cities.removeAt(0);
 
   print(cities);
   print(cities.first);
