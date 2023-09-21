@@ -135,9 +135,15 @@ void main() {
 } */
 
 //-FIXME: Clear
-void main () {
+/* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   cities.clear();
 
   print(cities);
+} */
+
+//-FIXME: Contains
+void main () {
+  var cities = ['Paris', 'Montreal', 'Lima'];
+  print(cities.contains('Paris'));
 }
