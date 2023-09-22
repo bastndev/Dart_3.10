@@ -204,7 +204,7 @@ void main() {
   print('Does it contain Russia? $containsRussia');
 } */
 
-void main() {
+/* void main() {
   var saCountries = {'Peru', 'Venezuela', 'Colombia'};
   var asianCountries = {'China', 'India', 'Peru'};
 
@@ -218,4 +218,11 @@ void main() {
   for (var country in saCountries) {
     print(country);
   }
+} */
+
+//--- --- --- --- --- -- -TODO: 60. [Exercise] Sets
+
+void mina (){
+  
 }
+
