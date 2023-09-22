@@ -106,7 +106,7 @@ void main() {
   print(cities.last);
 } */
 
-//-FIXME: add 
+//-FIXME: add
 /* void main () {
   var cities = ['Paris', 'Montreal', 'Lima'];
   cities.add('Tokio');
@@ -195,7 +195,7 @@ void main() {
   print(countries);
 } */
 
-//--- -FIXME: bool (true || false)  
+//--- -FIXME: bool (true || false)
 /* void main() {
   var countries = {'Peru', 'China', 'Russia'};
   bool containsRussia = countries.contains('Russia');
@@ -204,10 +204,18 @@ void main() {
   print('Does it contain Russia? $containsRussia');
 } */
 
-void main () {
-  var saCountries = {'Peru' , 'Venezuela', 'Colombia'};
+void main() {
+  var saCountries = {'Peru', 'Venezuela', 'Colombia'};
   var asianCountries = {'China', 'India', 'Peru'};
 
   print(saCountries.union(asianCountries));
   print(saCountries.intersection(asianCountries));
+  print(saCountries.difference(asianCountries));
+
+  for (var country in asianCountries) {
+    print(country);
+  }
+  for (var country in saCountries) {
+    print(country);
+  }
 }
