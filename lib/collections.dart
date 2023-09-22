@@ -196,11 +196,18 @@ void main() {
 } */
 
 //--- -FIXME: bool (true || false)  
-void main() {
+/* void main() {
   var countries = {'Peru', 'China', 'Russia'};
   bool containsRussia = countries.contains('Russia');
 
   print(countries);
   print('Does it contain Russia? $containsRussia');
-}
+} */
 
+void main () {
+  var saCountries = {'Peru' , 'Venezuela', 'Colombia'};
+  var asianCountries = {'China', 'India', 'Peru'};
+
+  print(saCountries.union(asianCountries));
+
+}
