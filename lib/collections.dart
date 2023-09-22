@@ -188,3 +188,9 @@ void main() {
   print(countries);
 } */
 
+void main () {
+  var countries = {'Peru' , 'China', 'Russia'};
+  countries.remove('Russia');
+
+  print(countries);
+}
