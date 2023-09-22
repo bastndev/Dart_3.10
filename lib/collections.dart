@@ -209,5 +209,5 @@ void main () {
   var asianCountries = {'China', 'India', 'Peru'};
 
   print(saCountries.union(asianCountries));
-
+  print(saCountries.intersection(asianCountries));
 }
