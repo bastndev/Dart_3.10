@@ -195,6 +195,7 @@ void main() {
   print(countries);
 } */
 
+//--- -FIXME: bool (true || false)  
 void main() {
   var countries = {'Peru', 'China', 'Russia'};
   bool containsRussia = countries.contains('Russia');
