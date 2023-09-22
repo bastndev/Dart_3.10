@@ -222,7 +222,7 @@ void main() {
 
 //--- --- --- --- --- -- -TODO: 60. [Exercise] Sets
 
-void mina (){
-  
+void main (){
+
 }
 
