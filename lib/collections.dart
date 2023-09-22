@@ -172,9 +172,19 @@ void main() {
   cities[1]= 'Venice';
 } */
 //-FIXME: swap Montreal for Venice
-void main () {
+/* void main () {
   final cities = ['Paris', 'Montreal', 'Lima'];
   cities[1]= 'Venice';
 
   print(cities);
-}
+} */
+
+//-TODO: 59. Sets
+/* void main () {
+  // const cities = ['Paris', 'Montreal', 'Lima'];
+  var countries = {'Peru' , 'China', 'Russia'};
+  countries.add('Brazil');
+
+  print(countries);
+} */
+
