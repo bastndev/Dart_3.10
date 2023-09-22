@@ -188,9 +188,18 @@ void main() {
   print(countries);
 } */
 
-void main () {
+/* void main () {
   var countries = {'Peru' , 'China', 'Russia'};
   countries.remove('Russia');
 
   print(countries);
+} */
+
+void main() {
+  var countries = {'Peru', 'China', 'Russia'};
+  bool containsRussia = countries.contains('Russia');
+
+  print(countries);
+  print('Does it contain Russia? $containsRussia');
 }
+
