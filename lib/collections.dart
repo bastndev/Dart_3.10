@@ -246,10 +246,20 @@ void main() {
   };
 } */
 
+/* void main () {
+  var person = <String, dynamic> {
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+} */
+
 void main () {
   var person = <String, dynamic> {
     'name': 'Gohit',
     'age': 25,
     'height': 1.70,
   };
+  var name = person ['name'];
+  print(name);
 }
