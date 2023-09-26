@@ -254,7 +254,7 @@ void main() {
   };
 } */
 
-void main () {
+/* void main () {
   var person = <String, dynamic> {
     'name': 'Gohit',
     'age': 25,
@@ -265,4 +265,14 @@ void main () {
   person['age'] = 37;
   person['likesPizza'] = false;
   print(person);
+} */
+
+void main () {
+  var person = <String, dynamic> {
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+  var name = person ['name'] as String;
+  print(name);
 }
