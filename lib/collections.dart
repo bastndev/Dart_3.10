@@ -314,7 +314,7 @@ void main() {
   }
 } */
 
-void main () {
+/* void main () {
   var person = <String, dynamic>{
     'name': 'Gohit',
     'age': 25,
@@ -326,7 +326,46 @@ void main () {
   // for (var value in person.values){
   //   print(value);
   // }
-  for (var entry in person.entries){
-    print("${entry.key}: ${entry.value}");
+  for (var entry in person.entries){// entries es un Metodo de Map
+    print("${entry.key}: ${entry.value}"); //key, value = propiedad
   }
+} */
+
+//--- --- --- --- --- --- --- -TODO: 65. [Exercise] Pizza Ordering
+//--FIXME: Me failure
+/* void main () {
+  const pizzaPrices = {
+    'margherita': 5.5,
+    'pepperoni': 7.5,
+    'vegetarian': 6.5,
+  };
+  const order = <dynamic>['margherita','pepperoni'];
+  print(order);
+  for (var order  in pizzaPrices.values){
+    print(order);
+  }if(order == pizzaPrices){
+    print("Lucas");
+  }else {
+    print("pineapple pizza is not on the menu");
+  }
+} */ 
+
+void main (){
+  const pizzaPrices = {
+    'margherita': 5.5,
+    'pepperoni': 7.5,
+    'vegetarian': 6.5,
+  };
+  const order = ['margherita', 'pepperoni'];
+  var total = 0.0;
+
+  for ( var item in order){
+    final price = pizzaPrices[item];
+    if(price != null){
+      total += price;
+    }else{
+      print("$item Pizza is not on the menu");
+    }
+  }
+  print("Total: \$$total");
 }
