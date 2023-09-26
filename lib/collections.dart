@@ -313,3 +313,14 @@ void main() {
     print(key);
   }
 } */
+
+void main () {
+  var person = <String, dynamic>{
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+  for ( var key in person.keys){
+    print(person [key]);
+  }
+}
