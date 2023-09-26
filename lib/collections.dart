@@ -267,7 +267,7 @@ void main() {
   print(person);
 } */
 
-void main () {
+/* void main () {
   var person = <String, dynamic> {
     'name': 'Gohit',
     'age': 25,
@@ -275,4 +275,19 @@ void main () {
   };
   var name = person ['name'] as String;
   print(name);
+} */
+
+void main () {
+  var person = <String, dynamic> {
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+  var weigth = person ['weight'];
+  print(weigth);
+  if (weigth == null){
+    print("No Value");
+  }else{
+    print(weigth);
+  }
 }
