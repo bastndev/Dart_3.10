@@ -239,5 +239,9 @@ void main() {
 
 //--- --- --- --- --- -- -TODO: 61. Maps
 void main () {
-  
+  var person = {
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
 }
