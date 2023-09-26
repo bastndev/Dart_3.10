@@ -238,8 +238,16 @@ void main() {
 } */
 
 //--- --- --- --- --- -- -TODO: 61. Maps
+/* void main () {
+  Map <String, dynamic> person = {
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+} */
+
 void main () {
-  var person = {
+  var person = <String, dynamic> {
     'name': 'Gohit',
     'age': 25,
     'height': 1.70,
