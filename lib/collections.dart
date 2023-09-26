@@ -303,13 +303,13 @@ void main() {
 }// --- recorre todo los number y los imopreme uno por uno
  */
 
-/* void main () {
+void main () {
   var person = <String, dynamic>{
     'name': 'Gohit',
     'age': 25,
     'height': 1.70,
   };
-  for ( var item in person){
-
+  for ( var item in person.keys){
+    print(item);
   }
-} */
+}
