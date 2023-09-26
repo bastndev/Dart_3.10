@@ -277,7 +277,7 @@ void main() {
   print(name);
 } */
 
-void main () {
+/* void main () {
   var person = <String, dynamic> {
     'name': 'Gohit',
     'age': 25,
@@ -290,4 +290,26 @@ void main () {
   }else{
     print(weigth);
   }
-}
+} */
+
+//-- -- -TODO: 64. Iterating on maps
+//-- -FIXME: for in
+/* void main (){
+  var numbers = [1,2,3,4,5];
+
+  for( var number in numbers){
+    print(number);
+  }
+}// --- recorre todo los number y los imopreme uno por uno
+ */
+
+/* void main () {
+  var person = <String, dynamic>{
+    'name': 'Gohit',
+    'age': 25,
+    'height': 1.70,
+  };
+  for ( var item in person){
+
+  }
+} */
