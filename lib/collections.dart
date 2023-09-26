@@ -262,4 +262,7 @@ void main () {
   };
   var name = person ['name'];
   print(name);
+  person['age'] = 37;
+  person['likesPizza'] = false;
+  print(person);
 }
