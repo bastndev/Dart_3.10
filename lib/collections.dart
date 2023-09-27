@@ -370,4 +370,24 @@ void main() {
   print("Total: \$$total");
 } */
 
+void main (){
+  const foodPeru ={
+    'seviche': 5.5,
+    'chaufa': 4.5,
+    'trucha': 3.5,
+  };
+  const order = ['trucha', 'chaufa', 'pollo'];
+  var total = 0.0;
+
+  for (var item in order ){
+    final price = foodPeru[item];
+    if(price != null){
+      total += price;
+    }else {
+      print("$item I don't right know");
+    }
+  }
+  print("total: \$$total");
+}
+
 //--- -- -- -TODO: 66. Nested Collections
