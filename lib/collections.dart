@@ -370,7 +370,7 @@ void main() {
   print("Total: \$$total");
 } */
 
-void main (){
+/* void main (){
   const foodPeru ={
     'seviche': 5.5,
     'chaufa': 4.5,
@@ -388,6 +388,29 @@ void main (){
     }
   }
   print("total: \$$total");
-}
+} */
 
 //--- -- -- -TODO: 66. Nested Collections
+
+void main (){
+  var restaurants = [
+    {
+      'name': 'Pizza Mario',
+      'cuisine':' Italian',
+      'rating': [5.0, 3.5, 4.5],
+    },
+    {
+      'name': 'Peru Mario',
+      'cuisine':' Italian',
+      'rating': [1.0, 5.5, 1.5],
+    },
+    {
+      'name': 'Puno Mayer',
+      'cuisine':' Italian',
+      'rating': [4.0, 9.5, 5.5],
+    }
+  ];
+  for (var restaurant in restaurants){
+    print(restaurant);
+  }
+}
