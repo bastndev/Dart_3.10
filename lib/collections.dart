@@ -416,7 +416,8 @@ void main() {
 } */
 
 //--- -- -- -TODO: 67. [Exercise] Restaurant ratings
-void main() {
+
+/* void main() {
   var restaurants = [
     {
       'name': 'Pizza Mario',
@@ -444,4 +445,6 @@ void main() {
     restaurant['avgRating'] = avgRating;
     print(restaurant);
   }
-}
+} */
+
+//--- -- -- -TODO: 
