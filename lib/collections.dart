@@ -491,3 +491,20 @@ void main() {
  */
 
 //--TODO: 69. Collection-for
+//Option1 
+void main() {
+  const addBlue = false;
+  const addRed = true;
+  const extraColors =['yellow', 'green'];
+  final colors = [
+    'Grey',
+    'Brown',
+    if (addBlue) 'Blue',
+    if (addRed) 'Red',
+    for (var color in extraColors){
+      color,//-FIXME:
+    }
+  ];
+  colors.addAll(extraColors);
+  print(colors);
+}
