@@ -448,7 +448,7 @@ void main() {
 } */
 
 //--- -- -- -TODO: 68. Collection-if
-void main () {
+/* void main () {
   final colors = ['Grey', 'Brown'];
   const addBlue = false;
   const addRed = true;
@@ -460,4 +460,18 @@ void main () {
   }
 
   print(colors);
-}
+} */
+//-FIXME: me practice
+/* void main () {
+  final colors = ['Grey', 'Brown'];
+  const addBlue = false;
+  const addRed = true;
+
+  if(addBlue!= addRed ){
+    colors.add('Blue');
+  }if(addRed){
+    colors.add('Red');
+  }
+
+  print(colors);
+} */
