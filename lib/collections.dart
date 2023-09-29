@@ -492,7 +492,22 @@ void main() {
 
 //--TODO: 69. Collection-for
 //Option1 
-void main() {
+/* void main() {
+  const addBlue = false;
+  const addRed = true;
+  const extraColors =['yellow', 'green'];
+  final colors = [
+    'Grey',
+    'Brown',
+    if (addBlue) 'Blue',
+    if (addRed) 'Red',
+  ];
+  colors.addAll(extraColors);
+  print(colors);
+} */
+
+//-Option 2
+/* void main() {
   const addBlue = false;
   const addRed = true;
   const extraColors =['yellow', 'green'];
@@ -505,6 +520,5 @@ void main() {
       color,//-FIXME:
     }
   ];
-  colors.addAll(extraColors);
   print(colors);
-}
+} */
