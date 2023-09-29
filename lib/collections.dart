@@ -447,4 +447,17 @@ void main() {
   }
 } */
 
-//--- -- -- -TODO: 
+//--- -- -- -TODO: 68. Collection-if
+void main () {
+  final colors = ['Grey', 'Brown'];
+  const addBlue = false;
+  const addRed = true;
+
+  if(addBlue){
+    colors.add('Blue');
+  }if(addRed){
+    colors.add('Red');
+  }
+
+  print(colors);
+}
