@@ -522,3 +522,17 @@ void main() {
   ];
   print(colors);
 } */
+
+void main() {
+  const addBlue = false;
+  const addRed = true;
+  const extraColors =['yellow', 'green'];
+  final colors = [
+    'Grey',
+    'Brown',
+    if (addBlue) 'Blue',
+    if (addRed) 'Red',
+    ...extraColors //-FIXME:
+  ];
+  print(colors);
+} 
