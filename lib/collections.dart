@@ -523,7 +523,7 @@ void main() {
   print(colors);
 } */
 
-void main() {
+/* void main() {
   const addBlue = false;
   const addRed = true;
   const extraColors =['yellow', 'green'];
@@ -532,7 +532,23 @@ void main() {
     'Brown',
     if (addBlue) 'Blue',
     if (addRed) 'Red',
-    ...extraColors //-FIXME:
+    ...extraColors, //-FIXME:
   ];
   print(colors);
-} 
+}  */
+void main (){
+  const addBlue = false;
+  const addRed = true;
+  const addExtraColors = true;
+  final colors = [
+    'grey',
+    'brown',
+    if (addBlue)
+    'blue',
+    if (addRed)
+    'red',
+    if (addExtraColors)
+    ...['yellow', 'green'], //the ... delete [] 
+  ];
+  print(colors);
+}
