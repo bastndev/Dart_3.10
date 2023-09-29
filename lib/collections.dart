@@ -475,3 +475,19 @@ void main() {
 
   print(colors);
 } */
+//- Second OPtion and 
+/* void main() {
+  const addBlue = false;
+  const addRed = true;
+  final colors = [
+    'Grey',
+    'Brown',
+    if (addBlue) 'Blue',
+    if (addRed) 'Red',
+  ];
+
+  print(colors);
+}
+ */
+
+//--TODO: 69. Collection-for
