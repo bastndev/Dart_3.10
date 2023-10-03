@@ -577,7 +577,7 @@ void main() {
   print(shoppingList);
 } */
 //--FIXME: List mode
-void main() {
+/* void main() {
   const bananas = 5;
   const apples = 6;
   const grains = {
@@ -592,4 +592,9 @@ void main() {
   };
 
   print(shoppingList);
+} */
+
+//-TODO: 72. Copying collections
+void main (){
+
 }
