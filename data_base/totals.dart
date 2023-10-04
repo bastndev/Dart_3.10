@@ -1,3 +1,4 @@
-void main (){
+void main(List<String> argument) {
   
+  print(argument);
 }
