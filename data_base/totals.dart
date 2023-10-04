@@ -62,6 +62,7 @@ void main(List<String> arguments) {
   final lines = File(inputFile).readAsLinesSync();
   final totalDurationByTag = <String, double>{};
   lines.removeAt(0);
+  var totalDuration = 0.0;
   for (var line in lines) {
     final values = line.split(',');
     final durationStr = values[3].replaceAll('"', '');
@@ -73,10 +74,12 @@ void main(List<String> arguments) {
     } else {
       totalDurationByTag[tag] = previousTotal + duration;
     }
+    totalDuration += duration;
   }
   for (var entry in totalDurationByTag.entries) {
     final durationFormatted = entry.value.toStringAsFixed(1);
     final tag = entry.key;
     print('$tag: ${durationFormatted}h');
   }
+  print('Total for all tags: ${totalDuration.toStringAsFixed(1)}h ');
 }
