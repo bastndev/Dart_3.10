@@ -139,11 +139,19 @@ void main (){
 }  */
 
 // -- -- -- -TODO: 84. Null Safety with collections
-void main (){
+/* void main (){
   const cities =  <String?>['Lima', 'Juliaca', null];
   for(var city in cities){
     if (city != null){
       print(city.toUpperCase());
     }
+  }
+} */
+
+// -- -- -- -TODO: 85. The conditional access operator & the billion dollar mistake
+void main (){
+  const cities =  <String?>['Lima', 'Juliaca', null];
+  for(var city in cities){
+      print(city?.toUpperCase());
   }
 }
