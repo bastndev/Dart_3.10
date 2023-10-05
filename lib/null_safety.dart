@@ -28,7 +28,7 @@
   }
 } */
 
-void main () {
+/* void main () {
   int x = 10;
   int sign ;
   if ( x >= 11){
@@ -37,4 +37,17 @@ void main () {
     sign = -1;
   }
   print(sign);
+} */
+
+//-- -- -- -- -- -FIXME: Update (if else) 
+void main (){
+  final x = 10; 
+  final bono;
+
+  if(x >= 0 ){
+    bono = 11;
+  }else{
+    bono = -1;
+  }
+  print(bono);
 }
