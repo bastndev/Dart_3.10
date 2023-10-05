@@ -128,7 +128,7 @@ void main (){
 } */
 
 // -- -- -- -TODO: 83. Null Safety with type inference
-void main (){
+/* void main (){
   const x = -1;
   var maybeVAlue;
   if(x > 0 ){
@@ -136,4 +136,14 @@ void main (){
   }
   final value = maybeVAlue ?? 0; //-FIXME: recommend
   print(value);
-} 
+}  */
+
+// -- -- -- -TODO: 84. Null Safety with collections
+void main (){
+  const cities =  <String?>['Lima', 'Juliaca', null];
+  for(var city in cities){
+    if (city != null){
+      print(city.toUpperCase());
+    }
+  }
+}
