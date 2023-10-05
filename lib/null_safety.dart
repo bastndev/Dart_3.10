@@ -63,7 +63,7 @@
   print(beta);
 } */
 
-void main () {
+/* void main () {
   const mota = 25;
   final cota;
   if( mota == 0){
@@ -72,4 +72,15 @@ void main () {
     cota = 'Aea manito';
   }
   print(cota);
+} */
+
+void main () {
+  const x = 10;
+  final beta;
+  if( x >= 10){
+    beta = 1+1/(3);
+  }else{
+    beta = -1;
+  }
+  print(beta);
 }
