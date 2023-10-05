@@ -17,7 +17,7 @@
  */
 
 //-- -- -- -TODO: 80. Flow Analysis: Promotion and Definite Assignment
-void main (){
+/* void main (){
   int?  a;
   int b = 10;
 
@@ -26,4 +26,15 @@ void main (){
   }else{
     print(a + b);
   }
+} */
+
+void main () {
+  int x = 10;
+  int sign ;
+  if ( x >= 11){
+    sign =  1;
+  }else{
+    sign = -1;
+  }
+  print(sign);
 }
