@@ -85,12 +85,33 @@
   print(beta);
 } */
 
-void main (){
+/* void main (){
   int x = 22;
   int? maybeValue;
   if (x > 0){
     maybeValue = x;
   }
-  int value = maybeValue!;
+  int value = maybeValue!; // ! indica que maybeValue no es null
+  print(value);
+} */
+
+//-- --- --- -TODO: 82. The if-null operator
+/* void main (){
+  int x = -1;
+  int? maybeVAlue;
+  if(x > 0 ){
+    maybeVAlue = x;
+  }
+  int value = maybeVAlue == null ? 0 : maybeValue;
+  print(value);
+} */
+
+void main (){
+  int x = -1;
+  int? maybeVAlue;
+  if(x > 0 ){
+    maybeVAlue = x;
+  }
+  int value = maybeVAlue ?? 0;
   print(value);
 }
