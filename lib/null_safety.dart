@@ -105,13 +105,35 @@
   int value = maybeVAlue == null ? 0 : maybeValue;
   print(value);
 } */
-
+/* 
 void main (){
   int x = -1;
   int? maybeVAlue;
   if(x > 0 ){
     maybeVAlue = x;
   }
-  int value = maybeVAlue ?? 0;
+  maybeVAlue ??= 0;
+  int value = maybeVAlue;
   print(value);
-}
+} */
+
+/* void main (){
+  int x = -1;
+  int? maybeVAlue;
+  if(x > 0 ){
+    maybeVAlue = x;
+  }
+  int value = maybeVAlue ?? 0; //-FIXME: recommend
+  print(value);
+} */
+
+// -- -- -- -TODO: 83. Null Safety with type inference
+void main (){
+  const x = -1;
+  var maybeVAlue;
+  if(x > 0 ){
+    maybeVAlue = x;
+  }
+  final value = maybeVAlue ?? 0; //-FIXME: recommend
+  print(value);
+} 
