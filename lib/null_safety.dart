@@ -52,7 +52,7 @@
   print(bono);
 } */
 
-void main (){
+/* void main (){
   const  a = 10; 
   final beta;
   if(a >= 15){
@@ -61,4 +61,15 @@ void main (){
     beta = 'Claro pi mascota';
   }
   print(beta);
+} */
+
+void main () {
+  const mota = 25;
+  final cota;
+  if( mota == 0){
+    cota = 10; 
+  }else{
+    cota = 'Aea manito';
+  }
+  print(cota);
 }
