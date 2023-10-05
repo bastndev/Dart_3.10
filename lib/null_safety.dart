@@ -15,3 +15,15 @@
   print(a + b ); //FIXME: whit error
 }
  */
+
+//-- -- -- -TODO: 80. Flow Analysis: Promotion and Definite Assignment
+void main (){
+  int?  a;
+  int b = 10;
+
+  if(a == null){
+    print("this is null");
+  }else{
+    print(a + b);
+  }
+}
