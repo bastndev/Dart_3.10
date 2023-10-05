@@ -40,7 +40,7 @@
 } */
 
 //-- -- -- -- -- -FIXME: Update (if else) 
-void main (){
+/* void main (){
   final x = 10; 
   final bono;
 
@@ -50,4 +50,15 @@ void main (){
     bono = -1;
   }
   print(bono);
+} */
+
+void main (){
+  const  a = 10; 
+  final beta;
+  if(a >= 15){
+    beta = 1;
+  }else{
+    beta = 'Claro pi mascota';
+  }
+  print(beta);
 }
