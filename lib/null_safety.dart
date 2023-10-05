@@ -74,7 +74,7 @@
   print(cota);
 } */
 
-void main () {
+/* void main () {
   const x = 10;
   final beta;
   if( x >= 10){
@@ -83,4 +83,14 @@ void main () {
     beta = -1;
   }
   print(beta);
+} */
+
+void main (){
+  int x = 22;
+  int? maybeValue;
+  if (x > 0){
+    maybeValue = x;
+  }
+  int value = maybeValue!;
+  print(value);
 }
