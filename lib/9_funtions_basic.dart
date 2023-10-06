@@ -88,8 +88,32 @@ int epale(double name, int age) {
 }
  */
 
-void main() {
+/* void main() {
   print(sum([1, 2, 3, 4]));
+}
+
+int sum(List<int> values) {
+  var sum = 0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum;
+} */
+/* void main() {
+  print(sum([1, 2, 3, 4]));
+}
+
+double sum(List<double> values) {
+  var sum = 0.0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum; //COMMEND
+} */
+
+/* void main() {
+  var result = sum([1, 2, 3, 4]);
+  print(result.toInt());
 }
 
 double sum(List<double> values) {
@@ -99,3 +123,4 @@ double sum(List<double> values) {
   }
   return sum;
 }
+ */
