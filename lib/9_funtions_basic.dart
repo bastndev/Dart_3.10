@@ -20,16 +20,32 @@ void sayHi(){
  */
 
 /* void main() {
-  const name = 'Lucas';
-  const age = 25;
+  const name = 'Vero';
+  const age = 20;
   epale(name, age);
 
-  const name2 = 'Lucas';
-  const age2 = 25;
+  const name2 = 'Vero';
+  const age2 = 20;
   epale(name2, age2);
 }
 
 void epale(String name, int age) {
   print("Hello my name is $name I'm $age years old");
-}//--- FIXME: after
+}//--- -FIXME: after
  */
+
+void main() {
+  const name = 'Vero';
+  const age = 20;
+  epale(name, age);
+
+  const name2 = 'Vero';
+  const age2 = 20;
+  epale(name2, age2);
+
+  epale('Juan', 18);
+}
+
+void epale(String name, int age) {
+  print("Hello my name is $name I'm $age years old");
+}
