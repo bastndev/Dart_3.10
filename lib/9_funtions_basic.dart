@@ -68,10 +68,34 @@ String epale(String name, int age) {
   return "Hello my name is $name I'm $age years old";
 } */
 
-void main() {
+/* void main() {
   final person = epale('Marco', 27);
   print(person);
 }
 
-String epale(String name, int age) =>
-    "Hello my name is $name I'm $age years old";
+String epale(String name, int age) => //-FIXME: arrow function
+    "Hello my name is $name I'm $age years old"; */
+
+// -- --- -- -TODO: 90. [Exercise] Sum of a list of numbers
+
+/* void main() {
+  final sum = epale(2, 25);
+  print(sum);
+}
+//-FIXME: falle soy una basura , remember Practice 
+int epale(double name, int age) {
+  return name.toInt() + age;
+}
+ */
+
+void main() {
+  print(sum([1, 2, 3, 4]));
+}
+
+double sum(List<double> values) {
+  var sum = 0.0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum;
+}
