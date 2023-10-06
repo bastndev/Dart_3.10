@@ -124,3 +124,16 @@ double sum(List<double> values) {
   return sum;
 }
  */
+
+/* void main() {
+  print(average([1, 2, 3, 4, 5]));
+}
+
+double average(List<int> values) {
+  var sum = 0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum / values.length;
+}
+ */
