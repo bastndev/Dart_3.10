@@ -137,3 +137,37 @@ double average(List<int> values) {
   return sum / values.length;
 }
  */
+
+/* void main (){
+  final name = 'Lucas';
+  var lucas = names(name);
+  print(lucas);
+}
+
+String names(String name){
+  return "aea $name you are crazy!";
+} */
+// --- --- -FIXME: practice
+/* void main() {
+  print(average([1, 2, 3, 4, 5]));
+}
+
+double average(List<int> values) {
+  var sum = 0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum / values.length;
+} */
+
+void main() {
+  print(suma([1, 2, 3, 4]));
+}
+
+int suma(List<int> values) {
+  var sum = 0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum;
+}
