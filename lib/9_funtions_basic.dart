@@ -18,3 +18,17 @@ void sayHi(){
   print("Hello my name is $name2 , y i'm $age2 years old");
 }//-FIXME: Before 
  */
+
+void main() {
+  const name = 'Lucas';
+  const age = 25;
+  epale(name, age);
+  
+  const name2 = 'Lucas';
+  const age2 = 25;
+  epale(name2, age2);
+}
+
+void epale(String name, int age) {
+  print("Hello my name is $name I'm $age years old");
+}
