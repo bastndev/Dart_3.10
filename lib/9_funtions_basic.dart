@@ -1,1 +1,8 @@
-//--- -- --- --- -TODO: 86. Section Intro
+//--- -- --- --- -TODO: 87. Intro to functions
+void main (){
+  sayHi();
+}
+void sayHi(){
+  print("Hello");
+  print("Welcome");
+}
