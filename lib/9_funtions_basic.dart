@@ -59,11 +59,19 @@ void epale(String name, int age) {
 } */
 
 //--- -- --- --- -TODO: 89. Return values (good)
-void main() {
+/* void main() {
   final person = epale('Gohit', 25);
   print(person);
 }
 
 String epale(String name, int age) {
   return "Hello my name is $name I'm $age years old";
+} */
+
+void main() {
+  final person = epale('Marco', 27);
+  print(person);
 }
+
+String epale(String name, int age) =>
+    "Hello my name is $name I'm $age years old";
