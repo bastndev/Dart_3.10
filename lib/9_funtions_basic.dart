@@ -19,11 +19,11 @@ void sayHi(){
 }//-FIXME: Before 
  */
 
-void main() {
+/* void main() {
   const name = 'Lucas';
   const age = 25;
   epale(name, age);
-  
+
   const name2 = 'Lucas';
   const age2 = 25;
   epale(name2, age2);
@@ -31,4 +31,5 @@ void main() {
 
 void epale(String name, int age) {
   print("Hello my name is $name I'm $age years old");
-}
+}//--- FIXME: after
+ */
