@@ -34,7 +34,7 @@ void epale(String name, int age) {
 }//--- -FIXME: after
  */
 
-void main() {
+/* void main() {
   const name = 'Vero';
   const age = 20;
   epale(name, age);
@@ -44,6 +44,15 @@ void main() {
   epale(name2, age2);
 
   epale('Juan', 18);
+}
+
+void epale(String name, int age) {
+  print("Hello my name is $name I'm $age years old");
+} */
+
+void main() {
+
+  epale('Gohit', 25);
 }
 
 void epale(String name, int age) {
