@@ -277,10 +277,10 @@ String describe({required String name, required int age}) {
  */
 
 void main() {
-  final person = foo(age: 25, name: 'Marcus');
+  var person = foo(age: 25, name: 'Marcus');
   print(person);
 }
 
-String foo({required String name, required int age}) {
+dynamic foo({required String name, required int age}) {
   return "Hello my name is $name, I'm $age years old";
 }
