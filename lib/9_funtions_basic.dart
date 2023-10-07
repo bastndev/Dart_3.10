@@ -241,9 +241,26 @@ String describe({required String name ,required int age}) {
  */
 
 //-- --- -- -TODO: 93. Default positional arguments
-void main (){
+/* void main (){
   foo(1,6);
 }
 void foo (int a, [int b = 2]){
   print('a: $a, b: $b');
+} */
+
+/* void main() {
+  foo(1, b: 0, c: 4);
+}
+
+void foo(int a, {int b = 0, int c = 0}) {
+  print("a: $a, b: $b, c: $c");
+} */
+
+void main() {
+  final person = foo(name: 'Luis', age: 20);
+  print(person);
+}
+
+String foo({String name = '', int age = 0}) {
+  return "My name is $name and I'm $age years old";
 }
