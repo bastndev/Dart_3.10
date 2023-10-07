@@ -209,16 +209,22 @@ String describe(String name, int age) {
 }
  */
 
-/* void main() { //-FIXME: Option 1
+/* //-FIXME: Option 1
+  void main() { 
   final person = describe(age: 25, name: 'Gohit');
   print(person);
 }
 
 String describe({String? name, int? age}) {
   return "My name is $name I'm $age years old";
-}
- */
+}*/
 
-void main (){
-  
+//-FIXME: Option 2
+  void main() { 
+  final person = describe(age: 25, name: 'Gohit');
+  print(person);
+}
+
+String describe({String name = '', int age = 0}) {
+  return "My name is $name I'm $age years old";
 }
