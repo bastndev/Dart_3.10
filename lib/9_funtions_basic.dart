@@ -256,11 +256,31 @@ void foo(int a, {int b = 0, int c = 0}) {
   print("a: $a, b: $b, c: $c");
 } */
 
-void main() {
+/* void main() {
   final person = foo(name: 'Luis', age: 20);
   print(person);
 }
 
 String foo({String name = '', int age = 0}) {
   return "My name is $name and I'm $age years old";
+}
+ */
+
+/* void main() {
+  var person = describe(name: 'luis', age: 20);
+  print(person);
+}
+
+String describe({required String name, required int age}) {
+  return "Hello my name is $name, I'm $age years old";
+}
+ */
+
+void main() {
+  final person = foo(age: 25, name: 'Marcus');
+  print(person);
+}
+
+String foo({required String name, required int age}) {
+  return "Hello my name is $name, I'm $age years old";
 }
