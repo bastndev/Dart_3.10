@@ -184,4 +184,16 @@ double sum(List<double> values) {
   }
   return sum;
 } */
-//
+
+/* void main() {
+  print(sum([1, 2, 3, 4, 5]));
+}
+
+String sum(List<double> values) {
+  var sum = 0.0;
+  for (var value in values) {
+    sum += value;
+  }
+  return sum.toString(); //-FIXME: Swap of number to text
+}
+ */
