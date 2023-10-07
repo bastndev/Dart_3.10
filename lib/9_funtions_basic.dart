@@ -173,14 +173,14 @@ int suma(List<int> values) {
 }
  */
 
-void main() {
+/* void main() {
   print(sum([1, 2, 3, 4]));
 }
 
 double sum(List<double> values) {
   var sum = 0.0;
   for (var value in values) {
-    sum += value;
+    sum += value; //-FIXME: operadores compuestos (primero suman luego asignan el valor a value)
   }
   return sum;
-}
+} */
