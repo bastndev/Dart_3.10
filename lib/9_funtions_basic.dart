@@ -286,7 +286,7 @@ dynamic foo({required String name, required int age}) {
 }
  */
 
-void main() {
+/* void main() {
   String person = greet(name:'Marcus', age: 25);
   print(person);
 }
@@ -294,3 +294,22 @@ void main() {
 String greet({required String name, required int age}) {
   return "Hello, my name is $name, I'm $age years old";
 }
+ */
+
+//-TODO: 94. [Exercise] Pizza ordering with functions
+/* void main (){ //-FIXME: Video
+  const pizzaPrices = {
+    'margherita': 5.5,
+    'pepperoni':7.5,
+    'vegetarian':6.5,
+  };
+  const order = ['margherita', 'pepperoni','pineapple'];
+  var total = 0.0;
+  for(var item in order){
+    final price = pizzaPrices[item];
+    if(price != null){
+      total += price;
+    }
+  }
+  print("Total: \$$total");
+} */
