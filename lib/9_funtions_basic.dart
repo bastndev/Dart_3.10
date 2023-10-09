@@ -359,7 +359,7 @@ double calculateTotal(List<String> order) {
 }
  */
 
-void main() {
+/* void main() {
   final order = ['seviche', 'Lomo Saltado', 'trucha thimpo'];
   final total = calculateTotal(order);
   print(total);
@@ -374,6 +374,29 @@ double calculateTotal(List<String> order) {
   var total = 0.0;
   for (var item in order) {
     final price = foodPrices[item];
+    if (price != null) {
+      total += price;
+    }
+  }
+  return total;
+}
+ */
+
+void main() {
+  const order = ['tomato', 'weather', 'salt'];
+  final total = priceTotal(order);
+  print(total);
+}
+
+double priceTotal(List<String> order) {
+  const priceIngredients = {
+    'salt': 5.5,
+    'potato': 3.5,
+    'tomato': 5.5,
+  };
+  var total = 0.0;
+  for (var item in order) {
+    final price = priceIngredients[item];
     if (price != null) {
       total += price;
     }
