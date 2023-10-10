@@ -460,14 +460,26 @@ double totalPrice(List<String> order) {
 int sum(int x, int y) => x + y; */
 
 // -- -- --- --- -TODO: 96. The global and local scope
-
-void main (){
+/* void main() {
   const a = 10;
   print(a);
 
-  if(a > 5){
+  if (a > 5) {
     const a = 5;
     print(a);
   }
-
 }
+ */
+/* const global = 15;
+void main() {
+  const a = 10;
+  print(global);
+  print(a);
+
+  if (a > 5) {
+    const a = 5;
+    print(a);
+  }
+} */
+
+// -- -- --- --- -TODO: 97. Inner Functions
