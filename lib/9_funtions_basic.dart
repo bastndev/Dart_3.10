@@ -504,15 +504,34 @@ void main() {
 }
  */
 //  --- --- -TODO: 98. Global mutable state and functions with side effects
-var counter = 1;
+
+/* var counter = 1;
 
 void foo() {
   print('*' * counter);
-  counter++;
+  counter++;//-FIXME: Really bad
 }
 
 void main() {
   foo();
   foo();
   foo();
+} */
+var counter = 1;
+const bitsInByte = 8;
+
+void foo() {
+  print('*' * counter);
+}
+
+void main() {
+  const kilobit = 1024 * bitsInByte;
+  const megabit = 1024 * kilobit;
+  foo();
+  counter++;
+  foo();
+  counter++;
+  foo();
+  
+  print(megabit);
 }
