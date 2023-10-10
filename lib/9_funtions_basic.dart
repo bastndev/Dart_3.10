@@ -483,3 +483,36 @@ void main() {
 } */
 
 // -- -- --- --- -TODO: 97. Inner Functions
+/* const global = 15;
+
+void main() {
+  const a = 10;
+  print(global);
+  print(a);
+  void foo(int b) {
+    print(global);
+    print(a);
+    print(b);
+    void bar(int c) {
+      print(global);
+      print(a);
+      print(b);
+      print(c);
+    }
+  }
+  foo(5);
+}
+ */
+//  --- --- -TODO: 98. Global mutable state and functions with side effects
+var counter = 1;
+
+void foo() {
+  print('*' * counter);
+  counter++;
+}
+
+void main() {
+  foo();
+  foo();
+  foo();
+}
