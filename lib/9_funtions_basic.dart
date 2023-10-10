@@ -404,7 +404,7 @@ double priceTotal(List<String> order) {
   return total;
 } */
 
-void main() {
+/* void main() {
   const order = ['coca cola', 'fanta', 'sprite'];
   final total = totalPrice(order);
   print(total);
@@ -423,5 +423,29 @@ double totalPrice(List<String> order) {
       total += price;
     }
   }
+  return total;
+}
+ */
+
+void main() {
+  const order = ['Tomato', 'potato', 'carrot'];
+  final total = totalPrice(order);
+  print(total);
+}
+
+double totalPrice(List<String> order) {
+  final listProducts = {
+    'Tomato': 5.5,
+    'carrot': 1.5,
+    'weather': 2.5,
+  };
+  var total = 0.0;
+  for (var item in order) {
+    final price = listProducts[item];
+    if (price != null) {
+      total += price;
+    }
+  }
+  ;
   return total;
 }
