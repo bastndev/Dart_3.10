@@ -427,7 +427,7 @@ double totalPrice(List<String> order) {
 }
  */
 
-void main() {
+/* void main() {
   const order = ['Tomato', 'potato', 'carrot'];
   final total = totalPrice(order);
   print(total);
@@ -448,4 +448,13 @@ double totalPrice(List<String> order) {
   }
   ;
   return total;
+} */
+
+// -- -- --- --- -TODO: 95. Fat arrow notation (=>)
+
+void main() {
+  final lucas = sum(1, 2);
+  print(lucas);
 }
+
+int sum(int x, int y) => x + y;
