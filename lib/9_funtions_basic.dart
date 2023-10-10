@@ -452,9 +452,22 @@ double totalPrice(List<String> order) {
 
 // -- -- --- --- -TODO: 95. Fat arrow notation (=>)
 
-void main() {
+/* void main() {
   final lucas = sum(1, 2);
   print(lucas);
 }
 
-int sum(int x, int y) => x + y;
+int sum(int x, int y) => x + y; */
+
+// -- -- --- --- -TODO: 96. The global and local scope
+
+void main (){
+  const a = 10;
+  print(a);
+
+  if(a > 5){
+    const a = 5;
+    print(a);
+  }
+
+}
