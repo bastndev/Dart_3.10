@@ -517,7 +517,7 @@ void main() {
   foo();
   foo();
 } */
-var counter = 1;
+/* var counter = 1;
 const bitsInByte = 8;
 
 void foo() {
@@ -534,4 +534,25 @@ void main() {
   foo();
   
   print(megabit);
+}
+ */
+
+void main() {
+  int counter = 1;
+  const bitsInByte = 8;
+
+  void foo(int count) {
+    print('*' * count);
+  }
+
+  const kilobit = 1024 * bitsInByte;
+  const megabit = 1024 * kilobit;
+
+  foo(counter);
+  counter++;
+  foo(counter);
+  counter++;
+  foo(counter);
+
+  print('Value of megabit: $megabit');
 }
