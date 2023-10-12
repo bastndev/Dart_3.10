@@ -10,5 +10,10 @@ void main() {
 // --- --- --- -TODO: 100. Anonymous functions
 void main() {
   final sayHi = (String name) => 'Hi, $name';
-  print(sayHi('Gohit'));
+  welcome(sayHi, 'Andrea');
+}
+
+void welcome(String Function(String) greet, String name) {
+  print(greet(name));
+  print('Welcome to this course');
 }
