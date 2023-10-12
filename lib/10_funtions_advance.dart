@@ -8,7 +8,7 @@ void main() {
 }
  */
 // --- --- --- -TODO: 100. Anonymous functions
-void main (){
-  final sayHi = (name) => 'Hi, $name';
+void main() {
+  final sayHi = (String name) => 'Hi, $name';
   print(sayHi('Gohit'));
 }
