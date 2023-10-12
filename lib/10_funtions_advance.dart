@@ -8,12 +8,27 @@ void main() {
 }
  */
 // --- --- --- -TODO: 100. Anonymous functions
-void main() {
+/* void main() {
   final sayHi = (String name) => 'Hi, $name';
   welcome(sayHi, 'Andrea');
 }
 
 void welcome(String Function(String) greet, String name) {
+  print(greet(name));
+  print('Welcome to this course');
+}
+ */
+
+typedef Greet = String Function(String);
+String sayHi(String name) => "Hi $name";
+String sayBonjour(String name) => "Bonjour $name";
+String sayHola(String name) => "Hola $name";
+
+void main() {
+  welcome(sayBonjour, 'Andrea');
+}
+
+void welcome(Greet greet, String name) {
   print(greet(name));
   print('Welcome to this course');
 }
