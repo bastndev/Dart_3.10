@@ -36,7 +36,7 @@ void welcome(Greet greet, String name) {
 } */
 
 
-typedef Greet = String Function(String);
+/* typedef Greet = String Function(String);
 
 String sayHello(String name) => "Hello $name";
 
@@ -47,4 +47,4 @@ void main() {
 void welcome(Greet greet, String name) {
   print(greet(name));
   print('Welcome to this course');
-}
+} */
