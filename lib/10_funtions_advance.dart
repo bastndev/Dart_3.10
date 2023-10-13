@@ -48,4 +48,3 @@ void welcome(Greet greet, String name) {
   print(greet(name));
   print('Welcome to this course');
 }
- 
