@@ -91,3 +91,17 @@ void welcome(Greet greet, String name) {
   final doubles = list.map((value) => value * 2);
   print(doubles);
 } */
+
+/* void main() {
+  const list = [1,2,3,4];
+  list.forEach(print);
+  final List<int> doubles= list.map((value) => value * 2).toList();
+  print(doubles);
+} */
+
+/* void main() {
+  const list = [1.0, 1.2, 3.9, 4];
+  list.forEach(print);
+  final List<double> doubles = list.map((value) => value * 2.0).toList();
+  print(doubles);
+} */
