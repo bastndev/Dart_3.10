@@ -35,7 +35,6 @@ void welcome(Greet greet, String name) {
   print('Welcome to this course');
 } */
 
-
 /* typedef Greet = String Function(String);
 
 String sayHello(String name) => "Hello $name";
@@ -48,3 +47,14 @@ void welcome(Greet greet, String name) {
   print(greet(name));
   print('Welcome to this course');
 } */
+
+//--- --- -- -TODO: 103. Closures
+void main() {
+  const multiplier = 10;
+  const list = [1, 2, 3, 4];
+
+  final result = list.map((x){
+    return x * multiplier;
+  });
+  print(result);
+}
