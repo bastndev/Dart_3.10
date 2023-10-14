@@ -49,7 +49,7 @@ void welcome(Greet greet, String name) {
 } */
 
 //--- --- -- -TODO: 103. Closures
-void main() {
+/* void main() {
   const multiplier = 10;
   const list = [1, 2, 3, 4];
 
@@ -57,4 +57,18 @@ void main() {
     return x * multiplier;
   });
   print(result);
+}
+ */
+
+//--- --- -- -TODO: 104. The forEach method
+/* void main() {
+  const list = [1, 2, 3];
+  for (var value in list) {
+    print(value);
+  }
+} */
+
+void main() {
+  const list = [1, 2, 3];
+  list.forEach((x) => print(x));
 }
