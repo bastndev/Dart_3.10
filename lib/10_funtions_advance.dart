@@ -85,9 +85,9 @@ void welcome(Greet greet, String name) {
   list.forEach(print);
 } */
 
-void main() {
+/* void main() {
   const list = [1,2,3,4];
   list.forEach(print);
   final doubles = list.map((value) => value * 2);
   print(doubles);
-}
+} */
