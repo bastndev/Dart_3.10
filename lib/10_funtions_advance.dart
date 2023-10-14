@@ -68,7 +68,14 @@ void welcome(Greet greet, String name) {
   }
 } */
 
-void main() {
+/* void main() {
   const list = [1, 2, 3];
   list.forEach((x) => print(x));
+} */
+
+void main() {
+  const list = [1, 2, 3, 4, 5];
+  list.forEach((x) {
+    print(x);
+  });
 }
