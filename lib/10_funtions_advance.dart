@@ -134,8 +134,14 @@ List<int> doubleItems(List<int> items) {
 } */
 
 //-- -- -- -TODO: 108. The where and firstWhere methods
-void main() {
+/* void main() {
   const list = [1, 2, 3, 4, 5, 6, 7];
+  final even = list.where((value) => value % 2 == 0);
+  print(even);
+} */
+
+void main() {
+  const list = [1.1, 2.3, 3, 4.4, 5, 6, 7];
   final even = list.where((value) => value % 2 == 0);
   print(even);
 }
