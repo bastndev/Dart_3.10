@@ -140,8 +140,13 @@ List<int> doubleItems(List<int> items) {
   print(even);
 } */
 
-void main() {
+/* void main() {
   const list = [1.1, 2.3, 3, 4.4, 5, 6, 7];
   final even = list.where((value) => value % 2 == 0);
+  print(even);
+} */
+void main() {
+  const list = [1, 2, 3, 4, 5, 6, 7, 9, 10];
+  final even = list.where((value) => value % 3 == 0);
   print(even);
 }
