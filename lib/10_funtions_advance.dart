@@ -145,10 +145,43 @@ List<int> doubleItems(List<int> items) {
   final even = list.where((value) => value % 2 == 0);
   print(even);
 } */
-void main() {
+/* void main() {
   const list = [1, 2, 3, 4, 5, 6, 5];
   final even = list.where((value) => value % 2 == 0);
   print(even);
   final value = list.firstWhere((x) => x == 9, orElse: () => -1);
   print(value);
+}
+ */
+
+//--- --- -TODO: 109. [Exercise] Implement the where function
+/* void main() {
+  const list = [1, 2, 3, 4];
+  final odd = where<int>(list, (value) => value % 2 == 0);
+  print(odd);
+}
+
+List<T> where<T>(List<T> items, bool Function(T) f) {
+  var result = <T>[];
+  for (var x in items) {
+    if (f(x)) {
+      result.add(x);
+    }
+  }
+  return result;
+}
+ */
+void main() {
+  const list = [1, 2, 3, 4];
+  final odd = list.where((value) => value % 2 == 1);
+  print(odd);
+}
+List<T> where<T>(List<T> items, bool Function(T)f){
+var result = <T>[];
+  for (var item in items) {
+    if (f(item)) {
+      result.add(item);
+    }
+  }
+  return result;
 }
