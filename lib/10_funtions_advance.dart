@@ -107,16 +107,11 @@ void welcome(Greet greet, String name) {
 } */
 
 //--- --- --- -TODO: 107. Code reuse with anonymous functions and generics
-void main() {
+/* void main() {
   const list = [1, 1, 3, 4];
   const l2 = [1.0, 2.0, 3.0, 4.0];
   list.forEach(print);
   final List<int> doubles = list.map((value) => value * 2).toList();
-  // lua.forEach(print);
-  // final List<int> doubles = list.map((value) => value * 2).toList();
-  // final List<int> doubles = doubleItems(list);
-  // final doubles = doubleItems(list);
-  // final doubles = transform<int, int>(list, (x) => x * 2);
   final rounded = transform<double, int>(l2, (x) => x.round());
   print("Hello $doubles");
   print("Hola $rounded");
@@ -136,4 +131,11 @@ List<int> doubleItems(List<int> items) {
     result.add(x * 2);
   }
   return result;
+} */
+
+//-- -- -- -TODO: 108. The where and firstWhere methods
+void main() {
+  const list = [1, 2, 3, 4, 5, 6, 7];
+  final even = list.where((value) => value % 2 == 0);
+  print(even);
 }
