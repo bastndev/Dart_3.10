@@ -204,7 +204,7 @@ T firstWhere<T>(List<T> items, bool Function(T) f,
   return orELse();
 } */
 
-void main() {
+/* void main() {
   const list = [1, 2, 3, 4];
   final result = list.firstWhere((x) => x == 4, orElse: () => -1);
   print(result);
@@ -218,4 +218,4 @@ M firstWhere<M>(List<M> items, bool Function(M) f,
     }
   }
   return orELse();
-}
+} */
