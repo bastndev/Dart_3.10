@@ -171,7 +171,7 @@ List<T> where<T>(List<T> items, bool Function(T) f) {
   return result;
 }
  */
-void main() {
+/* void main() {
   const list = [1, 2, 3, 4];
   final odd = list.where((value) => value % 2 == 1);
   print(odd);
@@ -184,4 +184,22 @@ var result = <T>[];
     }
   }
   return result;
+} */
+
+//-- --- -TODO: 110. [Exercise] Implement the firstWhere function
+
+void main() {
+  const list = [1, 2, 3, 4];
+  final result = firstWhere(list, (x) => x == 3, orELse: () => -1);
+  print(result);
+}
+
+T firstWhere<T>(List<T> items, bool Function(T) f,
+    {required T Function() orELse}) {
+  for (var item in items) {
+    if (f(item)) {
+      return item;
+    }
+  }
+  return orELse();
 }
