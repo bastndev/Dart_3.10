@@ -221,5 +221,8 @@ M firstWhere<M>(List<M> items, bool Function(M) f,
 } */
 
 // --- --- --TODO:  111. The reduce method
-void main() {
-}
+/* void main() {
+  const list = [1, 2, 3, 4];
+  final sum = list.reduce((value, element ) => value + element); 
+  print(sum);
+} */
