@@ -224,5 +224,39 @@ M firstWhere<M>(List<M> items, bool Function(M) f,
 /* void main() {
   const list = [1, 2, 3, 4];
   final sum = list.reduce((value, element ) => value + element); 
+  const
+} */
+/* void main () {
+  const list = [1, 2, 3, 4];
+  final sum = list.reduce((value, element) => value + element);
   print(sum);
 } */
+
+//--- --- -TODO: 112. Combining functional operators
+void main() {
+  const emails = [
+    'abc@abc.com',
+    'me@example.co.uk',
+    'john@gmail.com',
+    'katy@gmail.com',
+    'katy@gmaisal.com',
+  ];
+  const knownDomains = ['gmail.com', 'yahoo.com'];
+  final unknownDomains = getUnknownDomains(emails, knownDomains);
+  print(unknownDomains);
+}
+
+Iterable<String> getUnknownDomains(List<String> emails, List<String> knownDomains) => emails
+      .map((email) => email.split('@').last)
+      .where((domains) => !knownDomains.contains(domains));
+
+Iterable<String> getUnknownDomains2(List<String> emails, List<String> knownDomains) {
+  var results = <String>[];
+  for (var email in emails) {
+    var domain = email.split('@').last; 
+    if (!knownDomains.contains(domain)) {
+      results.add(domain);
+    }
+  }
+  return results;
+}
