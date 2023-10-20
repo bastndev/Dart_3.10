@@ -37,7 +37,7 @@ void main() {
 }
  */
 
-class BankAccount {
+/* class BankAccount {
   double balance = 0;
 
   void deposit(double amount) {
@@ -62,7 +62,7 @@ void main() {
   final success2 = bankAccount.withdraw(100);
   print("success: $success2, balance: ${bankAccount.balance}");
 }
-
+ */
 /* class BankAccount {
   double balance = 0;
 
