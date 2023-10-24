@@ -141,7 +141,7 @@ void main() {
   final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
   print(bankAccount.balance.toInt());
 } */
-class BankAccount {
+/* class BankAccount {
   BankAccount({
     required this.accountHolder,
     this.balance = 0,
@@ -166,4 +166,4 @@ class BankAccount {
 void main() {
   final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
   print(bankAccount.balance.toInt());
-}
+} */
