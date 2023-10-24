@@ -117,10 +117,9 @@ void main() {
 
 class BankAccount {
   BankAccount({
-    required String accountHolder,
-    double balance = 0,
-  })  : accountHolder = accountHolder,
-        balance = balance;
+    required this.accountHolder,
+    this.balance = 0,
+  });
   String accountHolder;
   double balance;
 
