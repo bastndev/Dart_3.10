@@ -90,7 +90,7 @@ void main() {
   print("success: $success2, balance: ${bankAccount.balance}");
 }
  */
-class BankAccount {
+/* class BankAccount {
   BankAccount(double balance) {
     this.balance = balance;
   }
@@ -113,4 +113,32 @@ class BankAccount {
 void main() {
   final bankAccount = BankAccount(100);
   print(bankAccount.balance);
+} */
+
+class BankAccount {
+  BankAccount({
+    required String accountHolder,
+    double balance = 0,
+  })  : accountHolder = accountHolder,
+        balance = balance;
+  String accountHolder;
+  double balance;
+
+  void deposit(double amount) {
+    balance += amount;
+  }
+
+  bool withdraw(double amount) {
+    if (balance > amount) {
+      balance -= amount;
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+void main() {
+  final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
+  print(bankAccount.balance.toInt());
 }
