@@ -167,3 +167,9 @@ void main() {
   final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
   print(bankAccount.balance.toInt());
 } */
+void main() {
+  int number = 1;
+  double number2 = 2;
+
+  print(number + number2);
+}
