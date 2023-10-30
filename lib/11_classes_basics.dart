@@ -167,9 +167,15 @@ void main() {
   final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
   print(bankAccount.balance.toInt());
 } */
-void main() {
+/* void main() {
   int number = 1;
   double number2 = 2;
 
   print(number + number2);
+} */
+void main() {
+  int number = 12;
+  double number2 =13;
+
+  print("Hello I'm ${number2.toInt()+number} yeas old");
 }
