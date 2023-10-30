@@ -180,3 +180,30 @@ void main() {
 
   print("Hello I'm ${number2.toInt()+number} yeas old");
 } */
+
+class BankAccount {
+  BankAccount({
+    required this.accountHolder,
+    this.balance = 0,
+  });
+  final String accountHolder;
+  double balance;
+
+  void deposit(double amount) {
+    balance += amount;
+  }
+
+  bool withdraw(double amount) {
+    if (balance > amount) {
+      balance -= amount;
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+void main() {
+  final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
+  print(bankAccount.balance.toInt());
+}
