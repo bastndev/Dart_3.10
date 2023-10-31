@@ -208,7 +208,7 @@ void main() {
   print(bankAccount.balance.toInt());
 } */
 
-class Person {
+/* class Person {
   final String name;
   final int age;
   final double height;
@@ -225,9 +225,10 @@ class Person {
 }
 
 void main() {
-  // final person = {'name': 'Gohit', 'age': 25, 'height': 170};
+  // final person = <String, dynamic>{'name': 'Gohit', 'age': '25', 'height': 170};
   final p1 = Person(name: 'Andrea', age: 29, height: 1.90);
   final p2 = Person(name: 'Maria', age: 21, height: 1.15);
   p1.printDescription();
   p2.printDescription();
 }
+ */
