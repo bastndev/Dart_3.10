@@ -181,7 +181,7 @@ void main() {
   print("Hello I'm ${number2.toInt()+number} yeas old");
 } */
 
-class BankAccount {
+/* class BankAccount {
   BankAccount({
     required this.accountHolder,
     this.balance = 0,
@@ -206,4 +206,28 @@ class BankAccount {
 void main() {
   final bankAccount = BankAccount(accountHolder: 'Gohit', balance: 100);
   print(bankAccount.balance.toInt());
+} */
+
+class Person {
+  final String name;
+  final int age;
+  final double height;
+
+  Person({
+    required this.name,
+    required this.age,
+    required this.height,
+  });
+
+  void printDescription() {
+    print("My name is $name. I'm $age years old, I'm $height meters tall");
+  }
+}
+
+void main() {
+  // final person = {'name': 'Gohit', 'age': 25, 'height': 170};
+  final p1 = Person(name: 'Andrea', age: 29, height: 1.90);
+  final p2 = Person(name: 'Maria', age: 21, height: 1.15);
+  p1.printDescription();
+  p2.printDescription();
 }
