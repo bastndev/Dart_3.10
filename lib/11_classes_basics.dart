@@ -309,7 +309,7 @@ class Temperature {
 
 void main() {
   final temp1 = Temperature.celsius(30);
-  final temp2 = Temperature.fahrenheit(90);
+  // final temp2 = Temperature.fahrenheit(90);
   print('Temperature 1 in Celsius: ${temp1.celsius}');
   temp1.celsius = 32;
   print('Temperature 1 in Fahrenheit: ${temp1.fahrenheit}');
