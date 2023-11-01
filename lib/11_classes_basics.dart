@@ -278,15 +278,45 @@ void main() {
 
 // --- -- --- --- -TODO: 123. Named constructors: temperature example
 
-class Temperature{
+/* class Temperature {
   Temperature.celsius(this.celsius);
-  Temperature.fahrenheit(double fahrenheit)
+  Temperature.fahrenheit(double fahrenheit) 
     : celsius = (fahrenheit - 32) / 1.8;
   double celsius;
+  double get fahrenheit => celsius;
+  set fahrenheit(double fahrenheit)
+    => celsius = (fahrenheit - 32) / 1.8;
 }
+
 void main() {
   final temp1 = Temperature.celsius(30);
   final temp2 = Temperature.fahrenheit(90);
   print(temp1.celsius);
   temp1.celsius = 32;
+  print(temp1.fahrenheit);
+  temp1.fahrenheit = 90;
+  final temp = 30;
+} */
+class Temperature {
+  Temperature.celsius(this.celsius);
+  Temperature.fahrenheit(double fahrenheit) 
+    : celsius = (fahrenheit - 32) / 1.8;
+  double celsius;
+  double get fahrenheit => celsius * 9/5 + 32; 
+  set fahrenheit(double fahrenheit)
+    => celsius = (fahrenheit - 32) / 1.8;
+}
+
+void main() {
+  final temp1 = Temperature.celsius(30);
+  final temp2 = Temperature.fahrenheit(90);
+  print('Temperature 1 in Celsius: ${temp1.celsius}');
+  temp1.celsius = 32;
+  print('Temperature 1 in Fahrenheit: ${temp1.fahrenheit}');
+  temp1.fahrenheit = 90;
+  print('Temperature 1 in Celsius after setting Fahrenheit: ${temp1.celsius}');
+
+  final temp = Temperature.celsius(30);
+  print('Temperature in Celsius: ${temp.celsius}');
+  print('Temperature in Fahrenheit: ${temp.fahrenheit}');
 }
