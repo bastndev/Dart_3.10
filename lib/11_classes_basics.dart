@@ -232,8 +232,23 @@ void main() {
   p2.printDescription();
 }
  */
-void main() {
+/* void main() {
   int i = 10;
   double ii = 20.2;
   print("hello my name ins ${i+ii}");
+} */
+
+class Complex {
+  const Complex(this.re, this.im);
+  final double re;
+  final double im;
+}
+
+void main() {
+  const complex = Complex(1, 2);
+  const x = 10;
+  const list = [
+    Complex(1, 2),
+    Complex(3, 4),
+  ];
 }
