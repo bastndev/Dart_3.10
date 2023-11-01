@@ -245,10 +245,5 @@ class Complex {
 }
 
 void main() {
-  const complex = Complex(1, 2);
-  const x = 10;
-  const list = [
-    Complex(1, 2),
-    Complex(3, 4),
-  ];
+
 }
