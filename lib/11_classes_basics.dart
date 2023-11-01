@@ -232,3 +232,8 @@ void main() {
   p2.printDescription();
 }
  */
+void main() {
+  int i = 10;
+  double ii = 20.2;
+  print("hello my name ins ${i+ii}");
+}
