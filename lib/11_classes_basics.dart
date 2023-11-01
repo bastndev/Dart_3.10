@@ -238,12 +238,39 @@ void main() {
   print("hello my name ins ${i+ii}");
 } */
 
-class Complex {
+/* class Complex {
   const Complex(this.re, this.im);
   final double re;
   final double im;
 }
 
 void main() {
+  const complex = Complex(1, 2);
+  const x = 10;
+  const list = [
+    Complex(1, 2),
+    Complex(3, 4),
+  ];
+} */
 
+// --- -- --- --- -TODO: 122. Named constructors
+class Complex {
+  const Complex(this.re, this.im);
+  const Complex.zero()
+      : re = 0,
+        im = 0;
+  const Complex.identity()
+      : re = 0,
+        im = 0;
+  const Complex.real(this.re) : im = 0;
+  const Complex.imaginary(this.im) : re = 0;
+  final double re;
+  final double im;
+}
+
+void main() {
+  final zero = Complex.zero();
+  final identity = Complex.identity();
+  final real = Complex.real(3);
+  final imaginary = Complex.imaginary(4);
 }
