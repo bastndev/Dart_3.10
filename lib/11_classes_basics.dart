@@ -254,7 +254,7 @@ void main() {
 } */
 
 // --- -- --- --- -TODO: 122. Named constructors
-class Complex {
+/* class Complex {
   const Complex(this.re, this.im);
   const Complex.zero()
       : re = 0,
@@ -273,4 +273,20 @@ void main() {
   final identity = Complex.identity();
   final real = Complex.real(3);
   final imaginary = Complex.imaginary(4);
+}
+ */
+
+// --- -- --- --- -TODO: 123. Named constructors: temperature example
+
+class Temperature{
+  Temperature.celsius(this.celsius);
+  Temperature.fahrenheit(double fahrenheit)
+    : celsius = (fahrenheit - 32) / 1.8;
+  double celsius;
+}
+void main() {
+  final temp1 = Temperature.celsius(30);
+  final temp2 = Temperature.fahrenheit(90);
+  print(temp1.celsius);
+  temp1.celsius = 32;
 }
