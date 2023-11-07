@@ -297,7 +297,7 @@ void main() {
   temp1.fahrenheit = 90;
   final temp = 30;
 } */
-class Temperature {
+/* class Temperature {
   Temperature.celsius(this.celsius);
   Temperature.fahrenheit(double fahrenheit) 
     : celsius = (fahrenheit - 32) / 1.8;
@@ -319,4 +319,5 @@ void main() {
   final temp = Temperature.celsius(30);
   print('Temperature in Celsius: ${temp.celsius}');
   print('Temperature in Fahrenheit: ${temp.fahrenheit}');
-}
+} */
+
