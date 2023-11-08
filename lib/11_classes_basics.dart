@@ -321,3 +321,40 @@ void main() {
   print('Temperature in Fahrenheit: ${temp.fahrenheit}');
 } */
 
+class Restaurant {
+  const Restaurant({
+    required this.name,
+    required this.cuisine,
+    required this.ratings,
+  });
+  final String name;
+  final String cuisine;
+  final List<double> ratings;
+
+  int get numRatings => ratings.length;
+
+  double? avgRating() {
+    if (ratings.isEmpty) {
+      return null;
+    }
+    return ratings.reduce((value, element) => value + element) / ratings.length;
+  }
+}
+
+void main() {
+  // Create an instance of Restaurant
+  final restaurant = Restaurant(
+    name: "My Restaurant",
+    cuisine: "Delicious Food",
+    ratings: [4.5, 5.0, 4.2, 4.8],
+  );
+
+  // Print information to the screen
+  print("Restaurant Name: ${restaurant.name}");
+  print("Cuisine Type: ${restaurant.cuisine}");
+  print("Number of Ratings: ${restaurant.numRatings}");
+
+  // Calculate and print the average rating
+  final avg = restaurant.avgRating();
+  print("Average Rating: ${avg ?? 'No ratings available'}");
+}
