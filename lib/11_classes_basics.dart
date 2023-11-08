@@ -356,3 +356,35 @@ void main() {
   print("Average Rating: ${avg ?? 'No ratings available'}");
 }
  */
+
+// --- -- --- --- -FIXME: Exercise
+class Dog {
+  String name;
+  String race;
+  int age;
+  double height;
+
+  Dog({
+    required this.name,
+    required this.race,
+    required this.age,
+    required this.height,
+  });
+}
+
+void main() {
+  Dog dog1 = Dog(
+    name: 'Juan',
+    age: 2,
+    race: 'Doberman',
+    height: 54.3,
+  );
+    Dog dog2 = Dog(
+    name: 'Marta',
+    age: 2,
+    race: 'Doberman',
+    height: 54.3,
+  );
+  print(dog1.name);
+  print(dog2.name);
+}
