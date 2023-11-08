@@ -370,6 +370,9 @@ class Dog {
     required this.age,
     required this.height,
   });
+  void eat() {
+    print('$name is eating');
+  }
 }
 
 void main() {
@@ -379,12 +382,15 @@ void main() {
     race: 'Doberman',
     height: 54.3,
   );
-    Dog dog2 = Dog(
+  Dog dog2 = Dog(
     name: 'Marta',
     age: 2,
     race: 'Doberman',
     height: 54.3,
   );
-  print(dog1.name);
-  print(dog2.name);
+  // print(dog1.name);
+  // print(dog2.name);
+
+  dog1.eat();
+  dog2.eat();
 }
