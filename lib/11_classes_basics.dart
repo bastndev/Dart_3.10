@@ -321,7 +321,7 @@ void main() {
   print('Temperature in Fahrenheit: ${temp.fahrenheit}');
 } */
 
-class Restaurant {
+/* class Restaurant {
   const Restaurant({
     required this.name,
     required this.cuisine,
@@ -342,19 +342,17 @@ class Restaurant {
 }
 
 void main() {
-  // Create an instance of Restaurant
   final restaurant = Restaurant(
     name: "My Restaurant",
     cuisine: "Delicious Food",
     ratings: [4.5, 5.0, 4.2, 4.8],
   );
 
-  // Print information to the screen
   print("Restaurant Name: ${restaurant.name}");
   print("Cuisine Type: ${restaurant.cuisine}");
   print("Number of Ratings: ${restaurant.numRatings}");
 
-  // Calculate and print the average rating
   final avg = restaurant.avgRating();
   print("Average Rating: ${avg ?? 'No ratings available'}");
 }
+ */
