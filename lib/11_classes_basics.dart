@@ -469,6 +469,7 @@ void main() {
 class BankAccount {
   BankAccount(this._balance);
   double _balance;
+  double get balance => _balance;
 
   void deposit(double amount){
     _balance += amount;
@@ -479,9 +480,4 @@ class BankAccount {
       _balance -= amount;
     }
   }
-}
-
-void main(){
-  final backAccount = BankAccount(100);
-  backAccount._balance = 1000000;
 }
