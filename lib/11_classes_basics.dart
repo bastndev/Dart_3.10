@@ -450,8 +450,8 @@ class Car {
     return carName == "Tesla" ? true : false;
   }
 
-  static start(){
-    print("The car is start");
+  void start() {
+    print("The car is started");
   }
 }
 
@@ -459,6 +459,7 @@ void main() {
   var car = Car("TOYOTA");
 
   var isElectricCar = car.isElectricCar();
-  // print(isElectricCar);
-  print(Car.start(is));
+  print(isElectricCar);
+
+  car.start();
 }
