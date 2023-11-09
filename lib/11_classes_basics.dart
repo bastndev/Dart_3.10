@@ -441,3 +441,19 @@ void main (){
   print(Strings.singIn);
   print(Strings.greet('Gohit'));
 } */
+class Car {
+  final String carName;
+
+  Car(this.carName);
+
+  bool isElectricCar() {
+    return carName == "Tesla" ? true : false;
+  }
+}
+
+void main() {
+  var tesla = Car("TOYOTA");
+
+  var isElectricCar = tesla.isElectricCar();
+  print(isElectricCar);
+}
