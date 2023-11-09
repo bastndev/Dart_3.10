@@ -358,7 +358,7 @@ void main() {
  */
 
 // --- -- --- --- -FIXME: Exercise
-class Dog {
+/* class Dog {
   String name;
   String race;
   int age;
@@ -393,4 +393,30 @@ void main() {
 
   dog1.eat();
   dog2.eat();
+}
+ */
+
+class Cat {
+  String name;
+  String race;
+  int age;
+  double height;
+
+  Cat({
+    required this.name,
+    required this.race,
+    required this.age,
+    required this.height,
+  });
+}
+
+void main() {
+  Cat cat1 = Cat(
+    name: 'Katie',
+    age: 2,
+    race: 'beautiful',
+    height: 34.2,
+  );
+
+  print("Name of my Cat is ${cat1.name} she has ${cat1.age} years of life and race is ${cat1.race},and has ${cat1.height}");
 }
