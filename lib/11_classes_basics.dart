@@ -441,7 +441,7 @@ void main (){
   print(Strings.singIn);
   print(Strings.greet('Gohit'));
 } */
-class Car {
+/* class Car {
   final String carName;
 
   Car(this.carName);
@@ -462,4 +462,26 @@ void main() {
   print(isElectricCar);
 
   car.start();
+}
+ */
+
+// --- --- --- -TODO: 127. Private variables and methods
+class BankAccount {
+  BankAccount(this._balance);
+  double _balance;
+
+  void deposit(double amount){
+    _balance += amount;
+  }
+
+  void withdraw(double amount){
+    if(_balance > amount){
+      _balance -= amount;
+    }
+  }
+}
+
+void main(){
+  final backAccount = BankAccount(100);
+  backAccount._balance = 1000000;
 }
