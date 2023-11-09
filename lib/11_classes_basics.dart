@@ -449,11 +449,16 @@ class Car {
   bool isElectricCar() {
     return carName == "Tesla" ? true : false;
   }
+
+  static start(){
+    print("The car is start");
+  }
 }
 
 void main() {
-  var tesla = Car("TOYOTA");
+  var car = Car("TOYOTA");
 
-  var isElectricCar = tesla.isElectricCar();
-  print(isElectricCar);
+  var isElectricCar = car.isElectricCar();
+  // print(isElectricCar);
+  print(Car.start(is));
 }
