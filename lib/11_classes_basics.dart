@@ -424,6 +424,20 @@ void main() {
  */
 
 //  --- --- --- --- -TODO: 126. Static methods and variables
-void main (){
-  
+/* const welcome = 'Welcome';
+const signIn = 'Sign In';
+
+class Strings{
+  static const welcome = 'Welcome';
+  static const singIn = 'Sing in';
+  static String greet(String name) => 'Hi, $name';
+
+  void foo(){
+    print(welcome);
+  }
 }
+void main (){
+  print(Strings.welcome);
+  print(Strings.singIn);
+  print(Strings.greet('Gohit'));
+} */
