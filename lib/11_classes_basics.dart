@@ -396,7 +396,7 @@ void main() {
 }
  */
 
-class Cat {
+/* class Cat {
   String name;
   String race;
   int age;
@@ -418,5 +418,12 @@ void main() {
     height: 34.2,
   );
 
-  print("Name of my Cat is ${cat1.name} she has ${cat1.age} years of life and race is ${cat1.race},and has ${cat1.height}");
+  print(
+      "Name of my Cat is ${cat1.name} she has ${cat1.age} years of life and race is ${cat1.race},and has ${cat1.height}");
+}
+ */
+
+//  --- --- --- --- -TODO: 126. Static methods and variables
+void main (){
+  
 }
