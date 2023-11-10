@@ -22,7 +22,7 @@ void main() {
 
 // --- --- --- -TODO: Introduction to inheritance / subclassing
 
-class Animal {
+/* class Animal {
   void sleep() => print('sleep');
 }
 
@@ -50,4 +50,21 @@ void main() {
   cleverDog.bark();
   cleverDog.sleep();
   cleverDog.moo();
+}
+ */
+
+// --- --- --- -TODO: 132. The super constructor
+class Cat {
+  String sleep() => 'Sleeping ehh';
+}
+
+class Dog extends Cat {
+  String eat() => 'Tuna';
+}
+
+void main() {
+  final cat = Cat();
+  final dog = Dog();
+  cat.sleep();
+  print("My cat is so beautiful and she right now she ${cat.sleep()} and she eat ${dog.eat()}");
 }
