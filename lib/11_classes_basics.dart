@@ -466,7 +466,7 @@ void main() {
  */
 
 // --- --- --- -TODO: 127. Private variables and methods
-class BankAccount {
+/* class BankAccount {
   BankAccount(this._balance);
   double _balance;
   double get balance => _balance;
@@ -480,4 +480,4 @@ class BankAccount {
       _balance -= amount;
     }
   }
-}
+} */
