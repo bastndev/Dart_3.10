@@ -1,4 +1,4 @@
-class Animal {
+/* class Animal {
   String sleep() {
     print('Sleep');
     return 'is sleeping';
@@ -17,4 +17,16 @@ void main() {
   dog.bark();
 
   print("My dog ${dog.sleep()}");
+}
+ */
+
+// --- --- --- -TODO: Introduction to inheritance / subclassing
+
+class Animal {
+  void sleep() => print('sleep');
+}
+
+void main() {
+  final animal = Animal();
+  animal.sleep();
 }
