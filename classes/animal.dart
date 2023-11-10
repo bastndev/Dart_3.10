@@ -25,8 +25,14 @@ void main() {
 class Animal {
   void sleep() => print('sleep');
 }
+class Dog extends Animal {
+  void bark() => print('Bark');
+}
 
 void main() {
   final animal = Animal();
   animal.sleep();
+  final dog = Dog();
+  dog.bark();
+  dog.sleep();
 }
