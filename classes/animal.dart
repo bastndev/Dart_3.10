@@ -62,9 +62,13 @@ class Dog extends Cat {
   String eat() => 'Tuna';
 }
 
+class Human extends Dog {
+  double height() => 23.2;
+}
 void main() {
   final cat = Cat();
   final dog = Dog();
+  final human = Human();
   cat.sleep();
-  print("My cat is so beautiful and she right now she ${cat.sleep()} and she eat ${dog.eat()}");
+  print("My cat is so beautiful and she right now she ${cat.sleep()} and she eat ${dog.eat()} an tall is ${human.height()}");
 }
