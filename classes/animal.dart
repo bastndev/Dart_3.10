@@ -53,7 +53,6 @@ void main() {
 }
  */
 
-
 /* class Cat {
   String sleep() => 'Sleeping ehh';
 }
@@ -112,5 +111,3 @@ void main() {
   cleverDog.sleep();
   cleverDog.moo();
 }
-
-
