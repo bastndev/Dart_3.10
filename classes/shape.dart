@@ -1,5 +1,5 @@
-//--- --- --- -TODO: 134. Abstract classes
-abstract class Shape {
+//--- --- --- -TODO: 134. Abstract classes erencias
+/* abstract class Shape {
   double get area;
 }
 
@@ -33,4 +33,7 @@ void main() {
     Circle(3),
   ];
   shapes.forEach(printArea);
-}
+} */
+
+//--- --- --- -FIXME: 135. [Exercise] Area and Perimeter
+
