@@ -1,16 +1,16 @@
 //--- --- --- -TODO: 134. Abstract classes
 abstract class Shape {
-  int get area;
+  double get area;
 }
 class Square extends Shape {
   Square(this.side);
-  final int side;
+  final double side;
 
   @override
-  int get area => side * side;
+  double get area => side * side;
 }
 
 void main() {
-  final square = Square(5);
+  final square = Square(10);
   print(square.area);
 }
