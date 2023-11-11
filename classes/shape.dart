@@ -47,7 +47,7 @@ class Square extends Shape {
   final double side;
 
   @override
-  double get area => side * side;
+  double get area => 2 * side;
 }
 
 class Circle extends Shape {
@@ -55,7 +55,26 @@ class Circle extends Shape {
   final double radius;
 
   @override
-  double get area => pi * radius * radius;
+  double get area => 2 * pi * radius;
 }
 
-void main() {}
+class Perimeter extends Shape {
+  Perimeter(this.perimeter);
+  final double perimeter;
+
+  @override
+  double get area => 4 * pi * perimeter;
+}
+
+void printValues(Shape shape) {
+  print(shape.area);
+}
+
+void main() {
+  final shapes = [
+    Square(2),
+    Circle(3),
+    Perimeter(4),
+  ];
+  shapes.forEach(printValues);
+}
