@@ -1,12 +1,16 @@
 // --- --- --- -TODO: 138. The toString() method
 class Point {
-  Point(this.x, this.y);
+  const Point(this.x, this.y);
 
   final int x;
   final int y;
+
+  @override
+  String toString() => 'Point($x, $y)';
 }
 
 void main() {
-  var myPoint = Point(1, 1);
-  print("x: ${myPoint.x}, y: ${myPoint.y}");
+  print(Point(1, 1));
+  const list = [Point(1, 2), Point(3, 4)];
+  print(list);
 }
