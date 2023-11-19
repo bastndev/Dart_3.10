@@ -1,5 +1,5 @@
 // --- --- --- -TODO: 138. The toString() method
-class Point {
+/* class Point {
   const Point(this.x, this.y);
 
   final int x;
@@ -14,3 +14,4 @@ void main() {
   const list = [Point(1, 2), Point(3, 4)];
   print(list);
 }
+ */
