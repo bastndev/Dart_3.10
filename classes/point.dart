@@ -117,7 +117,7 @@ void main() {
   print(Point(2, 1) * 5);
 } */
 
-class Point {
+/* class Point {
   const Point(this.x, this.y);
   final int x, y;
 
@@ -133,4 +133,33 @@ void main() {
   print(Point(1, 1) + Point(2, 0));
   print(Point(2, 1) * 5);
 }
+ */
+class Point {
+  const Point(this.x, this.y);
 
+  final int x, y;
+
+  @override
+  String toString() => 'Point($x, $y)';
+
+  @override
+  bool operator ==(covariant Point other) {
+    return x == other.x && y == other.y;
+  }
+
+  Point operator +(covariant Point other) {
+    return Point(x + other.x, y + other.y);
+  }
+
+  Point operator *(int other) {
+    return Point(x * other, y * other);
+  }
+}
+
+void main() {
+  final sumResult = Point(1, 1) + Point(2, 0);
+  final multiplyResult = Point(2, 1) * 5;
+
+  print('Sum Result: $sumResult');
+  print('Multiply Result: $multiplyResult');
+}
