@@ -89,7 +89,7 @@ void main() {
 } */
 
 // --- --- --- -FIXME: 140. [Exercise] Implement the + and * operators
-class Point {
+/* class Point {
   const Point(this.x, this.y);
 
   final int x;
@@ -115,4 +115,22 @@ class Point {
 void main() {
   print(Point(1, 1) + Point(2, 0));
   print(Point(2, 1) * 5);
+} */
+
+class Point {
+  const Point(this.x, this.y);
+  final int x, y;
+
+  @override
+  String toString() => 'Point($x, $y)';
+  @override
+  bool operator ==(covariant Point other) => x == other.x && y == other.y;
+  Point operator +(covariant Point other) => Point(x + other.x, y + other.y);
+  Point operator *(int other) => Point(x * other, y * other);
 }
+
+void main() {
+  print(Point(1, 1) + Point(2, 0));
+  print(Point(2, 1) * 5);
+}
+
