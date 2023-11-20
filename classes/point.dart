@@ -134,7 +134,7 @@ void main() {
   print(Point(2, 1) * 5);
 }
  */
-class Point {
+/* class Point {
   const Point(this.x, this.y);
 
   final int x, y;
@@ -162,4 +162,4 @@ void main() {
 
   print('Sum Result: $sumResult');
   print('Multiply Result: $multiplyResult');
-}
+} */
