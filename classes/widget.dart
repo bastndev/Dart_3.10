@@ -19,7 +19,7 @@ void main() {
 }
  */
 abstract class Widget {
-  void build(); // Agregamos un método abstracto
+  void build();
 }
 
 class Text extends Widget {
@@ -28,7 +28,6 @@ class Text extends Widget {
 
   @override
   void build() {
-    // Implementación del método abstracto
     print('Building Text widget with text: $text');
   }
 }
@@ -40,7 +39,6 @@ class Button extends Widget {
 
   @override
   void build() {
-    // Implementación del método abstracto
     print('Building Button widget');
   }
 }
@@ -51,7 +49,6 @@ void main() {
     onPressed: (() => print('Button pressed')),
   );
 
-  // Llamamos al método build en lugar de imprimir directamente
   button.build();
-  button.child.build(); // También llamamos al método build en el widget hijo
+  button.child.build();
 }
