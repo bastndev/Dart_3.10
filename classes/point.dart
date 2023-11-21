@@ -186,6 +186,6 @@ class Point extends Equatable {
 }
 
 void main() {
-  print(Point(1, 1) + Point(2, 0));
+  print(Point(1, 1) == Point(1, 1));
   print(Point(2, 1) * 5);
 }
