@@ -171,19 +171,10 @@ class Point extends Equatable {
   final int y;
 
   @override
-  // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [x, y];
 
   @override
   String toString() => 'Point($x, $y)';
-
-  @override
-  int get hashCode => super.hashCode;
-
-  @override
-  bool operator ==(covariant Point other) {
-    return x == other.x && y == other.y;
-  }
 
   Point operator +(covariant Point other) {
     return Point(x + other.x, y + other.y);
