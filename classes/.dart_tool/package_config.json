@@ -2,6 +2,24 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "collection",
+      "rootUri": "file:///C:/Users/gohit/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///C:/Users/gohit/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///C:/Users/gohit/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "pedantic",
       "rootUri": "file:///C:/Users/gohit/AppData/Local/Pub/Cache/hosted/pub.dev/pedantic-1.11.1",
       "packageUri": "lib/",
@@ -14,7 +32,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2023-11-10T15:27:00.769723Z",
+  "generated": "2023-11-21T21:46:57.596833Z",
   "generator": "pub",
   "generatorVersion": "3.1.3"
 }

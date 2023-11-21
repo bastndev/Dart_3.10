@@ -163,10 +163,16 @@ void main() {
   print('Sum Result: $sumResult');
   print('Multiply Result: $multiplyResult');
 } */
-class Point {
+import 'package:equatable/equatable.dart';
+
+class Point extends Equatable {
   const Point(this.x, this.y);
   final int x;
   final int y;
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
 
   @override
   String toString() => 'Point($x, $y)';
