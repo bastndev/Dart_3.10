@@ -12,4 +12,8 @@ void main() {
   stack.push(2);
   print(stack.pop());
   print(stack.pop());
+  final name = Stack<String>();
+  name.push('Gohit');
+  name.push('Melody');
+  print(name.pop());
 }
