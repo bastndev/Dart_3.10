@@ -1,5 +1,10 @@
 import 'dart:math';
 
+class ClosedPath2 {
+  const ClosedPath2(this.points);
+  final List<Point> points;
+}
+
 class ClosedPath {
   List<Point> _points = [];
 
@@ -13,11 +18,10 @@ class ClosedPath {
 }
 
 void main() {
-  final path = ClosedPath();
-
-  path.moveTo(Point(0, 0));
-  path.lineTo(Point(2, 0));
-  path.lineTo(Point(2, 2));
-  path.lineTo(Point(0, 2));
-  path.lineTo(Point(0, 0));
+  final path = ClosedPath()
+    ..moveTo(Point(0, 0))
+    ..lineTo(Point(2, 0))
+    ..lineTo(Point(2, 2))
+    ..lineTo(Point(0, 2))
+    ..lineTo(Point(0, 0));
 }
