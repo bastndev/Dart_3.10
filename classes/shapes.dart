@@ -192,3 +192,19 @@ void main() {
 } */
 
 //--- --- -FIXME: 145. [Exercise] JSON Serialization
+class Person {
+  Person({required this.name, required this.age});
+  final String name;
+  final int age;
+  //-TODO: Implement fromJson
+  //-TODO: Implement toJson
+}
+
+void main() {
+  final person = Person.fromJson({
+    'name': 'Gohit',
+    'age:': 25,
+  });
+  final json = person.toJson();
+  print(json);
+}
