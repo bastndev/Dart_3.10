@@ -1,12 +1,11 @@
 // --- --- -TODO: 144. Factory constructors and reading JSON data
-import 'dart:ffi';
 import 'dart:math';
 
-abstract class Shapes {
+abstract class Shape {
   double get area;
-  const Shapes();
+  const Shape();
 
-  factory Shapes.fromJson(Map<String, Object> json) {
+  factory Shape.fromJson(Map<String, Object> json) {
     final type = json['type'];
     switch (type) {
       case 'square':
@@ -27,7 +26,7 @@ abstract class Shapes {
   }
 }
 
-class Square extends Shapes {
+class Square extends Shape {
   Square(this.side);
   final double side;
 
@@ -35,7 +34,7 @@ class Square extends Shapes {
   double get area => side * side;
 }
 
-class Circle extends Shapes {
+class Circle extends Shape {
   Circle(this.radius);
   final double radius;
 
@@ -43,7 +42,7 @@ class Circle extends Shapes {
   double get area => pi * radius * radius;
 }
 
-void printArea(Shapes shape) {
+void printArea(Shape shape) {
   print(shape.area);
 }
 
@@ -54,8 +53,10 @@ void main() {
       'side': 10.0,
     },
     {
-      'type': 'Circle',
-      'side': 5.0,
+      'type': 'circle',
+      'radius': 5.0,
     }
   ];
+  final shapes = shapesJson.map((shapeJson) => Shape.fromJson(shapeJson));
+  shapes.forEach(printArea);
 }
