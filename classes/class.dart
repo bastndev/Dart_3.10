@@ -2,7 +2,7 @@ class Animal {
   late String name;
   late String type;
 
-  Animal({required String name,  String type = ''}) {
+  Animal({required String name, String type = ''}) {
     this.name = name;
     this.type = type;
   }
