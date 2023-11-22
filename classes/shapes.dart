@@ -128,7 +128,7 @@ void main() {
 } */
 //--- -FIXME: recommend
 
-import 'dart:math';
+/* import 'dart:math';
 
 abstract class Shape {
   double get area;
@@ -189,4 +189,4 @@ void main() {
 
   final shapes = shapesJson.map((shapeJson) => Shape.fromJson(shapeJson));
   shapes.forEach(printArea);
-}
+} */
