@@ -190,3 +190,5 @@ void main() {
   final shapes = shapesJson.map((shapeJson) => Shape.fromJson(shapeJson));
   shapes.forEach(printArea);
 } */
+
+//--- --- -FIXME: 145. [Exercise] JSON Serialization
