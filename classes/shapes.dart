@@ -196,15 +196,29 @@ class Person {
   Person({required this.name, required this.age});
   final String name;
   final int age;
-  //-TODO: Implement fromJson
-  //-TODO: Implement toJson
+
+  factory Person.fromJson(Map<String, Object> json) {
+    final name = json['name'];
+    final age = json['age'];
+    if (name is String && age is int) {
+      return Person(name: name, age: age);
+    }
+    throw StateError('could Not read or name is not');
+  }
+
+  Map<String, Object> toJson() => {
+        'name': name,
+        'age': age,
+      };
 }
 
 void main() {
-  final person = Person.fromJson({
-    'name': 'Gohit',
-    'age:': 25,
-  });
+  final person = Person.fromJson(
+    {
+      'name': 'Gohit',
+      'age': 25,
+    },
+  );
   final json = person.toJson();
   print(json);
 }
