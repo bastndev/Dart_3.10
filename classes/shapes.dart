@@ -1,36 +1,27 @@
 import 'dart:math';
 
-abstract class Shape {
+abstract class Shapes {
   double get area;
-  double get perimeter;
-
-  void printValues() {
-    print('area: $area, perimeter: $perimeter');
-  }
 }
 
-class Square extends Shape {
+class Square extends Shapes {
   Square(this.side);
   final double side;
 
   @override
   double get area => side * side;
-
-  @override
-  double get perimeter => 4 * side;
 }
 
-class Circle extends Shape {
+class Circle extends Shapes {
   Circle(this.radius);
   final double radius;
 
   @override
   double get area => pi * radius * radius;
-
-  @override
-  double get perimeter => 2 * pi * radius;
 }
 
-void main() {
-
+void printArea(Shapes shape) {
+  print(shape.area);
 }
+
+void main() {}
