@@ -58,3 +58,8 @@ class Animal {
     print("Hello: ${name} ${lastName}");
   }
 }
+
+void main() {
+  Animal animal = Animal(name: 'Lion', lastName: 'Cerpa');
+  animal.greet();
+}
