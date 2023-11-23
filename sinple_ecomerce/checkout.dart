@@ -7,7 +7,8 @@ class Product {
   final String name;
   final int id;
 
-  String get displayName => '$name: \$price';
+  String get displayName => '($initial)${name.substring(1)}: \$price';
+  String get initial => name.substring(0, 1);
 }
 
 class Item {
@@ -59,4 +60,9 @@ void main() {
   }
 }
 
-Product? chooseProduct() {}
+Product? chooseProduct() {
+  final productList =
+      allProducts.map((product) => product.displayName).join('\n');
+  stdout.write('Available products: \n$productList\nYour choice:');
+  final line = stdin.readLineSync();
+}
