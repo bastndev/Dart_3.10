@@ -18,3 +18,16 @@ class Item {
 class Cart {
   //-TODO:  Items collection
 }
+
+//loop
+//   prompt: view card / and item / checkout 
+//   if  selection == add item
+//    choose a product
+//    add  it to the  cart
+//   else if selection == view card
+//    print cart
+//   else if selection == checkout
+//    do checkout
+//    exit
+//   end
+
