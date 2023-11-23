@@ -33,7 +33,7 @@ void main() {
 }
  */
 
-class Person {
+/* class Person {
   String name;
   String lastName;
 
@@ -47,4 +47,4 @@ class Person {
 void main() {
   Person person = Person("Luis", "Cerpa");
   person.greet();
-}
+} */
