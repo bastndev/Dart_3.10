@@ -31,3 +31,7 @@ class Cart {
 //    exit
 //   end
 
+void main () {
+  
+}
+
