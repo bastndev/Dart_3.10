@@ -17,7 +17,7 @@ void main() {
  */
 
 //-TODO: Class 2
-class Animal {
+/* class Animal {
   late String name;
   late String type;
 
@@ -31,3 +31,4 @@ void main() {
   Animal animal = Animal(name: 'Lion');
   print('Animal: ${animal.name} - ${animal.type}');
 }
+ */
