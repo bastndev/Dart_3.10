@@ -14,3 +14,7 @@ class Item {
 
   double get price => quantity * product.price;
 }
+
+class Cart {
+  //-TODO:  Items collection
+}
