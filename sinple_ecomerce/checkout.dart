@@ -6,6 +6,8 @@ class Product {
   final double price;
   final String name;
   final int id;
+
+  String get displayName => '$name: \$price';
 }
 
 class Item {
@@ -56,3 +58,5 @@ void main() {
     }
   }
 }
+
+Product? chooseProduct() {}
