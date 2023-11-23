@@ -47,7 +47,7 @@ class Cart {
 
     final itemizedList =
         _items.values.map((item) => item.toString()).join('\n');
-    return '$itemizedList\nTotal: \${total()}';
+    return '--- ---$itemizedList\nTotal: \${total()}--- ---';
   }
 }
 
@@ -73,6 +73,7 @@ const allProducts = [
 //   end
 
 void main() {
+  final cart = Cart();
   while (true) {
     stdout.write(
         'What do you want to do? (v)iew items, (a)dd items, (c)hechout:');
@@ -80,10 +81,11 @@ void main() {
     if (line == 'a') {
       final product = chooseProduct();
       if (product != null) {
-        print(product.displayName);
+        cart.addProduct(product);
+        print(cart);
       }
     } else if (line == 'v') {
-      //-TODO: Implement
+      print(cart);
     } else if (line == 'c') {
       //-TODO: Implement
     }
