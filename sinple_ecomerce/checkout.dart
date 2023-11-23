@@ -65,4 +65,11 @@ Product? chooseProduct() {
       allProducts.map((product) => product.displayName).join('\n');
   stdout.write('Available products: \n$productList\nYour choice:');
   final line = stdin.readLineSync();
+  for (var product in allProducts) {
+    if (product.initial == line) {
+      return product;
+    }
+  }
+  print('Not found');
+  return null;
 }
