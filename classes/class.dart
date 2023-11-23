@@ -119,11 +119,12 @@ class Love {
   final String country;
   final int kilometers;
 
-  void lvlup (){
-    print("My love is in ${country} to ${kilometers}");
+  void lvlup() {
+    print("My love is in ${country} to ${kilometers}/km");
   }
 }
 
 void main() {
-  
+  Love loves = Love(country: 'Asia', kilometers: 700);
+  loves.lvlup();
 }
