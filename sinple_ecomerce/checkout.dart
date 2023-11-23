@@ -1,7 +1,7 @@
 import 'dart:io';
 
 class Product {
-  Product({required this.id, required this.name, required this.price});
+  const Product({required this.price, required this.name, required this.id});
 
   final double price;
   final String name;
@@ -20,6 +20,15 @@ class Item {
 class Cart {
   //-TODO:  Items collection
 }
+
+const allProducts = [
+  Product(id: 1, name: 'apples', price: 1.60),
+  Product(id: 2, name: 'bananas', price: 0.70),
+  Product(id: 3, name: 'courgettes', price: 1.0),
+  Product(id: 4, name: 'grapes', price: 2.00),
+  Product(id: 5, name: 'mushrooms', price: 0.80),
+  Product(id: 6, name: 'potatoes', price: 1.50),
+];
 
 //loop
 //   prompt: view card / and item / checkout
