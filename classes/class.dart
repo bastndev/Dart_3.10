@@ -80,7 +80,7 @@ void main() {
   car.hello();
 } */
 
-class Car {
+/* class Car {
   late String model;
   late int year;
 
@@ -94,4 +94,4 @@ class Car {
 void main() {
   Car car = Car(model: 'Mercedes', year: 1998);
   car.hello();
-}
+} */
