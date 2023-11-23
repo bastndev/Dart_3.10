@@ -21,7 +21,16 @@ class Item {
 }
 
 class Cart {
-  //-TODO:  Items collection
+  final Map<int, Item> _items = {};
+
+  void addProduct(Product product) {
+    final item = _items[product.id];
+    if (item == null) {
+      _items[product.id] = Item(product: product, quantity: 1);
+    } else {
+      _items[product.id] = Item(product: product, quantity: item.quantity + 1);
+    }
+  }
 }
 
 const allProducts = [
