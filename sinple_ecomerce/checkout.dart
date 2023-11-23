@@ -51,7 +51,10 @@ void main() {
         'What do you want to do? (v)iew items, (a)dd items, (c)hechout:');
     final line = stdin.readLineSync();
     if (line == 'a') {
-      //-TODO: Implement
+      final product = chooseProduct();
+      if (product != null) {
+        print(product.displayName);
+      }
     } else if (line == 'v') {
       //-TODO: Implement
     } else if (line == 'c') {
