@@ -11,4 +11,6 @@ class Item {
 
   final Product product;
   final int quantity;
+
+  double get price => quantity * product.price;
 }
