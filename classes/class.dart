@@ -49,7 +49,7 @@ void main() {
   person.greet();
 } */
 
-class Animal {
+/* class Animal {
   Animal({required this.name, required this.lastName});
   final String name;
   final String lastName;
@@ -62,4 +62,17 @@ class Animal {
 void main() {
   Animal animal = Animal(name: 'Lion', lastName: 'Cerpa');
   animal.greet();
+} */
+
+class Car {
+  late String model;
+  late int year;
+
+  void hello() {
+    print("I love this is car: ${model} ${year}");
+  }
+}
+
+void main (){
+  
 }
