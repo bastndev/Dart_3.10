@@ -7,7 +7,7 @@ class Product {
   final String name;
   final int id;
 
-  String get displayName => '($initial)${name.substring(1)}: \$${price}';
+  String get displayName => '($initial)${name.substring(1)}: \$$price';
   String get initial => name.substring(0, 1);
 }
 
@@ -18,6 +18,9 @@ class Item {
   final int quantity;
 
   double get price => quantity * product.price;
+
+  @override
+  String toString() => '$quantity X ${product.name}: \$$price';
 }
 
 class Cart {
@@ -30,6 +33,21 @@ class Cart {
     } else {
       _items[product.id] = Item(product: product, quantity: item.quantity + 1);
     }
+  }
+
+  double total() => _items.values
+      .map((item) => item.price)
+      .reduce((value, element) => value + element);
+
+  @override
+  String toString() {
+    if (_items.isEmpty) {
+      return 'Cart is empty';
+    }
+
+    final itemizedList =
+        _items.values.map((item) => item.toString()).join('\n');
+    return '$itemizedList\nTotal: \${total()}';
   }
 }
 
