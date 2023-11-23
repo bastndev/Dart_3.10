@@ -97,12 +97,17 @@ void main() {
 } */
 
 class Books {
-  Books({required this.model, required this.year});
+  Books({required this.name, required this.year});
 
-  final String model;
+  final String name;
   final int year;
 
   void read() {
-    print("Hello my name is Gohit, and I love read ${model} of ${year}");
+    print("Hello my name is Gohit, and I love read ${name} of ${year}");
   }
+}
+
+void main() {
+  Books book = Books(name: 'I love Mel', year: 2023);
+  book.read();
 }
