@@ -7,7 +7,7 @@ class Product {
   final String name;
   final int id;
 
-  String get displayName => '($initial)${name.substring(1)}: \$price';
+  String get displayName => '($initial)${name.substring(1)}: \$${price}';
   String get initial => name.substring(0, 1);
 }
 
