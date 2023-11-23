@@ -1,3 +1,5 @@
+import 'dart:io';
+
 class Product {
   Product({required this.id, required this.name, required this.price});
 
@@ -20,7 +22,7 @@ class Cart {
 }
 
 //loop
-//   prompt: view card / and item / checkout 
+//   prompt: view card / and item / checkout
 //   if  selection == add item
 //    choose a product
 //    add  it to the  cart
@@ -31,7 +33,17 @@ class Cart {
 //    exit
 //   end
 
-void main () {
-  
+void main() {
+  while (true) {
+    stdout.write(
+        'What do you want to do? (v)iew items, (a)dd items, (c)hechout:');
+    final line = stdin.readLineSync();
+    if (line == 'a') {
+      //-TODO: Implement
+    } else if (line == 'v') {
+      //-TODO: Implement
+    } else if (line == 'c') {
+      //-TODO: Implement
+    }
+  }
 }
-
