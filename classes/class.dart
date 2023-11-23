@@ -155,7 +155,39 @@ class Person {
   }
 }
 
+abstract class Auto {
+  void start() {}
+  void end() {}
+}
+
+class Modern extends Auto {
+  // @override
+  void start() {
+    print("this is car Started");
+  }
+
+  void end() {
+    print("this is car End");
+  }
+}
+
+class Vintage {
+  void start() {
+    print("Vintage cars Started");
+  }
+
+  void end() {
+    print("Vintage cars End2");
+  }
+}
+
 void main() {
   Person person = Person('Gohit', 'Arhuire');
   person.greet();
+
+  Modern car = Modern();
+  car.start();
+
+  Vintage car2 = Vintage();
+  car2.end();
 }
