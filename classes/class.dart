@@ -95,3 +95,14 @@ void main() {
   Car car = Car(model: 'Mercedes', year: 1998);
   car.hello();
 } */
+
+class Books {
+  Books({required this.model, required this.year});
+
+  final String model;
+  final int year;
+
+  void read() {
+    print("Hello my name is Gohit, and I love read ${model} of ${year}");
+  }
+}
