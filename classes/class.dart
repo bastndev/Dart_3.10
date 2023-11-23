@@ -64,7 +64,7 @@ void main() {
   animal.greet();
 } */
 
-class Car {
+/* class Car {
   late String model;
   late int year;
 
@@ -77,5 +77,21 @@ void main() {
   Car car = Car();
   car.model = 'Mercedes';
   car.year = 1998;
+  car.hello();
+} */
+
+class Car {
+  late String model;
+  late int year;
+
+  Car({required this.model, required this.year});
+
+  void hello() {
+    print("I love this car: $model of $year");
+  }
+}
+
+void main() {
+  Car car = Car(model: 'Mercedes', year: 1998);
   car.hello();
 }
