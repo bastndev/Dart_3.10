@@ -32,3 +32,19 @@ void main() {
   print('Animal: ${animal.name} - ${animal.type}');
 }
  */
+
+class Person {
+  String name;
+  String lastName;
+
+  Person(this.name, this.lastName);
+
+  void greet() {
+    print('Hello: ${name} ${lastName}');
+  }
+}
+
+void main() {
+  Person person = Person("Luis", "Cerpa");
+  person.greet();
+}
