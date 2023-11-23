@@ -96,7 +96,7 @@ void main() {
   car.hello();
 } */
 
-class Books {
+/* class Books {
   Books({required this.name, required this.year});
 
   final String name;
@@ -110,4 +110,20 @@ class Books {
 void main() {
   Books book = Books(name: 'I love Mel', year: 2023);
   book.read();
+}
+ */
+
+class Love {
+  Love({required this.country, required this.kilometers});
+
+  final String country;
+  final int kilometers;
+
+  void lvlup (){
+    print("My love is in ${country} to ${kilometers}");
+  }
+}
+
+void main() {
+  
 }
