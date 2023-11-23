@@ -145,7 +145,7 @@ void main() {
   print('She live in: ${asia.country} to ${asia.kilometers}');
 } */
 
-class Person {
+/* class Person {
   final String name;
   final String lastName;
   Person(this.name, this.lastName);
@@ -190,4 +190,4 @@ void main() {
 
   Vintage car2 = Vintage();
   car2.end();
-}
+} */
