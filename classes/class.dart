@@ -131,8 +131,8 @@ void main() {
  */
 
 class Love {
-  late String country;
   late int kilometers;
+  late String country;
 
   Love({required String country, int kilometers = 0}) {
     this.country = country;
@@ -141,6 +141,6 @@ class Love {
 }
 
 void main() {
-  Love asia = Love(country: 'Asia', kilometers: 700);
+  Love asia = Love(country: 'Asia', );
   print('She live in: ${asia.country} to ${asia.kilometers}');
 }
