@@ -48,3 +48,13 @@ void main() {
   Person person = Person("Luis", "Cerpa");
   person.greet();
 } */
+
+class Animal {
+  Animal({required this.name, required this.lastName});
+  final String name;
+  final String lastName;
+
+  void greet() {
+    print("Hello: ${name} ${lastName}");
+  }
+}
