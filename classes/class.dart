@@ -69,10 +69,13 @@ class Car {
   late int year;
 
   void hello() {
-    print("I love this is car: ${model} ${year}");
+    print("I love this car: ${model} of ${year}");
   }
 }
 
-void main (){
-  
+void main() {
+  Car car = Car();
+  car.model = 'Mercedes';
+  car.year = 1998;
+  car.hello();
 }
