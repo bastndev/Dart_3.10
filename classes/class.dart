@@ -113,7 +113,7 @@ void main() {
 }
  */
 
-class Love {
+/* class Love {
   Love({required this.country, required this.kilometers});
 
   final String country;
@@ -127,4 +127,20 @@ class Love {
 void main() {
   Love loves = Love(country: 'Asia', kilometers: 700);
   loves.lvlup();
+}
+ */
+
+class Love {
+  late String country;
+  late int kilometers;
+
+  Love({required String country, int kilometers = 0}) {
+    this.country = country;
+    this.kilometers = kilometers;
+  }
+}
+
+void main() {
+  Love asia = Love(country: 'Asia', kilometers: 700);
+  print('She live in: ${asia.country} to ${asia.kilometers}');
 }
