@@ -130,7 +130,7 @@ void main() {
 }
  */
 
-class Love {
+/* class Love {
   late int kilometers;
   late String country;
 
@@ -143,4 +143,18 @@ class Love {
 void main() {
   Love asia = Love(country: 'Asia', );
   print('She live in: ${asia.country} to ${asia.kilometers}');
+} */
+
+class Person {
+  final String name;
+  final String lastName;
+  Person(this.name, this.lastName);
+
+  void greet (){
+    print("Hello: ${name} ${lastName}");
+  }
+}
+
+void main() {
+  
 }
