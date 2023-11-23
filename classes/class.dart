@@ -150,11 +150,12 @@ class Person {
   final String lastName;
   Person(this.name, this.lastName);
 
-  void greet (){
+  void greet() {
     print("Hello: ${name} ${lastName}");
   }
 }
 
 void main() {
-  
+  Person person = Person('Gohit', 'Arhuire');
+  person.greet();
 }
