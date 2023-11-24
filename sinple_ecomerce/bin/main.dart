@@ -1,57 +1,7 @@
 import 'dart:io';
 
-class Product {
-  const Product({required this.price, required this.name, required this.id});
-
-  final double price;
-  final String name;
-  final int id;
-
-  String get displayName => '($initial)${name.substring(1)}: \$$price';
-  String get initial => name.substring(0, 1);
-}
-
-class Item {
-  Item({required this.product, required this.quantity});
-
-  final Product product;
-  final int quantity;
-
-  double get price => quantity * product.price;
-
-  @override
-  String toString() => '$quantity X ${product.name}: \$$price';
-}
-
-class Cart {
-  final Map<int, Item> _items = {};
-
-  void addProduct(Product product) {
-    final item = _items[product.id];
-    if (item == null) {
-      _items[product.id] = Item(product: product, quantity: 1);
-    } else {
-      _items[product.id] = Item(product: product, quantity: item.quantity + 1);
-    }
-  }
-
-  bool get isEmpty => _items.isEmpty;
-
-  double total() => _items.values
-      .map((item) => item.price)
-      .reduce((value, element) => value + element);
-
-  @override
-  String toString() {
-    if (_items.isEmpty) {
-      return 'Cart is empty';
-    }
-
-    final itemizedList =
-        _items.values.map((item) => item.toString()).join('\n');
-    return '--- - ---\n$itemizedList\nTotal: \$${total()}\n--- - ---';
-  }
-}
+import 'package:test/cart.dart';
+import 'package:test/product.dart';
 
 const allProducts = [
   Product(id: 1, name: 'apples', price: 1.60),
