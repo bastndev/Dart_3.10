@@ -89,7 +89,9 @@ void main() {
     } else if (line == 'v') {
       print(cart);
     } else if (line == 'c') {
-      //-TODO: Implement
+      if (checkout(cart)) {
+        break;
+      }
     }
   }
 }
@@ -129,7 +131,7 @@ bool checkout(Cart cart) {
     final change = paid - total;
     print('Change: \$${change.toStringAsFixed(2)}');
     return true;
-  }else{
+  } else {
     print('Not enough cash');
     return false;
   }
