@@ -35,6 +35,8 @@ class Cart {
     }
   }
 
+  bool get isEmpty => _items.isEmpty;
+
   double total() => _items.values
       .map((item) => item.price)
       .reduce((value, element) => value + element);
@@ -104,4 +106,27 @@ Product? chooseProduct() {
   }
   print('Not found');
   return null;
+}
+
+bool checkout(Cart cart) {
+  if (cart.isEmpty) {
+    print('Cart is empty');
+    return false;
+  }
+
+  final total = cart.total();
+  print('Total: \$$total');
+  stdout.write('payment in cash');
+  final line = stdin.readLineSync();
+  if (line == null || line.isEmpty) {
+    return false;
+  }
+  final paid = double.tryParse(line);
+  if (paid == null) {
+    return false;
+  }
+  if (paid >= total) {
+    final change = paid - total;
+    print('Change: \$${change.toStringAsFixed(2)}');
+  }
 }
