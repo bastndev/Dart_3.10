@@ -128,5 +128,9 @@ bool checkout(Cart cart) {
   if (paid >= total) {
     final change = paid - total;
     print('Change: \$${change.toStringAsFixed(2)}');
+    return true;
+  }else{
+    print('Not enough cash');
+    return false;
   }
 }
