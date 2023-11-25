@@ -10,3 +10,8 @@ class Foo with Mixin, Mixin2 {
     print(foo);
   }
 }
+
+void main() {
+  final foo = Foo();
+  foo.printFoo();
+}
