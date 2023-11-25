@@ -5,7 +5,7 @@ mixin Mixin2 {
   int foo = 2;
 }
 
-class Foo with Mixin, Mixin2 {
+class Foo with Mixin2, Mixin {
   void printFoo() {
     print(foo);
   }
