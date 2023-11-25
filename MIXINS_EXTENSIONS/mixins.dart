@@ -19,9 +19,10 @@ void main() {
   human.swim();
 }
  */
-mixin Breathing {
+class Breathing {
   void swim() => print('breathing');
 }
+
 mixin Swimming {
   void swim() => print('Swimming');
 }
@@ -33,8 +34,6 @@ class Fish extends Animal with Swimming {}
 class Human extends Animal with Swimming {}
 
 void main() {
-  final fish = Fish();
-  fish.swim();
-  final human = Fish();
-  human.swim();
+/*   final breathing = Breathing();
+  final swimming= Swimming(); */
 }
