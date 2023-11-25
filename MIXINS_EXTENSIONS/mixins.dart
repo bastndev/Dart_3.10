@@ -26,7 +26,7 @@ mixin Swimming {
   void swim() => print('Swimming');
 }
 
-class Animal {}
+class Animal with Breathing {}
 
 class Fish extends Animal with Swimming {}
 
