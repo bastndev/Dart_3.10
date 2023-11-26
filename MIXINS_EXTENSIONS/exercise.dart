@@ -56,7 +56,9 @@ void main() {
     print(e);
   }
 } */
-extension Number on num {
+
+//-- -- -- -FIXME: Analytics
+/* extension Number on num {
   List<num> numberTo(num other) {
     if (other < this) {
       return [];
@@ -76,4 +78,13 @@ void main() {
   for (var e in 1.5.numberTo(6.5)) {
     print(e);
   }
+} */
+
+//--- --- --- TODO: Practice num
+num sumaNumbers(num a, num b) {
+  return a + b;
+}
+
+void main() {
+  print(sumaNumbers(5, 3.5)); 
 }
