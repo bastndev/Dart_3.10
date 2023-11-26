@@ -38,7 +38,7 @@ void main() {
   // output [1, 2, 3, 4 , 5]
 } */
 
-extension Number on int {
+/* extension Number on int {
   List<int> numberTo(int other) {
     if (other < this) {
       return [];
@@ -53,6 +53,27 @@ extension Number on int {
 
 void main() {
   for (var e in 1.numberTo(6)) {
+    print(e);
+  }
+} */
+extension Number on num {
+  List<num> numberTo(num other) {
+    if (other < this) {
+      return [];
+    }
+    
+    var list = [this];
+    
+    for (var e = this + 1; e <= other; e++) {
+      list.add(e);
+    }
+    
+    return list;
+  }
+}
+
+void main() {
+  for (var e in 1.5.numberTo(6.5)) {
     print(e);
   }
 }
