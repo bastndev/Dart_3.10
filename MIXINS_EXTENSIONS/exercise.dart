@@ -104,11 +104,19 @@ void main() {
   print(suma(10, 10));
 } */
 
-int suma(int a, int b) => a + b;
+/* int suma(int a, int b) => a + b;
 
 void main() {
   print("The sum is: ${suma(2, 2)}");
+} */
+
+/* double suma(double a, double b) {
+  return a + b;
 }
+
+void main() {
+  print("The sum is: ${suma(2, 2)}");
+} */
 
 /* num suma(int a, double b) => a + b;
 
