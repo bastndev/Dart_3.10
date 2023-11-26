@@ -80,11 +80,20 @@ void main() {
   }
 } */
 
-//--- --- --- TODO: Practice num
-num sumaNumbers(num a, num b) {
+//--- --- --- -TODO: Practice num
+/* num sumaNumbers(num a, num b) {
   return a + b;
 }
 
 void main() {
   print(sumaNumbers(5, 3.5)); 
+}
+ */
+
+num suma(num a, num b) {
+  return a + b;
+}
+
+void main() {
+  print(suma(2,3));
 }
