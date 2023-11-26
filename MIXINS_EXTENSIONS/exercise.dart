@@ -123,3 +123,9 @@ void main() {
 void main() {
   print("The sum is: ${suma(2, 2.2)}");
 } */
+
+num sum(int x, int y) => x + y;
+
+void main() {
+  print('Result: ${sum(1, 1999)}');
+}
