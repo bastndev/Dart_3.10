@@ -90,10 +90,16 @@ void main() {
 }
  */
 
-num suma(num a, num b) {
+/* num suma(num a, num b) {
   return a + b;
 }
 
 void main() {
-  print(suma(2,3));
+  print(suma(2, 3));
+} */
+
+num suma(int a, int b) => a + b;
+
+void main() {
+  print(suma(10, 10));
 }
