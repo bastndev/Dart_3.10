@@ -98,8 +98,14 @@ void main() {
   print(suma(2, 3));
 } */
 
-num suma(int a, int b) => a + b;
+/* num suma(int a, int b) => a + b;
 
 void main() {
   print(suma(10, 10));
+} */
+
+num suma(int a, double b) => a + b;
+
+void main() {
+  print("The sum is: ${suma(2, 2.2)}");
 }
