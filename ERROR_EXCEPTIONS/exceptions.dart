@@ -53,7 +53,7 @@ void main() {
 } */
 
 // ignore_for_file: deprecated_member_use
-class Fraction {
+/* class Fraction {
   Fraction(this.numeration, this.denominator) {
     if (denominator == 0) {
       throw IntegerDivisionByZeroException();
@@ -82,4 +82,6 @@ void testFraction() {
 void main() {
   testFraction();
   print('done');
-}
+} */
+
+//--- --- --- -FIXME: Practice
