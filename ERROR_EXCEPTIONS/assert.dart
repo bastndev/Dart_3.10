@@ -39,6 +39,7 @@ void main() {
  */
 
 void main() {
+  // Error
   const list = [1, 2, 3];
   print(list[4]);
 }
