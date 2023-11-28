@@ -186,13 +186,22 @@ void main() {
 }
  */
 
-class Chilita {
-  Chilita(this.name, this.age);
+class Cholita {
+  Cholita(this.name, this.age);
 
   final String name;
   final int age;
 
   bool get hasName {
     return name.isNotEmpty;
+  }
+}
+
+void main() {
+  final cholita = Cholita('Marina', 23);
+  if (cholita.hasName) {
+    print("My name is Cholita ${cholita.name} and I have ${cholita.age} ");
+  } else {
+    print("I don't care, sorry");
   }
 }
