@@ -144,9 +144,10 @@ void main() {
 } */
 
 //--- --- -FIXME: boolean
-class Person {
+
+/* class Person {
   Person(this.num1, this.num2, this.name);
-  final int num1;
+  final int num1; //--Variable
   final int num2;
   final String name;
 
@@ -162,5 +163,24 @@ void main() {
     print("Hello my name is ${person.name} and I'm ${person.value} years old.");
   } else {
     print("Hello, I have no name and I'm ${person.value} years old.");
+  }
+} */
+
+class Person {
+  Person({required this.age, required this.name, required this.height});
+  final int age;
+  final String name;
+  final double height;
+
+  bool get hasName => name.isNotEmpty;
+  int get value => age - 1;
+}
+
+void main() {
+  Person person = Person(age: 26, name: '', height: 1.34);
+  if(person.hasName){
+    print("papi my name is ${person.name} ");
+  }else{
+    print("I don't have name");
   }
 }
