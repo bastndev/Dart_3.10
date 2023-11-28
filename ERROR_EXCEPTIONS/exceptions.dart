@@ -320,3 +320,22 @@ void main() {
   }
 }
  */
+
+
+class Adult {
+  Adult(this.year, this.born);
+
+  final int year;
+  final int born;
+
+  int get value => year - born;
+}
+
+void main() {
+  final born = Adult(2023, 2006);
+  if (born.value >= 18) {
+    print("${born.value} Tu eres mayor de edad");
+  } else {
+    print("Noting to say ;)");
+  }
+}
