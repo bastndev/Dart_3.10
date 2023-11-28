@@ -290,3 +290,21 @@ void main() {
     print(" ${number.esPar} es Impar PE");
   }
 } */
+
+class ParOimpar {
+  ParOimpar(this.number1, this.number2);
+
+  final double number1;
+  final double number2;
+
+  num get esPar => number1 + number2;
+}
+
+void main() {
+  final number = ParOimpar(11, 2);
+  if (number.esPar % 2 == 0) {
+    print("${number.esPar} es par pe papi");
+  } else {
+    print(" no par papaseto");
+  }
+}
