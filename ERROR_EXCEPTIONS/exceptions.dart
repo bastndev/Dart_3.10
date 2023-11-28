@@ -397,13 +397,13 @@ void main() {
   print('${estudiante2.name} es adult: ${estudiante2.esAdult()}');
 }
  */
-class Student {
+/* class Student {
   Student(this.name, this.age);
 
   final String name;
   final int age;
 
-  bool names() {
+  bool ages() {
     return age >= 18;
   }
 }
@@ -412,6 +412,8 @@ void main() {
   Student student1 = Student('Maria', 20);
   Student student2 = Student('Juan', 12);
 
-  print("${student1.name} is adult: ${student1.names()}");
-  print("${student2.name} is adult: ${student2.names()}");
-}
+  print("${student1.name} is adult: ${student1.ages()}");
+  print("${student2.name} is adult: ${student2.ages()}");
+} */
+
+//--- --- --- FIXME: [Exercise] Email validation
