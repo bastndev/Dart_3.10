@@ -208,6 +208,26 @@ void main() {
 
 //--- -TODO: Practice makes perfect
 
+/* class Phones {
+  Phones(this.price1, this.price2, this.price3, this.brand);
+
+  final int price1;
+  final int price2;
+  final int price3;
+  final String brand;
+
+  bool get hasBrand => brand.isNotEmpty;
+}
+
+void main() {
+  final phones = Phones(10, 20, 30, 'Mayer');
+  if (phones.hasBrand) {
+    print('Hello, ${phones.brand}');
+  } else {
+    print('This phone has no name');
+  }
+}
+ */
 class Phones {
   Phones(this.price1, this.price2, this.price3, this.brand);
 
@@ -216,5 +236,14 @@ class Phones {
   final int price3;
   final String brand;
 
-  bool get value => brand.isEmpty;
+  bool get value => brand.isNotEmpty;
+}
+
+void main() {
+  final phones = Phones(10, 20, 30, 'Mayer');
+  if (phones.value) {
+    print('Hello, Mr: ${phones.brand}');
+  } else {
+    print('this is text no have name');
+  }
 }
