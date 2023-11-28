@@ -129,7 +129,7 @@ void main() {
   print("Hello my name is ${person.name} and I'm ${person.value} years old.");
 } */
 
-class Person {
+/* class Person {
   Person(this.num1, this.num2, this.name);
   final int num1;
   final int num2;
@@ -139,6 +139,28 @@ class Person {
 }
 
 void main() {
-  final person = Person(2023, 1998, 'Mayer');
+  final person = Person(2023, 1998, '');
   print("Hello my name is ${person.name} and I'm ${person.value} years old.");
+} */
+
+//--- --- -FIXME: boolean
+class Person {
+  Person(this.num1, this.num2, this.name);
+  final int num1;
+  final int num2;
+  final String name;
+
+  bool get hasName => name.isNotEmpty;
+
+  int get value => num1 - num2;
+}
+
+void main() {
+  final person = Person(2023, 1998, 'Lucas');
+
+  if (person.hasName) {
+    print("Hello my name is ${person.name} and I'm ${person.value} years old.");
+  } else {
+    print("Hello, I have no name and I'm ${person.value} years old.");
+  }
 }
