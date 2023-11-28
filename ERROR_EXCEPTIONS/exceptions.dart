@@ -114,3 +114,17 @@ void main() {
   Versatile division = Versatile(5, 5);
   print(division.value);
 } */
+
+class Mayer {
+  Mayer({required this.num1, required this.num2, required this.name});
+  final int num1;
+  final int num2;
+  final String name;
+
+  int get value => num1 - num2;
+}
+
+void main() {
+  final person = Mayer(num1: 2023, num2: 1998, name:'Mayer');
+  print("Hello my name is ${person.name} and I'm ${person.value} years old.");
+}
