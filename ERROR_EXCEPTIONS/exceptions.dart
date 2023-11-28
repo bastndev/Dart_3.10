@@ -104,4 +104,13 @@ class Versatile {
 
   final num num1;
   final num num2;
+
+  num get value {
+    return num1 / num2;
+  }
+}
+
+void main() {
+  Versatile division = Versatile(5, 5);
+  print(division.value);
 }
