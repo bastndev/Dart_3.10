@@ -191,4 +191,8 @@ class Chilita {
 
   final String name;
   final int age;
+
+  bool get hasName {
+    return name.isNotEmpty;
+  }
 }
