@@ -90,8 +90,11 @@ class Divisions {
   Divisions(this.num1, this.num2);
   final int num1;
   final int num2;
+
+  int get value => num1 + num2;
 }
 
 void main() {
-  
+  Divisions sum = Divisions(3, 4);
+  print(sum.value);
 }
