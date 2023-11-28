@@ -186,7 +186,7 @@ void main() {
 }
  */
 
-class Cholita {
+/* class Cholita {
   Cholita(this.name, this.age);
 
   final String name;
@@ -204,5 +204,17 @@ void main() {
   } else {
     print("I don't care, sorry");
   }
-}
+} */
+
 //--- -TODO: Practice makes perfect
+
+class Phones {
+  Phones(this.price1, this.price2, this.price3, this.brand);
+
+  final int price1;
+  final int price2;
+  final int price3;
+  final String brand;
+
+  bool get value => brand.isEmpty;
+}
