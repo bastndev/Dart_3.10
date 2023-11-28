@@ -378,7 +378,7 @@ void main() {
   }
 } */
 
-class Estudiante {
+/* class Estudiante {
   String name;
   int edad;
 
@@ -395,4 +395,11 @@ void main() {
 
   print('${estudiante1.name} es adult: ${estudiante1.esAdult()}');
   print('${estudiante2.name} es adult: ${estudiante2.esAdult()}');
+}
+ */
+class Student {
+  Student(this.name, this.age);
+  
+  final String name;
+  final int age;
 }
