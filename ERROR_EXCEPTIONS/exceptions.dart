@@ -166,7 +166,7 @@ void main() {
   }
 } */
 
-class Person {
+/* class Person {
   Person({required this.age, required this.name, required this.height});
   final int age;
   final String name;
@@ -183,4 +183,12 @@ void main() {
   } else {
     print("I don't have name");
   }
+}
+ */
+
+class Chilita {
+  Chilita(this.name, this.age);
+
+  final String name;
+  final int age;
 }
