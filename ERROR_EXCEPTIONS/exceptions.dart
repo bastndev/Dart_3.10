@@ -272,3 +272,12 @@ void main() {
     print("the $number is NO pair");
   }
 } */
+
+class ParOimpar {
+  ParOimpar(this.number1, this.number2);
+
+  final int number1;
+  final int number2;
+}
+
+void main() {}
