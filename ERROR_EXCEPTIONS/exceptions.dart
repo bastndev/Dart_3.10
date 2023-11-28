@@ -228,7 +228,7 @@ void main() {
   }
 }
  */
-class Phones {
+/* class Phones {
   Phones(this.price1, this.price2, this.price3, this.brand);
 
   final int price1;
@@ -246,4 +246,7 @@ void main() {
   } else {
     print('this is text no have name');
   }
-}
+} */
+
+
+//--- --- --FIXME: Practice whit AI
