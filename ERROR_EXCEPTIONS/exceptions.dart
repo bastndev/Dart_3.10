@@ -85,3 +85,13 @@ void main() {
 } */
 
 //--- --- --- -FIXME: Practice
+
+class Divisions {
+  Divisions(this.num1, this.num2);
+  final int num1;
+  final int num2;
+}
+
+void main() {
+  
+}
