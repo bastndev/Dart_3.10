@@ -99,7 +99,7 @@ void main() {
   print(sum.value);
 } */
 
-class Versatile {
+/* class Versatile {
   Versatile(this.num1, this.num2);
 
   final num num1;
@@ -113,4 +113,4 @@ class Versatile {
 void main() {
   Versatile division = Versatile(5, 5);
   print(division.value);
-}
+} */
