@@ -321,8 +321,7 @@ void main() {
 }
  */
 
-
-class Adult {
+/* class Adult {
   Adult(this.year, this.born);
 
   final int year;
@@ -338,4 +337,62 @@ void main() {
   } else {
     print("Noting to say ;)");
   }
+} */
+
+/* class Adult {
+  Adult(this.currentYear, this.birthYear);
+
+  final int currentYear;
+  final int birthYear;
+
+  int get age => currentYear - birthYear;
+
+  bool get isAdult => age >= 18;
+}
+
+void main() {
+  final person = Adult(2023, 2005);
+
+  if (person.isAdult) {
+    print("${person.age} años: Eres mayor de edad");
+  } else {
+    print("Nada que decir ;)");
+  }
+} */
+/* class Adult {
+  Adult(this.year, this.born);
+
+  final int year;
+  final int born;
+
+  int get value => year - born;
+  bool get age => value >= 18;
+}
+
+void main() {
+  final born = Adult(2023, 1998);
+  if (born.age) {
+    print("${born.value} Tu eres mayor de edad");
+  } else {
+    print("Noting to say ;)");
+  }
+} */
+
+class Estudiante {
+  String name;
+  int edad;
+
+  Estudiante(this.name, this.edad);
+
+  bool esAdult() {
+    return edad >= 18;
+  }
+}
+
+void main() {
+  Estudiante estudiante1 = Estudiante('Juan', 20);
+  Estudiante estudiante2 = Estudiante('Maria', 16);
+
+  print('${estudiante1.name} es adult: ${estudiante1.esAdult()}');
+  print('${estudiante2.name} es adult: ${estudiante2.esAdult()}');
 }
