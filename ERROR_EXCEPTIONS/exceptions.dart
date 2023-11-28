@@ -248,5 +248,27 @@ void main() {
   }
 } */
 
-
 //--- --- --FIXME: Practice whit AI
+/* void main() {
+  int number = 8;
+  bool esPar = number % 2 == 0;
+
+  if (esPar) {
+    print('$number es un número par.');
+  } else {
+    print('$number es un número impar.');
+  }
+}
+ */
+
+/* void main() {
+  int number = 5;
+
+  bool esPar = number % 2 == 0;
+
+  if (esPar) {
+    print("the $number is pair, ");
+  } else {
+    print("the $number is NO pair");
+  }
+} */
