@@ -99,7 +99,9 @@ void main() {
   print(sum.value);
 } */
 
-
 class Versatile {
-  
+  Versatile(this.num1, this.num2);
+
+  final num num1;
+  final num num2;
 }
