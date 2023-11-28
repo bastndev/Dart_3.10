@@ -399,7 +399,19 @@ void main() {
  */
 class Student {
   Student(this.name, this.age);
-  
+
   final String name;
   final int age;
+
+  bool names() {
+    return age >= 18;
+  }
+}
+
+void main() {
+  Student student1 = Student('Maria', 20);
+  Student student2 = Student('Juan', 12);
+
+  print("${student1.name} is adult: ${student1.names()}");
+  print("${student2.name} is adult: ${student2.names()}");
 }
