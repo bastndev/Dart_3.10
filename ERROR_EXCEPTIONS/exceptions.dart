@@ -291,7 +291,7 @@ void main() {
   }
 } */
 
-class ParOimpar {
+/* class ParOimpar {
   ParOimpar(this.number1, this.number2);
 
   final double number1;
@@ -307,4 +307,16 @@ void main() {
   } else {
     print(" no par papaseto");
   }
+} */
+
+/* void main() {
+  int age = 10;
+  bool esMayorDeEdad = age >= 18;
+
+  if (esMayorDeEdad) {
+    print('La persona es mayor de edad.');
+  } else {
+    print('La persona es menor de edad.');
+  }
 }
+ */
