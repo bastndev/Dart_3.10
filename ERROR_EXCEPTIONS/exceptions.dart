@@ -86,7 +86,7 @@ void main() {
 
 //--- --- --- -FIXME: Practice
 
-class Divisions {
+/* class Divisions {
   Divisions(this.num1, this.num2);
   final int num1;
   final int num2;
@@ -97,4 +97,9 @@ class Divisions {
 void main() {
   Divisions sum = Divisions(3, 4);
   print(sum.value);
+} */
+
+
+class Versatile {
+  
 }
