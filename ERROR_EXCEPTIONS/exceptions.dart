@@ -178,9 +178,9 @@ class Person {
 
 void main() {
   Person person = Person(age: 26, name: '', height: 1.34);
-  if(person.hasName){
+  if (person.hasName) {
     print("papi my name is ${person.name} ");
-  }else{
+  } else {
     print("I don't have name");
   }
 }
