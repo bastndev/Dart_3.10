@@ -93,12 +93,33 @@ void main() async {
 } */
 
 //--- --- -TODO: 168. Future.value and Future.error
-Future<String> fetchUserOrder() => Future.delayed(
+/* Future<String> fetchUserOrder() => Future.delayed(
       Duration(seconds: 2),
       () => 'Coffee',
     );
 Future<String> fetchUserOrder2() => Future.value('Espresso');
 Future<String> fetchUserOrder3() => Future.error(Exception('No milk'));
+void main() async {
+  print('Program Started');
+  try {
+    final order = await fetchUserOrder();
+    print(order);
+    final order2 = await fetchUserOrder3();
+    print(order2);
+  } catch (e) {
+    print(e);
+  } finally {
+    print('Done');
+  }
+}
+ */
+
+Future<String> fetchUserOrder() => Future.delayed(
+      Duration(seconds: 2),
+      () => 'Coffee',
+    );
+Future<String> fetchUserOrder2() => Future.value('Espresso');
+Future<String> fetchUserOrder3() => Future.error(UnimplementedError('Aea manito'));
 void main() async {
   print('Program Started');
   try {
