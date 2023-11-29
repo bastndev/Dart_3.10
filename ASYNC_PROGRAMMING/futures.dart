@@ -1,4 +1,4 @@
-Future<String> fetchUserOrder() => Future.delayed(
+/* Future<String> fetchUserOrder() => Future.delayed(
       Duration(seconds: 1),
       () => 'Coffee',
     );
@@ -6,4 +6,17 @@ Future<String> fetchUserOrder() => Future.delayed(
 void main() {
   print('Program Started');
   fetchUserOrder().then((order) => print('Your order is ready: $order'));
+}
+ */
+
+Future<String> fetchUserOrder() => Future.delayed(
+      Duration(seconds: 2),
+      () => throw Exception('Out of Coffee'),
+    );
+
+void main() {
+  print('Program Started');
+  fetchUserOrder()
+      .then((order) => print('Order is ready: $order'))
+      .catchError((error) => print(error));
 }
