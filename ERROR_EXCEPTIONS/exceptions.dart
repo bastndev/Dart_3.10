@@ -483,7 +483,7 @@ void main() {
 
 
 //--- --- -TODO: AI
-/* class EmailAddress {
+class EmailAddress {
   EmailAddress(this.email) {
     if (email.isEmpty) {
       throw FormatException("Email can't be empty");
@@ -507,4 +507,4 @@ void main() {
   } on FormatException catch (e) {
     print('Error: $e');
   }
-} */
+}
