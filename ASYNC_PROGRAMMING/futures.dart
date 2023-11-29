@@ -62,7 +62,7 @@ void main() {
       .whenComplete(() => fetchUserOrder().then((value) => null));
 } */
 
-Future<String> fetchUserOrder() => Future.delayed(
+/* Future<String> fetchUserOrder() => Future.delayed(
       Duration(seconds: 2),
       () => ('Coffee'),
     );
@@ -71,4 +71,23 @@ void main() async { // --- espera que siga el prgrama y luego se cargan en segun
   print('Program Started');
   final order = await fetchUserOrder();
   print(order);
+} */
+
+Future<String> fetchUserOrder() => Future.delayed(
+      Duration(seconds: 2),
+      () => 'Coffee',
+    );
+
+void main() async {
+  print('Program Started');
+  try {
+    final order = await fetchUserOrder();
+    print(order);
+    final order2 = await fetchUserOrder();
+    print(order2);
+  } catch (e) {
+    print(e);
+  } finally {
+    print('Done');
+  }
 }
