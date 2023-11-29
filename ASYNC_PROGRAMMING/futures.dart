@@ -1,9 +1,9 @@
 Future<String> fetchUserOrder() => Future.delayed(
-      Duration(seconds: 2),
+      Duration(seconds: 1),
       () => 'Coffee',
     );
 
 void main() {
   print('Program Started');
-  fetchUserOrder().then((order) => print('Order is ready: $order'));
+  fetchUserOrder().then((order) => print('Your order is ready: $order'));
 }
