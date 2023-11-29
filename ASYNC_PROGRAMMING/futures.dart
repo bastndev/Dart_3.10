@@ -151,7 +151,30 @@ void main() {
 }
  */
 
-void countdown(int n) async {
+/* void countdown(int n) async {
+  for (var i = n; i >= 0; i--) {
+    await Future.delayed(Duration(seconds: 1), () => print(i));
+  }
+}
+
+void main() {
+  countdown(6);
+  print('Done');
+} */
+
+/* Future<void> countdown(int n) async {
+  for (var i = n; i >= 0; i--) {
+    await Future.delayed(const Duration(seconds: 1));
+    print(i);
+  }
+}
+
+Future<void> main() async {
+  await countdown(6);
+  print('Done');
+} */
+
+Future<void> countdown(int n) async {
   for (var i = n; i >= 0; i--) {
     await Future.delayed(
       Duration(seconds: 1),
@@ -160,7 +183,7 @@ void countdown(int n) async {
   }
 }
 
-void main() {
-  countdown(6);
+Future<void> main() async {
+  await countdown(5);
   print('Done');
 }
