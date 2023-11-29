@@ -417,3 +417,94 @@ void main() {
 } */
 
 //--- --- --- FIXME: [Exercise] Email validation
+
+/* void main () {
+  try {
+    print(EmailAddress('me@example.com'));
+    print(EmailAddress('example.com'));
+    print(EmailAddress(''));
+  }on FormatException catch (e) {
+    print(e);
+  }
+} */
+/* class EmailAddress {
+  final String address;
+
+  EmailAddress(this.address) {
+    if (!_isValidEmail(address)) {
+      throw FormatException('Invalid email format');
+    }
+  }
+
+  bool _isValidEmail(String email) {
+    return RegExp(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
+        .hasMatch(email);
+  }
+}
+
+void main() {
+  try {
+    print(EmailAddress('me@example.com'));
+    print(EmailAddress('example.com'));
+    print(EmailAddress(''));
+  } on FormatException catch (e) {
+    print('Error: $e');
+  }
+} */
+
+//--- --- -TODO: TEACHER
+
+/* class EmailAddress {
+  EmailAddress(this.email) {
+    // assert(email.isNotEmpty);
+    // assert(email.contains('@'));
+    if (email.isEmpty) {
+      throw FormatException("Email can't be empty");
+    }
+    if (!email.contains('@')) {
+      throw FormatException("$email does not contain @ symbol");
+    }
+  }
+  final String email;
+
+  @override
+  String toString() => email;
+}
+
+void main() {
+  try {
+    print(EmailAddress('me@example.com'));
+    print(EmailAddress('example.com'));
+    print(EmailAddress(''));
+  } on FormatException catch (e) {
+    print('Error: $e');
+  }
+} */
+
+
+//--- --- -TODO: AI
+/* class EmailAddress {
+  EmailAddress(this.email) {
+    if (email.isEmpty) {
+      throw FormatException("Email can't be empty");
+    }
+    if (!email.contains('@')) {
+      throw FormatException("$email does not contain @ symbol");
+    }
+  }
+
+  final String email;
+
+  @override
+  String toString() => email;
+}
+
+void main() {
+  try {
+    print(EmailAddress('me@example.com'));
+    print(EmailAddress('example.com'));
+    print(EmailAddress(''));
+  } on FormatException catch (e) {
+    print('Error: $e');
+  }
+} */
