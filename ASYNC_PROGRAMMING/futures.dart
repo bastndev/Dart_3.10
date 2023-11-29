@@ -136,7 +136,7 @@ void main() async {
 
 //--- --- -FIXME: 169. [Exercise] Countdown with Futures
 
-void countdown(int n) {
+/* void countdown(int n) {
   for (var i = n; i >= 0; i--) {
     Future.delayed(
       Duration(seconds: 1),
@@ -147,5 +147,20 @@ void countdown(int n) {
 
 void main() {
   countdown(5);
+  print('Done');
+}
+ */
+
+void countdown(int n) async {
+  for (var i = n; i >= 0; i--) {
+    await Future.delayed(
+      Duration(seconds: 1),
+      () => print(i),
+    );
+  }
+}
+
+void main() {
+  countdown(6);
   print('Done');
 }
