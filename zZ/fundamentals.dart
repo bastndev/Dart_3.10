@@ -37,7 +37,7 @@ void main() {
   print(result);
 } */
 
-class Operation {
+/* class Operation {
   Operation(this.a, this.b);
 
   final int a;
@@ -49,5 +49,12 @@ class Operation {
 void main() {
   final sum = Operation(1, 1);
   int result = ((sum.value()) * 4) * 5 + 3;
+  print(result);
+} */
+
+int sum(int a, int b) => a + b;
+
+void main() {
+  final result = ((sum(1, 1)) * 4) * 5 + 3;
   print(result);
 }
