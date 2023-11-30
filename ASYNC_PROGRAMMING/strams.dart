@@ -60,3 +60,33 @@ void main() {
 
   print(evenSum);
 } */
+
+// --- -TODO: Analyze this is code and compare it whit the top code, Thanks.
+class EvenNumberProcessor {
+  EvenNumberProcessor(this.numbers) : evenSum = 0;
+
+  List<int> numbers;
+  int evenSum;
+
+  void processEvenNumbers() {
+    for (var element in numbers) {
+      if (element % 2 == 0) {
+        evenSum += element;
+      }
+    }
+  }
+
+  void printEvenSum() {
+    print(evenSum);
+  }
+}
+
+void main() {
+  final myList = [1, 3, 2, 4, 4];
+
+  var processor = EvenNumberProcessor(myList);
+
+  processor.processEvenNumbers();
+
+  processor.printEvenSum();
+}
