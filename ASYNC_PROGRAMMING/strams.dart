@@ -47,16 +47,16 @@ void main() async {
   
   print(total); // Debería imprimir la suma de los elementos multiplicados por 2.
 } */
-
+/* 
 void main() {
   var evenSum = 0;
-  final myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  
+  final myList = [1, 3, 2, 4, 4];
+
   for (var element in myList) {
     if (element % 2 == 0) {
       evenSum += element;
     }
   }
-  
-  print(evenSum); // Debería imprimir la suma de los números pares en la lista.
-}
+
+  print(evenSum);
+} */
