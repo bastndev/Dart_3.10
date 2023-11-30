@@ -202,7 +202,6 @@ void main() async {
   print('Done');
 } */
 
-
 // import 'dart:async';
 
 /* Future<void> countDown(int n) async {
@@ -217,3 +216,13 @@ void main() async {
   await countDown(5);
   print('Done');
 } */
+
+Future<void> temperatureMe(int m) async {
+  for (var i = m; i >= 0; i--) {
+    print('Aea mongol ');
+  }
+}
+
+void main() {
+  print(temperatureMe);
+}
