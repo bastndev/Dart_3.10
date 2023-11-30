@@ -296,7 +296,7 @@ void main() async {
 } */
 
 Future<void> ifAndElse(int n) async {
-  for (var i = n; i >= 0; i++) {
+  for (var i = n; i >= 0; i--) {
     print(i);
     await Future.delayed(Duration(milliseconds: 400));
   }
@@ -304,8 +304,9 @@ Future<void> ifAndElse(int n) async {
 
 void main() async {
   int m = 5;
-  if (m > 5) {
-    ifAndElse(9);
+  if (m > 4) {
+    await ifAndElse(4);
+    print('Done');
   } else {
     print("I don't care");
   }
