@@ -40,8 +40,6 @@
 }
  */
 
-import 'dart:async';
-
 void main() {
   Stream.periodic(Duration(seconds: 1), (index) => index)
       .takeWhile((value) => value < 10)
