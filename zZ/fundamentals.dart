@@ -60,7 +60,7 @@ void main() {
 }
  */
 
-class Person {
+/* class Person {
   String name;
   int age;
 
@@ -77,4 +77,36 @@ void main() {
 
   person1.sayHello();
   person2.sayHello();
+} */
+
+/* class Person {
+  late String name;
+  late int age;
+
+  void sayHello() {
+    print("Hello, my name is $name, and I am $age years old.");
+  }
 }
+  
+void main() {
+  // ignore: unused_local_variable
+  Person person1 = Person()..name = "Alice"..age = 25..sayHello();
+  Person person2 = Person()..name = "Bob"..age = 30..sayHello();
+} */
+
+/* class Person {
+  Person(this.name, this.age);
+
+  final String name;
+  final int age;
+
+  void me() {
+    print("Hello my name is $name, and I'm $age years old" );
+  }
+}
+
+void main() {
+  Person names = Person('Luis', 14);
+  names.me();
+}
+ */
