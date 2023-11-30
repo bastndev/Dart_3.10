@@ -295,7 +295,7 @@ void main() async {
   await ifAndElse(5);
 } */
 
-Future<void> ifAndElse(int n) async {
+/* Future<void> ifAndElse(int n) async {
   for (var i = n; i >= 0; i--) {
     print(i);
     await Future.delayed(Duration(milliseconds: 400));
@@ -310,4 +310,75 @@ void main() async {
   } else {
     print("I don't care");
   }
+} */
+
+/* Future<void> ifAndElse(int n) async {
+  for (var i = n; i >= 0; i++) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: 400));
+  }
 }
+
+void main() async {
+  int m = 5;
+  if (m > 4) {
+    await ifAndElse(4);
+    print('Done');
+  } else {
+    print("I don't care");
+  }
+}
+ */
+/* Future<void> ifAndElse(int n) async {
+  for (var i = n; i <= 10; i++) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: 400));
+  }
+}
+
+void main() async {
+  int m = 5;
+  if (m > 4) {
+    await ifAndElse(4);
+    print('Done');
+  } else {
+    print("I don't care");
+  }
+} */
+/* Future<void> ifAndElse(int n) async {
+  for (var i = n; i <= 10; i++) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: 400));
+  }
+}
+
+void main() async {
+  int m = 5;
+  if (m > 4) {
+    await ifAndElse(4);
+    print('Done');
+  } else {
+    print("I don't care");
+  }
+} */
+//--ai
+/* import 'dart:async';
+
+Future<void> printNumbersWithDelay(
+    int start, int end, int delayInMilliseconds) async {
+  for (var i = start; i <= end; i++) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: delayInMilliseconds));
+  }
+}
+
+void main() async {
+  int m = 5;
+  if (m > 4) {
+    await printNumbersWithDelay(4, 10, 400);
+    print('Done');
+  } else {
+    print("I don't care");
+  }
+}
+ */
