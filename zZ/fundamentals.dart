@@ -110,3 +110,34 @@ void main() {
   names.me();
 }
  */
+/* class Person {
+  // Person(this.name, this.age);
+
+  late String name;
+  late int age;
+
+  void me() {
+    print("Hello my name is $name, and I'm $age years old" );
+  }
+}
+
+void main() {
+  Person names = Person(name:'lucas', 14);
+  names.me();
+} */
+
+class Person {
+  late String name;
+  late int age;
+
+  void me() {
+    print("Hello my name is $name, and I'm $age years old");
+  }
+}
+
+void main() {
+  final names = Person();
+  names.name = 'Lucas';
+  names.age = 15;
+  names.me();
+}
