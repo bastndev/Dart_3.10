@@ -94,7 +94,6 @@ void main() {
 }
  */
 
-
 /* class PeriodicNumberCounter {
   final Duration _periodDuration = Duration(milliseconds: 400);
   final int _limit = 6;
@@ -126,3 +125,47 @@ void main() async {
 void main (){
   NumberCounter().counter();
 } */
+
+/* class PeriodicNumberCounter {
+  final Duration _periodDuration = Duration(milliseconds: 400);
+  final int _limit = 6;
+
+  Future<void> startCounting() async {
+    await for (int value in Stream.periodic(_periodDuration, (i) => i)
+        .takeWhile((value) => value < _limit)) {
+      print('$value ');
+    }
+
+    if (_limit == 0) {
+      print('Counting finished with limit set to 0');
+    } else {
+      print('Counting finished');
+    }
+  }
+}
+
+void main() async {
+  await PeriodicNumberCounter().startCounting();
+} */
+
+class PeriodicNumberCounter {
+  final Duration _periodDuration = Duration(milliseconds: 400);
+  final int _limit = 6;
+
+  Future<void> startCounting() async {
+    await for (int value in Stream.periodic(this._periodDuration, (i) => i)
+        .takeWhile((value) => value < this._limit)) {
+      print('$value ');
+    }
+
+    if (this._limit == 0) {
+      print('Counting finished with limit set to 0');
+    } else {
+      print('Counting finished');
+    }
+  }
+}
+
+void main() async {
+  await PeriodicNumberCounter().startCounting();
+}
