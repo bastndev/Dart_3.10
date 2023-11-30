@@ -148,7 +148,7 @@ void main() async {
   await PeriodicNumberCounter().startCounting();
 } */
 
-class PeriodicNumberCounter {
+/* class PeriodicNumberCounter {
   final Duration _periodDuration = Duration(milliseconds: 400);
   final int _limit = 6;
 
@@ -168,4 +168,14 @@ class PeriodicNumberCounter {
 
 void main() async {
   await PeriodicNumberCounter().startCounting();
+}
+ */
+
+// --- -TODO: 174. Stream methods
+
+Future<void> main() async {
+  final stream = Stream.fromIterable([9, 2, 3, 4]);
+
+  final value = await stream.first;
+  print(value);
 }

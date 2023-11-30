@@ -7,7 +7,7 @@ class MayerHumor {
         .takeWhile((value) => value < this._limit)) {
       print('$value');
     }
-    if (this._limit >= 5) {
+    if (this._limit >= 6) {
       print('Good Humor');
     } else {
       print('Bad Humor');
