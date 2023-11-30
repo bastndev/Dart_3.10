@@ -223,6 +223,6 @@ Future<void> temperatureMe(int m) async {
   }
 }
 
-void main() {
-  print(temperatureMe);
+void main() async {
+  await temperatureMe(5);
 }
