@@ -165,7 +165,7 @@ void main() {
 }
  */
 
-double calculateAverageOfOddNumbers(List<int> list) {
+/* double calculateAverageOfOddNumbers(List<int> list) {
   int sum = 0;
   int count = 0;
 
@@ -182,4 +182,4 @@ void main() {
   List<int> myList = [4, 2, 3, 7, 9];
   double average = calculateAverageOfOddNumbers(myList);
   print("The average of odd numbers: $average");
-}
+} */
