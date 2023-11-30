@@ -382,3 +382,23 @@ void main() async {
   }
 }
  */
+
+import 'dart:async';
+
+Future<void> printNumbersWithDelay(
+    int start, int end, int delayInMilliseconds) async {
+  for (var i = start; i <= end; i++) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: delayInMilliseconds));
+  }
+}
+
+void main() async {
+  int m = 5;
+  if (m >= 1) {
+    await printNumbersWithDelay(1, 10, 400);
+    print('Done');
+  } else {
+    print("I don't care");
+  }
+}
