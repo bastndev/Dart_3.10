@@ -7,7 +7,7 @@
   Stream.periodic(Duration(seconds: 1), (index) => index);
 }
  */
-void main() {
+/* void main() {
   // Stream.fromFuture
   Stream.fromFuture(Future.delayed(Duration(seconds: 5), () => 42)).listen(
     (int value) {
@@ -19,6 +19,21 @@ void main() {
   Stream.periodic(Duration(seconds: 1), (index) => index).listen(
     (int value) {
       print('Stream.periodic: $value');
+    },
+  );
+}
+ */
+
+void main() {
+  // Stream.periodic con takeWhile
+  Stream.periodic(Duration(seconds: 1), (index) => index)
+      .takeWhile((value) => value < 10)
+      .listen(
+    (int value) {
+      print('Stream.periodic: $value');
+    },
+    onDone: () {
+      print('Stream.periodic: Done');
     },
   );
 }
