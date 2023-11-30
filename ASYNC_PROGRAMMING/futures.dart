@@ -219,10 +219,14 @@ void main() async {
 
 Future<void> temperatureMe(int m) async {
   for (var i = m; i >= 0; i--) {
-    print('Aea mongol ');
+    await Future.delayed(
+      Duration(seconds: 1),
+      () => print(i),
+    );
   }
 }
 
 void main() async {
   await temperatureMe(5);
+  print('Done');
 }
