@@ -228,7 +228,7 @@ void main() {
 }
  */
 
-Future<int> sumStream(Stream<int> stream) async {
+/* Future<int> sumStream(Stream<int> stream) async {
   var sum = 0;
   await for (var value in stream) {
     sum += value;
@@ -240,4 +240,22 @@ void main() async{
   final stream = Stream<int>.fromIterable([10, 2, 3, 4]);
   final sum = await sumStream(stream);
   print(sum);
+} */
+
+//  --- -FIXME: Two methods 
+Future<int> sumStream(Stream<int> stream) async {
+  var sum = 0;
+  await for (var value in stream) {
+    sum += value;
+  }
+  return sum;
+}
+
+Future<int> sumStream2(Stream<int> stream) =>
+    stream.reduce((previous, element) => previous + element);
+
+Future<void> main() async {
+  final stream = Stream<int>.fromIterable([10, 2, 3, 4]);
+  final sum = await sumStream2(stream);
+  print("The sum is:$sum");
 }
