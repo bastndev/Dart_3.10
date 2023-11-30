@@ -173,9 +173,18 @@ void main() async {
 
 // --- -TODO: 174. Stream methods
 
-Future<void> main() async {
+/* void main() async {
   final stream = Stream.fromIterable([9, 2, 3, 4]);
 
   final value = await stream.first;
   print(value);
 }
+ */
+
+/* Future<void> main() async {
+  final stream = Stream.fromIterable([9, 2, 3, 4]);
+
+  final value = await stream.first;
+  print(value);
+}
+ */
