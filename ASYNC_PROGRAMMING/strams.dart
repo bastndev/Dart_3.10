@@ -298,23 +298,25 @@ Future<void> main() async {
 } */
 
 //--- --- -FIXME: 172. [Exercise] Fizz-buzz with streams
-Stream<int> fizzBuzz(int n) async* {
-  for (var i = 1; i <= n; i++) {
+Stream<String> asyncFizzBuzz() async* {
+  for (var i = 1; i <= 15; i++) {
     await Future.delayed(Duration(milliseconds: 500));
-    print(i);
-    yield i;
-  }
-}
-
-Iterable<int> count(int n) sync* {
-  for (var i = 1; i <= n; i++) {
-    yield i;
+    if (i % 3 == 0 && i % 5 == 0) {
+      yield 'fizz-buzz';
+    } else if (i % 3 == 0) {
+      yield 'fizz';
+    } else if (i % 5 == 0) {
+      yield 'buzz';
+    } else {
+      print(i);
+    }
+    yield '$i';
   }
 }
 
 Future<void> main() async {
-  final sum = Stream<int>.fromIterable([1, 2, 3, 4]);
-  await for (var value in fizzBuzz(4)) {
+  final stream = asyncFizzBuzz();
+  await for (var value in stream) {
+    print(value);
   }
-  print("The sum is: $sum");
 }
