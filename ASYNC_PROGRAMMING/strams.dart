@@ -146,3 +146,40 @@ void main() {
   print("The product of even numbers: $product");
 }
  */
+
+/* int countNegativeNumbers(List<int> list) {
+  int count = 0;
+
+  for (int number in list) {
+    if (number < 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+void main() {
+  List<int> myList = [4, -2, 3, -6, 8];
+  int negativeCount = countNegativeNumbers(myList);
+  print("The count of negative numbers: $negativeCount");
+}
+ */
+
+double calculateAverageOfOddNumbers(List<int> list) {
+  int sum = 0;
+  int count = 0;
+
+  for (int number in list) {
+    if (number % 2 != 0) {
+      sum += number;
+      count++;
+    }
+  }
+  return count > 0 ? sum / count : 0;
+}
+
+void main() {
+  List<int> myList = [4, 2, 3, 7, 9];
+  double average = calculateAverageOfOddNumbers(myList);
+  print("The average of odd numbers: $average");
+}
