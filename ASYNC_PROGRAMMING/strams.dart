@@ -183,3 +183,22 @@ void main() {
   double average = calculateAverageOfOddNumbers(myList);
   print("The average of odd numbers: $average");
 } */
+
+/* List<int> findNumbersAboveLimit(List<int> list, int limit) {
+  List<int> result = [];
+
+  for (int number in list) {
+    if (number > limit) {
+      result.add(number);
+    }
+  }
+  return result;
+}
+
+void main() {
+  List<int> myList = [4, 2, 3, 7, 9];
+  int limit = 5;
+  List<int> aboveLimit = findNumbersAboveLimit(myList, limit);
+  print("Numbers above $limit: $aboveLimit");
+}
+ */
