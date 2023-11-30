@@ -197,6 +197,7 @@ void main() async {
 }
  */
 
+/* 
 Future<void> main() async {
   final food = Stream.fromIterable(['nuggets', 'pizza']);
 
@@ -206,4 +207,11 @@ Future<void> main() async {
   if (favorite == 'nuggets') {
     print("I love nuggets too!");
   }
+} */
+
+Future<void> main() async {
+  final food = Stream.fromIterable(['pizza', 'nuggets']);
+
+  final favorite = await food.elementAt(1);
+  print("My favorite food is $favorite");
 }
