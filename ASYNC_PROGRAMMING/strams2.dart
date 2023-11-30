@@ -74,7 +74,7 @@
   });
 } */
 
-class NumberCounter {
+/* class NumberCounter {
   void counterNumber() {
     Stream.periodic(Duration(milliseconds: 400), (i) => i)
         .takeWhile((value) => value < 6)
@@ -91,4 +91,21 @@ class NumberCounter {
 
 void main() {
   NumberCounter().counterNumber();
+}
+ */
+
+class NumberCounter {
+  void counter() {
+    Stream.periodic(Duration(milliseconds: 400), (i) => i)
+        .takeWhile((value) => value < 6)
+        .listen((int value) {
+      print('$value ');
+    }, onDone: () {
+      print('Finish');
+    });
+  }
+}
+
+void main (){
+  NumberCounter().counter();
 }
