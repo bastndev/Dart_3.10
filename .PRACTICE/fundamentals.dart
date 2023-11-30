@@ -4,3 +4,8 @@
 
   print(num1 + num2);
 } */
+
+class Operation {
+  int a;
+  int b;
+}
