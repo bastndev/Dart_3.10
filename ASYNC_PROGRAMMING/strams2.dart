@@ -54,12 +54,22 @@
 }
  */
 
-void main() {
+/* void main() {
   Stream.periodic(Duration(seconds: 2), (index) => index)
       .takeWhile((value) => value < 11)
       .listen((int value) {
     print('$value seconds');
   }, onDone: () {
     print('Finish Time! ');
+  });
+} */
+
+void main() {
+  Stream.periodic(Duration(milliseconds: 400), (i) => i)
+      .takeWhile((value) => value < 6)
+      .listen((int value) {
+    print('$value ');
+  }, onDone: () {
+    print('Finish');
   });
 }
