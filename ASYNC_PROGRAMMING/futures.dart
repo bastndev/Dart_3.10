@@ -217,7 +217,7 @@ void main() async {
   print('Done');
 } */
 
-Future<void> temperatureMe(int m) async {
+/* Future<void> temperatureMe(int m) async {
   for (var i = m; i >= 0; i--) {
     await Future.delayed(
       Duration(seconds: 1),
@@ -229,4 +229,43 @@ Future<void> temperatureMe(int m) async {
 void main() async {
   await temperatureMe(5);
   print('Done');
+} */
+
+// --- FIXME: Fail.
+/* Future<void> ifAndElse(int n) async {
+  for (var i = n; i >= 0; i--) {
+    await Future.delayed(
+      Duration(seconds: 1),
+      () => print(i),
+    );
+  }
+}
+
+void main() async {
+  if (i > 5) {
+    print('okey');
+  } else {
+    ifAndElse(5);
+  }
+}
+ */
+
+import 'dart:async';
+
+Future<void> ifAndElse(int n) async {
+  for (var i = n; i >= 0; i--) {
+    await Future.delayed(
+      Duration(seconds: 1),
+      () => print(i),
+    );
+  }
+}
+
+void main() async {
+  int i = 6; 
+  if (i > 5) {
+    print('okey');
+  } else {
+    await ifAndElse(5);
+  }
 }
