@@ -62,7 +62,7 @@ void main() {
 } */
 
 // --- -TODO: Analyze this is code and compare it whit the top code, Thanks.
-class EvenNumberProcessor {
+/* class EvenNumberProcessor {
   EvenNumberProcessor(this.numbers) : evenSum = 0;
 
   List<int> numbers;
@@ -89,6 +89,42 @@ void main() {
   processor.processEvenNumbers();
 
   processor.printEvenSum();
-}
+} */
 
 // --- -TODO: Analyze this is code and compare it whit the top code, Thanks.
+/* int sumNumbersPars(List<int> list) {
+  int suma = 0;
+
+  for (int numero in list) {
+    if (numero % 2 == 0) {
+      suma += numero;
+    }
+  }
+
+  return suma;
+}
+
+void main() {
+  List<int> myList = [1, 3, 2, 4, 4];
+
+  int sumaPares = sumNumbersPars(myList);
+
+  print('La suma de los números pares en la list es: $sumaPares');
+} */
+
+int sumOddNumbers(List<int> list) {
+  int sum = 0;
+
+  for (int number in list) {
+    if (number % 3 == 0) {
+      sum += number;
+    }
+  }
+  return sum;
+}
+
+void main() {
+  List<int> myList = [4, 2, 3, 3, 9];
+  int sumaPars = sumOddNumbers(myList);
+  print(sumaPars);
+}
