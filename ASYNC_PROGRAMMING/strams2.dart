@@ -40,7 +40,7 @@
 }
  */
 
-void main() {
+/* void main() {
   Stream.periodic(Duration(seconds: 1), (index) => index)
       .takeWhile((value) => value < 10)
       .listen(
@@ -51,4 +51,15 @@ void main() {
       print('Temporizador: ¡Fin del temporizador!');
     },
   );
+}
+ */
+
+void main() {
+  Stream.periodic(Duration(seconds: 2), (index) => index)
+      .takeWhile((value) => value < 11)
+      .listen((int value) {
+    print('$value seconds');
+  }, onDone: () {
+    print('Finish Time! ');
+  });
 }
