@@ -202,3 +202,15 @@ void main() {
   print("Numbers above $limit: $aboveLimit");
 }
  */
+
+bool isPalindrome(List<int> list) {
+  List<int> reversedList = List.from(list.reversed);
+  return list
+      .every((element) => element == reversedList[list.indexOf(element)]);
+}
+
+void main() {
+  List<int> myList = [1, 2, 3, 2, 1];
+  bool palindrome = isPalindrome(myList);
+  print("Is the list a palindrome? $palindrome");
+}
