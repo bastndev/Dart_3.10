@@ -112,7 +112,7 @@ void main() {
   print('La suma de los números pares en la list es: $sumaPares');
 } */
 
-int sumOddNumbers(List<int> list) {
+/* int sumOddNumbers(List<int> list) {
   int sum = 0;
 
   for (int number in list) {
@@ -127,4 +127,22 @@ void main() {
   List<int> myList = [4, 2, 3, 3, 9];
   int sumaPars = sumOddNumbers(myList);
   print("The sum of Odd numbers: $sumaPars");
+} */
+
+/* int multiplyEvenNumbers(List<int> list) {
+  int result = 1;
+
+  for (int number in list) {
+    if (number % 2 == 0) {
+      result *= number;
+    }
+  }
+  return result;
 }
+
+void main() {
+  List<int> myList = [2, 2, 3, 4];
+  int product = multiplyEvenNumbers(myList);
+  print("The product of even numbers: $product");
+}
+ */
