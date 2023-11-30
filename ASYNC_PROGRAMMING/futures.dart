@@ -250,9 +250,7 @@ void main() async {
 }
  */
 
-import 'dart:async';
-
-Future<void> ifAndElse(int n) async {
+/* Future<void> ifAndElse(int n) async {
   for (var i = n; i >= 0; i--) {
     await Future.delayed(
       Duration(seconds: 1),
@@ -262,10 +260,37 @@ Future<void> ifAndElse(int n) async {
 }
 
 void main() async {
-  int i = 6; 
+  int i = 6;
   if (i > 5) {
     print('okey');
   } else {
     await ifAndElse(5);
   }
+}
+ */
+/* Future<void> ifAndElse(int n) async {
+  for (var i = n; i >= 0; i--) {
+    print(i);
+    await Future.delayed(Duration(seconds: 1));
+  }
+}
+void main() async {
+  int i = 5;
+  if (i > 5) {
+    print('okey');
+  } else {
+    await ifAndElse(5);
+  }
+}
+ */
+
+Future<void> ifAndElse(int n) async {
+  for (var i = n; i >= 0; i--) {
+    print(i);
+    await Future.delayed(Duration(milliseconds: 400));
+  }
+}
+
+void main() async {
+  await ifAndElse(5);
 }
