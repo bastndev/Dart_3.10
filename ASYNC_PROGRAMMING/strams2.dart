@@ -188,3 +188,10 @@ void main() async {
   print(value);
 }
  */
+
+Future<void> main() async {
+  final food = Stream.fromIterable(['pizza', 'nuggets']);
+
+  final favorite = await food.first;
+  print("My favorite food is $favorite");
+}
