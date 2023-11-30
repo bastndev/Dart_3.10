@@ -52,9 +52,29 @@ void main() {
   print(result);
 } */
 
-int sum(int a, int b) => a + b;
+/* int sum(int a, int b) => a + b;
 
 void main() {
   final result = ((sum(1, 1)) * 4) * 5 + 3;
   print(result);
+}
+ */
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void sayHello() {
+    print("Hello, my name is $name, and I am $age years old.");
+  }
+}
+
+void main() {
+  Person person1 = Person("Alice", 25);
+  Person person2 = Person("Bob", 30);
+
+  person1.sayHello();
+  person2.sayHello();
 }
