@@ -24,7 +24,8 @@
 }
  */
 
-void main() {
+//--- -FIXME: Practice
+/* void main() {
   // Stream.periodic con takeWhile
   Stream.periodic(Duration(seconds: 1), (index) => index)
       .takeWhile((value) => value < 10)
@@ -34,6 +35,22 @@ void main() {
     },
     onDone: () {
       print('Stream.periodic: Done');
+    },
+  );
+}
+ */
+
+import 'dart:async';
+
+void main() {
+  Stream.periodic(Duration(seconds: 1), (index) => index)
+      .takeWhile((value) => value < 10)
+      .listen(
+    (int value) {
+      print('Temporizador: $value seconds');
+    },
+    onDone: () {
+      print('Temporizador: ¡Fin del temporizador!');
     },
   );
 }
