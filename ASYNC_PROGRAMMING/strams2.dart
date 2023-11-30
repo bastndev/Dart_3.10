@@ -189,9 +189,21 @@ void main() async {
 }
  */
 
-Future<void> main() async {
+/* Future<void> main() async {
   final food = Stream.fromIterable(['pizza', 'nuggets']);
 
   final favorite = await food.first;
   print("My favorite food is $favorite");
+}
+ */
+
+Future<void> main() async {
+  final food = Stream.fromIterable(['nuggets', 'pizza']);
+
+  final favorite = await food.first;
+  print("My favorite food is $favorite");
+
+  if (favorite == 'nuggets') {
+    print("I love nuggets too!");
+  }
 }
