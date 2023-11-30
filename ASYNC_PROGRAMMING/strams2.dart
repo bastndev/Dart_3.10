@@ -94,7 +94,24 @@ void main() {
 }
  */
 
-class NumberCounter {
+
+/* class PeriodicNumberCounter {
+  final Duration _periodDuration = Duration(milliseconds: 400);
+  final int _limit = 6;
+
+  Future<void> startCounting() async {
+    await for (int value in Stream.periodic(_periodDuration, (i) => i).takeWhile((value) => value < _limit)) {
+      print('$value ');
+    }
+    print('Counting finished');
+  }
+}
+
+void main() async {
+  await PeriodicNumberCounter().startCounting();
+} */
+
+/* class NumberCounter {
   void counter() {
     Stream.periodic(Duration(milliseconds: 400), (i) => i)
         .takeWhile((value) => value < 6)
@@ -108,4 +125,4 @@ class NumberCounter {
 
 void main (){
   NumberCounter().counter();
-}
+} */
