@@ -203,14 +203,41 @@ void main() {
 }
  */
 
-bool isPalindrome(List<int> list) {
-  List<int> reversedList = List.from(list.reversed);
+//---FIXME: BAD TEST
+/* bool isPalindrome(List<String> list) {
+  List<String> reversedList = List.from(list.reversed);
   return list
       .every((element) => element == reversedList[list.indexOf(element)]);
 }
 
 void main() {
-  List<int> myList = [1, 2, 3, 2, 1];
+  List<String> myList = ['Meloso'];
   bool palindrome = isPalindrome(myList);
   print("Is the list a palindrome? $palindrome");
+} */
+
+/* bool isPalindrome(List<String> list) {
+  List<String> reversedList = List.from(list.reversed);
+  return list.join() == reversedList.join();
+}
+
+void main() {
+  List<String> myList = ['camionnesta'];
+  bool palindrome = isPalindrome(myList);
+  print("Is the list a palindrome? $palindrome");
+}
+ */
+
+Future<int> sumStream(Stream<int> stream) async {
+  var sum = 0;
+  await for (var value in stream) {
+    sum += value;
+  }
+  return sum;
+}
+
+void main() async{
+  final stream = Stream<int>.fromIterable([10, 2, 3, 4]);
+  final sum = await sumStream(stream);
+  print(sum);
 }
