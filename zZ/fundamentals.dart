@@ -10,7 +10,7 @@ void main() {
   print("${((sum) * 4) * 5 + 3} ");
 }
  */
-class Operation {
+/* class Operation {
   Operation(this.a, this.b);
 
   final int a;
@@ -22,3 +22,17 @@ void main() {
   int result = ((sum.a + sum.b) * 4) * 5 + 3;
   print("$result");
 }
+ */
+
+/* class Operation {
+  final int a;
+  final int b;
+
+  Operation(this.a, this.b);
+}
+
+void main() {
+  final sum = Operation(1, 1);
+  int result = ((sum.a + sum.b) * 4) * 5 + 3;
+  print(result);
+} */
