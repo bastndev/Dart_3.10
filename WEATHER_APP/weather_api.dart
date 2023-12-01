@@ -12,8 +12,7 @@ class WeatherAppClient {
     if (locationResponse.statusCode != 200) {
       throw Exception('Error getting locationID for city: $city');
     }
-    final locationJson = jsonDecode(locationResponse.body);
-    print(locationJson);
-    return 0;
+    final locationJson = jsonDecode(locationResponse.body) as List;
+    return locationJson.first['woeid'] as int;
   }
 }
