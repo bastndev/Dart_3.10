@@ -237,10 +237,19 @@ Future<void> main() async {
   await stream.forEach((value) => print(value));
 }
  */
-void main() {
+/* void main() {
   List<int> numeros = [1, 2, 3, 4, 5];
 
   List<int> doubles = numeros.map((numero) => numero * 2).toList();
 
   print(doubles);
+}
+ */
+
+void main() async {
+  final numbers = Stream.fromIterable([1, 2, 3]);
+
+  final doubles = numbers.map((value) => value * 2).where((value) => value > 3);
+
+  await doubles.forEach(print);
 }
