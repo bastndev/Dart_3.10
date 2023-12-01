@@ -224,8 +224,23 @@ Future<void> main() async {
   print("My favorite food is $favorite");
 } */
 
-Future<void> main() async {
+/* Future<void> main() async {
   final stream = Stream.fromIterable(['pizza', 'nuggets', 'Hamburg']);
 
   await stream.forEach((value) => print(value));
+}
+ */
+
+/* Future<void> main() async {
+  final stream = Stream.fromIterable(['pizza', 'nuggets', 'Hamburg']);
+
+  await stream.forEach((value) => print(value));
+}
+ */
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+
+  List<int> doubles = numeros.map((numero) => numero * 2).toList();
+
+  print(doubles);
 }
